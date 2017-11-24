@@ -16,21 +16,6 @@ items:
     type: Class
     children:
       - 'azure-arm-authorization.RoleDefinitions.#ctor'
-      - >-
-        azure-arm-authorization.RoleDefinitions#deleteMethodWithHttpOperationResponse
-      - 'azure-arm-authorization.RoleDefinitions#deleteMethod'
-      - 'azure-arm-authorization.RoleDefinitions#getWithHttpOperationResponse'
-      - 'azure-arm-authorization.RoleDefinitions#get'
-      - >-
-        azure-arm-authorization.RoleDefinitions#createOrUpdateWithHttpOperationResponse
-      - 'azure-arm-authorization.RoleDefinitions#createOrUpdate'
-      - 'azure-arm-authorization.RoleDefinitions#getByIdWithHttpOperationResponse'
-      - 'azure-arm-authorization.RoleDefinitions#getById'
-      - 'azure-arm-authorization.RoleDefinitions#listWithHttpOperationResponse'
-      - 'azure-arm-authorization.RoleDefinitions#list'
-      - >-
-        azure-arm-authorization.RoleDefinitions#listNextWithHttpOperationResponse
-      - 'azure-arm-authorization.RoleDefinitions#listNext'
     langs:
       - js
   - id: 'azure-arm-authorization.RoleDefinitions.#ctor'
@@ -91,9 +76,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -119,32 +102,8 @@ items:
         value: '{RoleDefinition} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinition} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinition} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -164,9 +123,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -177,11 +134,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(scope, roleDefinitionId, options,
         optionalCallback)
@@ -227,9 +180,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -253,32 +204,8 @@ items:
         value: '{RoleDefinition} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinition} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinition} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -298,9 +225,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -311,11 +236,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function get(scope, roleDefinitionId, options, optionalCallback)'
     langs:
       - js
@@ -387,9 +308,7 @@ items:
         - id: roleDefinition.properties.description
           type:
             - string
-          description: |-
-            The role definition
-            description.
+          description: "The role definition\rdescription."
           optional: true
         - id: roleDefinition.properties.type
           type:
@@ -399,16 +318,12 @@ items:
         - id: roleDefinition.properties.permissions
           type:
             - array
-          description: |-
-            Role definition
-            permissions.
+          description: "Role definition\rpermissions."
           optional: true
         - id: roleDefinition.properties.assignableScopes
           type:
             - array
-          description: |-
-            Role definition
-            assignable scopes.
+          description: "Role definition\rassignable scopes."
           optional: true
         - id: options
           type:
@@ -418,9 +333,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -448,32 +361,8 @@ items:
         value: '{RoleDefinition} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinition} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinition} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -517,9 +406,7 @@ items:
         - id: roleDefinition.properties.description
           type:
             - string
-          description: |-
-            The role definition
-            description.
+          description: "The role definition\rdescription."
           optional: true
         - id: roleDefinition.properties.type
           type:
@@ -529,16 +416,12 @@ items:
         - id: roleDefinition.properties.permissions
           type:
             - array
-          description: |-
-            Role definition
-            permissions.
+          description: "Role definition\rpermissions."
           optional: true
         - id: roleDefinition.properties.assignableScopes
           type:
             - array
-          description: |-
-            Role definition
-            assignable scopes.
+          description: "Role definition\rassignable scopes."
           optional: true
         - id: options
           type:
@@ -548,9 +431,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -561,11 +442,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(scope, roleDefinitionId, roleDefinition,
         options, optionalCallback)
@@ -598,9 +475,7 @@ items:
         - id: roleDefinitionId
           type:
             - string
-          description: |-
-            The fully qualified role definition ID to
-            get.
+          description: "The fully qualified role definition ID to\rget."
         - id: options
           type:
             - object
@@ -609,9 +484,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -635,41 +508,15 @@ items:
         value: '{RoleDefinition} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinition} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinition} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: roleDefinitionId
           type:
             - string
-          description: |-
-            The fully qualified role definition ID to
-            get.
+          description: "The fully qualified role definition ID to\rget."
         - id: options
           type:
             - object
@@ -678,9 +525,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -691,11 +536,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function getById(roleDefinitionId, options, optionalCallback)'
     langs:
       - js
@@ -735,16 +576,12 @@ items:
         - id: options.filter
           type:
             - string
-          description: |-
-            The filter to apply on the operation. Use
-            atScopeAndBelow filter to search below the given scope as well.
+          description: "The filter to apply on the operation. Use\ratScopeAndBelow filter to search below the given scope as well."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -768,34 +605,8 @@ items:
         value: '{RoleDefinitionListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinitionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinitionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinitionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinitionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -811,16 +622,12 @@ items:
         - id: options.filter
           type:
             - string
-          description: |-
-            The filter to apply on the operation. Use
-            atScopeAndBelow filter to search below the given scope as well.
+          description: "The filter to apply on the operation. Use\ratScopeAndBelow filter to search below the given scope as well."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -831,11 +638,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(scope, options, optionalCallback)'
     langs:
       - js
@@ -866,9 +669,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -877,9 +678,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -903,43 +702,15 @@ items:
         value: '{RoleDefinitionListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinitionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RoleDefinitionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinitionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RoleDefinitionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -948,9 +719,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -961,11 +730,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

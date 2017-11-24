@@ -16,17 +16,6 @@ items:
     type: Class
     children:
       - 'azure-arm-apimanagement.ProductApi.#ctor'
-      - >-
-        azure-arm-apimanagement.ProductApi#listByProductWithHttpOperationResponse
-      - 'azure-arm-apimanagement.ProductApi#listByProduct'
-      - >-
-        azure-arm-apimanagement.ProductApi#createOrUpdateWithHttpOperationResponse
-      - 'azure-arm-apimanagement.ProductApi#createOrUpdate'
-      - 'azure-arm-apimanagement.ProductApi#deleteMethodWithHttpOperationResponse'
-      - 'azure-arm-apimanagement.ProductApi#deleteMethod'
-      - >-
-        azure-arm-apimanagement.ProductApi#listByProductNextWithHttpOperationResponse
-      - 'azure-arm-apimanagement.ProductApi#listByProductNext'
     langs:
       - js
   - id: 'azure-arm-apimanagement.ProductApi.#ctor'
@@ -82,9 +71,7 @@ items:
         - id: productId
           type:
             - string
-          description: |-
-            Product identifier. Must be unique in the current
-            API Management service instance.
+          description: "Product identifier. Must be unique in the current\rAPI Management service instance."
         - id: options
           type:
             - object
@@ -93,37 +80,7 @@ items:
         - id: options.filter
           type:
             - string
-          description: >-
-            | Field       | Supported operators    |
-
-            Supported functions                         |
-
-            |-------------|------------------------|---------------------------------------------|
-
-            | id          | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
-
-            | name        | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
-
-            | description | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
-
-            | serviceUrl  | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
-
-            | path        | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
+          description: "| Field       | Supported operators    |\rSupported functions                         |\r|-------------|------------------------|---------------------------------------------|\r| id          | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |\r| name        | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |\r| description | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |\r| serviceUrl  | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |\r| path        | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |"
           optional: true
         - id: options.top
           type:
@@ -138,9 +95,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -168,32 +123,8 @@ items:
         value: '{ApiCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApiCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApiCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApiCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApiCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -208,9 +139,7 @@ items:
         - id: productId
           type:
             - string
-          description: |-
-            Product identifier. Must be unique in the current
-            API Management service instance.
+          description: "Product identifier. Must be unique in the current\rAPI Management service instance."
         - id: options
           type:
             - object
@@ -219,37 +148,7 @@ items:
         - id: options.filter
           type:
             - string
-          description: >-
-            | Field       | Supported operators    |
-
-            Supported functions                         |
-
-            |-------------|------------------------|---------------------------------------------|
-
-            | id          | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
-
-            | name        | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
-
-            | description | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
-
-            | serviceUrl  | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
-
-            | path        | ge, le, eq, ne, gt, lt | substringof, contains,
-            startswith,
-
-            endswith |
+          description: "| Field       | Supported operators    |\rSupported functions                         |\r|-------------|------------------------|---------------------------------------------|\r| id          | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |\r| name        | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |\r| description | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |\r| serviceUrl  | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |\r| path        | ge, le, eq, ne, gt, lt | substringof, contains, startswith,\rendswith |"
           optional: true
         - id: options.top
           type:
@@ -264,9 +163,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -277,11 +174,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByProduct(resourceGroupName, serviceName, productId,
         options, optionalCallback)
@@ -320,15 +213,11 @@ items:
         - id: productId
           type:
             - string
-          description: |-
-            Product identifier. Must be unique in the current
-            API Management service instance.
+          description: "Product identifier. Must be unique in the current\rAPI Management service instance."
         - id: apiId
           type:
             - string
-          description: |-
-            API identifier. Must be unique in the current API
-            Management service instance.
+          description: "API identifier. Must be unique in the current API\rManagement service instance."
         - id: options
           type:
             - object
@@ -337,9 +226,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -367,32 +254,8 @@ items:
         value: '{ApiContract} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApiContract} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApiContract} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApiContract} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApiContract} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -407,15 +270,11 @@ items:
         - id: productId
           type:
             - string
-          description: |-
-            Product identifier. Must be unique in the current
-            API Management service instance.
+          description: "Product identifier. Must be unique in the current\rAPI Management service instance."
         - id: apiId
           type:
             - string
-          description: |-
-            API identifier. Must be unique in the current API
-            Management service instance.
+          description: "API identifier. Must be unique in the current API\rManagement service instance."
         - id: options
           type:
             - object
@@ -424,9 +283,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -437,11 +294,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, serviceName, productId,
         apiId, options, optionalCallback)
@@ -480,15 +333,11 @@ items:
         - id: productId
           type:
             - string
-          description: |-
-            Product identifier. Must be unique in the current
-            API Management service instance.
+          description: "Product identifier. Must be unique in the current\rAPI Management service instance."
         - id: apiId
           type:
             - string
-          description: |-
-            API identifier. Must be unique in the current API
-            Management service instance.
+          description: "API identifier. Must be unique in the current API\rManagement service instance."
         - id: options
           type:
             - object
@@ -497,9 +346,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -527,30 +374,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -565,15 +390,11 @@ items:
         - id: productId
           type:
             - string
-          description: |-
-            Product identifier. Must be unique in the current
-            API Management service instance.
+          description: "Product identifier. Must be unique in the current\rAPI Management service instance."
         - id: apiId
           type:
             - string
-          description: |-
-            API identifier. Must be unique in the current API
-            Management service instance.
+          description: "API identifier. Must be unique in the current API\rManagement service instance."
         - id: options
           type:
             - object
@@ -582,9 +403,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -595,11 +414,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, serviceName, productId, apiId,
         options, optionalCallback)
@@ -634,9 +449,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -645,9 +458,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -673,41 +484,15 @@ items:
         value: '{ApiCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApiCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApiCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApiCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApiCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -716,9 +501,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -729,11 +512,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listByProductNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

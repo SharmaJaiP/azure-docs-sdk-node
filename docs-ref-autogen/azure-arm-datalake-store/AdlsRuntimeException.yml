@@ -3,10 +3,7 @@ items:
   - uid: azure-arm-datalake-store.AdlsRuntimeException
     id: azure-arm-datalake-store.AdlsRuntimeException
     name: AdlsRuntimeException
-    summary: |-
-      A WebHDFS exception thrown when an unexpected error occurs during an
-      operation. Thrown when a 500 error response code is returned (Internal
-      server error).
+    summary: "A WebHDFS exception thrown when an unexpected error occurs during an\roperation. Thrown when a 500 error response code is returned (Internal\rserver error)."
     fullName: azure-arm-datalake-store.AdlsRuntimeException
     source:
       id: azure-arm-datalake-store.AdlsRuntimeException
@@ -21,7 +18,6 @@ items:
     type: Class
     children:
       - 'azure-arm-datalake-store.AdlsRuntimeException.#ctor'
-      - 'azure-arm-datalake-store.AdlsRuntimeException#mapper'
     langs:
       - js
   - id: 'azure-arm-datalake-store.AdlsRuntimeException.#ctor'

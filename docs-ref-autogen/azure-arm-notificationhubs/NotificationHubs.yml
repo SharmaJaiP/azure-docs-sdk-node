@@ -18,48 +18,6 @@ items:
     type: Class
     children:
       - 'azure-arm-notificationhubs.NotificationHubs.#ctor'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#checkAvailabilityWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#checkAvailability'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#createOrUpdateWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#createOrUpdate'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#deleteMethodWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#deleteMethod'
-      - 'azure-arm-notificationhubs.NotificationHubs#getWithHttpOperationResponse'
-      - 'azure-arm-notificationhubs.NotificationHubs#get'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#createOrUpdateAuthorizationRuleWithHttpOperationResponse
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#createOrUpdateAuthorizationRule
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#deleteAuthorizationRuleWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#deleteAuthorizationRule'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#getAuthorizationRuleWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#getAuthorizationRule'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#listWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#list'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#listAuthorizationRulesWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#listAuthorizationRules'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#listKeysWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#listKeys'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#regenerateKeysWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#regenerateKeys'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#getPnsCredentialsWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#getPnsCredentials'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#listNextWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#listNext'
-      - >-
-        azure-arm-notificationhubs.NotificationHubs#listAuthorizationRulesNextWithHttpOperationResponse
-      - 'azure-arm-notificationhubs.NotificationHubs#listAuthorizationRulesNext'
     langs:
       - js
   - id: 'azure-arm-notificationhubs.NotificationHubs.#ctor'
@@ -139,9 +97,7 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: |-
-            Name of the notification hub sku.
-            Possible values include: 'Free', 'Basic', 'Standard'
+          description: "Name of the notification hub sku.\rPossible values include: 'Free', 'Basic', 'Standard'"
         - id: parameters.sku.tier
           type:
             - string
@@ -165,11 +121,7 @@ items:
         - id: parameters.isAvailiable
           type:
             - boolean
-          description: >-
-            True if the name is available and
-
-            can be used to create new Namespace/NotificationHub. Otherwise
-            false.
+          description: "True if the name is available and\rcan be used to create new Namespace/NotificationHub. Otherwise false."
           optional: true
         - id: options
           type:
@@ -179,9 +131,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -209,34 +159,8 @@ items:
         value: '{CheckAvailabilityResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CheckAvailabilityResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CheckAvailabilityResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link CheckAvailabilityResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link CheckAvailabilityResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -273,9 +197,7 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: |-
-            Name of the notification hub sku.
-            Possible values include: 'Free', 'Basic', 'Standard'
+          description: "Name of the notification hub sku.\rPossible values include: 'Free', 'Basic', 'Standard'"
         - id: parameters.sku.tier
           type:
             - string
@@ -299,11 +221,7 @@ items:
         - id: parameters.isAvailiable
           type:
             - boolean
-          description: >-
-            True if the name is available and
-
-            can be used to create new Namespace/NotificationHub. Otherwise
-            false.
+          description: "True if the name is available and\rcan be used to create new Namespace/NotificationHub. Otherwise false."
           optional: true
         - id: options
           type:
@@ -313,9 +231,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -326,11 +242,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function checkAvailability(resourceGroupName, namespaceName, parameters,
         options, optionalCallback)
@@ -379,110 +291,76 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create/update a
-            NotificationHub Resource.
+          description: "Parameters supplied to the create/update a\rNotificationHub Resource."
         - id: parameters.notificationHubCreateOrUpdateParametersName
           type:
             - string
-          description: |-
-            The
-            NotificationHub name.
+          description: "The\rNotificationHub name."
           optional: true
         - id: parameters.registrationTtl
           type:
             - string
-          description: |-
-            The RegistrationTtl of the
-            created NotificationHub
+          description: "The RegistrationTtl of the\rcreated NotificationHub"
           optional: true
         - id: parameters.authorizationRules
           type:
             - array
-          description: |-
-            The AuthorizationRules of the
-            created NotificationHub
+          description: "The AuthorizationRules of the\rcreated NotificationHub"
           optional: true
         - id: parameters.apnsCredential
           type:
             - object
-          description: |-
-            The ApnsCredential of the
-            created NotificationHub
+          description: "The ApnsCredential of the\rcreated NotificationHub"
           optional: true
         - id: parameters.apnsCredential.apnsCertificate
           type:
             - string
-          description: |-
-            The APNS
-            certificate.
+          description: "The APNS\rcertificate."
           optional: true
         - id: parameters.apnsCredential.certificateKey
           type:
             - string
-          description: |-
-            The certificate
-            key.
+          description: "The certificate\rkey."
           optional: true
         - id: parameters.apnsCredential.endpoint
           type:
             - string
-          description: |-
-            The endpoint of this
-            credential.
+          description: "The endpoint of this\rcredential."
           optional: true
         - id: parameters.apnsCredential.thumbprint
           type:
             - string
-          description: |-
-            The Apns certificate
-            Thumbprint
+          description: "The Apns certificate\rThumbprint"
           optional: true
         - id: parameters.apnsCredential.keyId
           type:
             - string
-          description: |-
-            A 10-character key
-            identifier (kid) key, obtained from your developer account
+          description: "A 10-character key\ridentifier (kid) key, obtained from your developer account"
           optional: true
         - id: parameters.apnsCredential.appName
           type:
             - string
-          description: |-
-            The name of the
-            application
+          description: "The name of the\rapplication"
           optional: true
         - id: parameters.apnsCredential.appId
           type:
             - string
-          description: >-
-            The issuer (iss)
-
-            registered claim key, whose value is your 10-character Team ID,
-            obtained
-
-            from your developer account
+          description: "The issuer (iss)\rregistered claim key, whose value is your 10-character Team ID, obtained\rfrom your developer account"
           optional: true
         - id: parameters.apnsCredential.token
           type:
             - string
-          description: |-
-            Provider Authentication
-            Token, obtained through your developer account
+          description: "Provider Authentication\rToken, obtained through your developer account"
           optional: true
         - id: parameters.wnsCredential
           type:
             - object
-          description: |-
-            The WnsCredential of the created
-            NotificationHub
+          description: "The WnsCredential of the created\rNotificationHub"
           optional: true
         - id: parameters.wnsCredential.packageSid
           type:
             - string
-          description: |-
-            The package ID for
-            this credential.
+          description: "The package ID for\rthis credential."
           optional: true
         - id: parameters.wnsCredential.secretKey
           type:
@@ -492,16 +370,12 @@ items:
         - id: parameters.wnsCredential.windowsLiveEndpoint
           type:
             - string
-          description: |-
-            The Windows
-            Live endpoint.
+          description: "The Windows\rLive endpoint."
           optional: true
         - id: parameters.gcmCredential
           type:
             - object
-          description: |-
-            The GcmCredential of the created
-            NotificationHub
+          description: "The GcmCredential of the created\rNotificationHub"
           optional: true
         - id: parameters.gcmCredential.gcmEndpoint
           type:
@@ -516,37 +390,27 @@ items:
         - id: parameters.mpnsCredential
           type:
             - object
-          description: |-
-            The MpnsCredential of the
-            created NotificationHub
+          description: "The MpnsCredential of the\rcreated NotificationHub"
           optional: true
         - id: parameters.mpnsCredential.mpnsCertificate
           type:
             - string
-          description: |-
-            The MPNS
-            certificate.
+          description: "The MPNS\rcertificate."
           optional: true
         - id: parameters.mpnsCredential.certificateKey
           type:
             - string
-          description: |-
-            The certificate
-            key for this credential.
+          description: "The certificate\rkey for this credential."
           optional: true
         - id: parameters.mpnsCredential.thumbprint
           type:
             - string
-          description: |-
-            The Mpns certificate
-            Thumbprint
+          description: "The Mpns certificate\rThumbprint"
           optional: true
         - id: parameters.admCredential
           type:
             - object
-          description: |-
-            The AdmCredential of the created
-            NotificationHub
+          description: "The AdmCredential of the created\rNotificationHub"
           optional: true
         - id: parameters.admCredential.clientId
           type:
@@ -556,23 +420,17 @@ items:
         - id: parameters.admCredential.clientSecret
           type:
             - string
-          description: |-
-            The credential
-            secret access key.
+          description: "The credential\rsecret access key."
           optional: true
         - id: parameters.admCredential.authTokenUrl
           type:
             - string
-          description: |-
-            The URL of the
-            authorization token.
+          description: "The URL of the\rauthorization token."
           optional: true
         - id: parameters.baiduCredential
           type:
             - object
-          description: |-
-            The BaiduCredential of the
-            created NotificationHub
+          description: "The BaiduCredential of the\rcreated NotificationHub"
           optional: true
         - id: parameters.baiduCredential.baiduApiKey
           type:
@@ -606,9 +464,7 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: |-
-            Name of the notification hub sku.
-            Possible values include: 'Free', 'Basic', 'Standard'
+          description: "Name of the notification hub sku.\rPossible values include: 'Free', 'Basic', 'Standard'"
         - id: parameters.sku.tier
           type:
             - string
@@ -637,9 +493,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -667,34 +521,8 @@ items:
         value: '{NotificationHubResource} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link NotificationHubResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link NotificationHubResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link NotificationHubResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link NotificationHubResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -713,110 +541,76 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create/update a
-            NotificationHub Resource.
+          description: "Parameters supplied to the create/update a\rNotificationHub Resource."
         - id: parameters.notificationHubCreateOrUpdateParametersName
           type:
             - string
-          description: |-
-            The
-            NotificationHub name.
+          description: "The\rNotificationHub name."
           optional: true
         - id: parameters.registrationTtl
           type:
             - string
-          description: |-
-            The RegistrationTtl of the
-            created NotificationHub
+          description: "The RegistrationTtl of the\rcreated NotificationHub"
           optional: true
         - id: parameters.authorizationRules
           type:
             - array
-          description: |-
-            The AuthorizationRules of the
-            created NotificationHub
+          description: "The AuthorizationRules of the\rcreated NotificationHub"
           optional: true
         - id: parameters.apnsCredential
           type:
             - object
-          description: |-
-            The ApnsCredential of the
-            created NotificationHub
+          description: "The ApnsCredential of the\rcreated NotificationHub"
           optional: true
         - id: parameters.apnsCredential.apnsCertificate
           type:
             - string
-          description: |-
-            The APNS
-            certificate.
+          description: "The APNS\rcertificate."
           optional: true
         - id: parameters.apnsCredential.certificateKey
           type:
             - string
-          description: |-
-            The certificate
-            key.
+          description: "The certificate\rkey."
           optional: true
         - id: parameters.apnsCredential.endpoint
           type:
             - string
-          description: |-
-            The endpoint of this
-            credential.
+          description: "The endpoint of this\rcredential."
           optional: true
         - id: parameters.apnsCredential.thumbprint
           type:
             - string
-          description: |-
-            The Apns certificate
-            Thumbprint
+          description: "The Apns certificate\rThumbprint"
           optional: true
         - id: parameters.apnsCredential.keyId
           type:
             - string
-          description: |-
-            A 10-character key
-            identifier (kid) key, obtained from your developer account
+          description: "A 10-character key\ridentifier (kid) key, obtained from your developer account"
           optional: true
         - id: parameters.apnsCredential.appName
           type:
             - string
-          description: |-
-            The name of the
-            application
+          description: "The name of the\rapplication"
           optional: true
         - id: parameters.apnsCredential.appId
           type:
             - string
-          description: >-
-            The issuer (iss)
-
-            registered claim key, whose value is your 10-character Team ID,
-            obtained
-
-            from your developer account
+          description: "The issuer (iss)\rregistered claim key, whose value is your 10-character Team ID, obtained\rfrom your developer account"
           optional: true
         - id: parameters.apnsCredential.token
           type:
             - string
-          description: |-
-            Provider Authentication
-            Token, obtained through your developer account
+          description: "Provider Authentication\rToken, obtained through your developer account"
           optional: true
         - id: parameters.wnsCredential
           type:
             - object
-          description: |-
-            The WnsCredential of the created
-            NotificationHub
+          description: "The WnsCredential of the created\rNotificationHub"
           optional: true
         - id: parameters.wnsCredential.packageSid
           type:
             - string
-          description: |-
-            The package ID for
-            this credential.
+          description: "The package ID for\rthis credential."
           optional: true
         - id: parameters.wnsCredential.secretKey
           type:
@@ -826,16 +620,12 @@ items:
         - id: parameters.wnsCredential.windowsLiveEndpoint
           type:
             - string
-          description: |-
-            The Windows
-            Live endpoint.
+          description: "The Windows\rLive endpoint."
           optional: true
         - id: parameters.gcmCredential
           type:
             - object
-          description: |-
-            The GcmCredential of the created
-            NotificationHub
+          description: "The GcmCredential of the created\rNotificationHub"
           optional: true
         - id: parameters.gcmCredential.gcmEndpoint
           type:
@@ -850,37 +640,27 @@ items:
         - id: parameters.mpnsCredential
           type:
             - object
-          description: |-
-            The MpnsCredential of the
-            created NotificationHub
+          description: "The MpnsCredential of the\rcreated NotificationHub"
           optional: true
         - id: parameters.mpnsCredential.mpnsCertificate
           type:
             - string
-          description: |-
-            The MPNS
-            certificate.
+          description: "The MPNS\rcertificate."
           optional: true
         - id: parameters.mpnsCredential.certificateKey
           type:
             - string
-          description: |-
-            The certificate
-            key for this credential.
+          description: "The certificate\rkey for this credential."
           optional: true
         - id: parameters.mpnsCredential.thumbprint
           type:
             - string
-          description: |-
-            The Mpns certificate
-            Thumbprint
+          description: "The Mpns certificate\rThumbprint"
           optional: true
         - id: parameters.admCredential
           type:
             - object
-          description: |-
-            The AdmCredential of the created
-            NotificationHub
+          description: "The AdmCredential of the created\rNotificationHub"
           optional: true
         - id: parameters.admCredential.clientId
           type:
@@ -890,23 +670,17 @@ items:
         - id: parameters.admCredential.clientSecret
           type:
             - string
-          description: |-
-            The credential
-            secret access key.
+          description: "The credential\rsecret access key."
           optional: true
         - id: parameters.admCredential.authTokenUrl
           type:
             - string
-          description: |-
-            The URL of the
-            authorization token.
+          description: "The URL of the\rauthorization token."
           optional: true
         - id: parameters.baiduCredential
           type:
             - object
-          description: |-
-            The BaiduCredential of the
-            created NotificationHub
+          description: "The BaiduCredential of the\rcreated NotificationHub"
           optional: true
         - id: parameters.baiduCredential.baiduApiKey
           type:
@@ -940,9 +714,7 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: |-
-            Name of the notification hub sku.
-            Possible values include: 'Free', 'Basic', 'Standard'
+          description: "Name of the notification hub sku.\rPossible values include: 'Free', 'Basic', 'Standard'"
         - id: parameters.sku.tier
           type:
             - string
@@ -971,9 +743,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -984,11 +754,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, namespaceName,
         notificationHubName, parameters, options, optionalCallback)
@@ -1038,9 +804,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1068,30 +832,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1115,9 +857,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1128,11 +868,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, namespaceName,
         notificationHubName, options, optionalCallback)
@@ -1184,9 +920,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1214,34 +948,8 @@ items:
         value: '{NotificationHubResource} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link NotificationHubResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link NotificationHubResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link NotificationHubResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link NotificationHubResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1265,9 +973,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1278,11 +984,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, namespaceName, notificationHubName,
         options, optionalCallback)
@@ -1341,15 +1043,11 @@ items:
         - id: parameters.properties
           type:
             - object
-          description: |-
-            Properties of the Namespace
-            AuthorizationRules.
+          description: "Properties of the Namespace\rAuthorizationRules."
         - id: parameters.properties.rights
           type:
             - array
-          description: |-
-            The rights associated with the
-            rule.
+          description: "The rights associated with the\rrule."
           optional: true
         - id: parameters.location
           type:
@@ -1368,9 +1066,7 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: |-
-            Name of the notification hub sku.
-            Possible values include: 'Free', 'Basic', 'Standard'
+          description: "Name of the notification hub sku.\rPossible values include: 'Free', 'Basic', 'Standard'"
         - id: parameters.sku.tier
           type:
             - string
@@ -1399,9 +1095,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1439,34 +1133,8 @@ items:
           object.
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedAccessAuthorizationRuleResource} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedAccessAuthorizationRuleResource} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleResource} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleResource} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1493,15 +1161,11 @@ items:
         - id: parameters.properties
           type:
             - object
-          description: |-
-            Properties of the Namespace
-            AuthorizationRules.
+          description: "Properties of the Namespace\rAuthorizationRules."
         - id: parameters.properties.rights
           type:
             - array
-          description: |-
-            The rights associated with the
-            rule.
+          description: "The rights associated with the\rrule."
           optional: true
         - id: parameters.location
           type:
@@ -1520,9 +1184,7 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: |-
-            Name of the notification hub sku.
-            Possible values include: 'Free', 'Basic', 'Standard'
+          description: "Name of the notification hub sku.\rPossible values include: 'Free', 'Basic', 'Standard'"
         - id: parameters.sku.tier
           type:
             - string
@@ -1551,9 +1213,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1564,11 +1224,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdateAuthorizationRule(resourceGroupName,
         namespaceName, notificationHubName, authorizationRuleName, parameters,
@@ -1623,9 +1279,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1655,30 +1309,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1706,9 +1338,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1719,11 +1349,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteAuthorizationRule(resourceGroupName, namespaceName,
         notificationHubName, authorizationRuleName, options, optionalCallback)
@@ -1781,9 +1407,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1817,34 +1441,8 @@ items:
           object.
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedAccessAuthorizationRuleResource} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedAccessAuthorizationRuleResource} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleResource} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleResource} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1872,9 +1470,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1885,11 +1481,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getAuthorizationRule(resourceGroupName, namespaceName,
         notificationHubName, authorizationRuleName, options, optionalCallback)
@@ -1935,9 +1527,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1963,34 +1553,8 @@ items:
         value: '{NotificationHubListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link NotificationHubListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link NotificationHubListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link NotificationHubListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link NotificationHubListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2010,9 +1574,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2023,11 +1585,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function list(resourceGroupName, namespaceName, options,
         optionalCallback)
@@ -2081,9 +1639,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2116,34 +1672,8 @@ items:
           object.
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedAccessAuthorizationRuleListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedAccessAuthorizationRuleListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleListResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleListResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2167,9 +1697,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2180,11 +1708,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listAuthorizationRules(resourceGroupName, namespaceName,
         notificationHubName, options, optionalCallback)
@@ -2233,9 +1757,7 @@ items:
         - id: authorizationRuleName
           type:
             - string
-          description: |-
-            The connection string of the
-            NotificationHub for the specified authorizationRule.
+          description: "The connection string of the\rNotificationHub for the specified authorizationRule."
         - id: options
           type:
             - object
@@ -2244,9 +1766,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2275,32 +1795,8 @@ items:
         value: '{ResourceListKeys} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceListKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceListKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2319,9 +1815,7 @@ items:
         - id: authorizationRuleName
           type:
             - string
-          description: |-
-            The connection string of the
-            NotificationHub for the specified authorizationRule.
+          description: "The connection string of the\rNotificationHub for the specified authorizationRule."
         - id: options
           type:
             - object
@@ -2330,9 +1824,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2343,11 +1835,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listKeys(resourceGroupName, namespaceName, notificationHubName,
         authorizationRuleName, options, optionalCallback)
@@ -2361,11 +1849,7 @@ items:
     name: >-
       regenerateKeysWithHttpOperationResponse(resourceGroupName, namespaceName,
       notificationHubName, authorizationRuleName, parameters, options)
-    summary: >-
-      Regenerates the Primary/Secondary Keys to the NotificationHub
-      Authorization
-
-      Rule
+    summary: "Regenerates the Primary/Secondary Keys to the NotificationHub Authorization\rRule"
     fullName: >-
       azure-arm-notificationhubs.NotificationHubs.regenerateKeysWithHttpOperationResponse(resourceGroupName,
       namespaceName, notificationHubName, authorizationRuleName, parameters,
@@ -2401,25 +1885,15 @@ items:
         - id: authorizationRuleName
           type:
             - string
-          description: |-
-            The connection string of the
-            NotificationHub for the specified authorizationRule.
+          description: "The connection string of the\rNotificationHub for the specified authorizationRule."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to regenerate the
-            NotificationHub Authorization Rule Key.
+          description: "Parameters supplied to regenerate the\rNotificationHub Authorization Rule Key."
         - id: parameters.policyKey
           type:
             - string
-          description: >-
-            Name of the key that has to be
-
-            regenerated for the Namespace/Notification Hub Authorization Rule.
-            The value
-
-            can be Primary Key/Secondary Key.
+          description: "Name of the key that has to be\rregenerated for the Namespace/Notification Hub Authorization Rule. The value\rcan be Primary Key/Secondary Key."
           optional: true
         - id: options
           type:
@@ -2429,9 +1903,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2449,11 +1921,7 @@ items:
     name: >-
       regenerateKeys(resourceGroupName, namespaceName, notificationHubName,
       authorizationRuleName, parameters, options, optionalCallback)
-    summary: >-
-      Regenerates the Primary/Secondary Keys to the NotificationHub
-      Authorization
-
-      Rule
+    summary: "Regenerates the Primary/Secondary Keys to the NotificationHub Authorization\rRule"
     fullName: >-
       azure-arm-notificationhubs.NotificationHubs.regenerateKeys(resourceGroupName,
       namespaceName, notificationHubName, authorizationRuleName, parameters,
@@ -2465,32 +1933,8 @@ items:
         value: '{ResourceListKeys} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceListKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceListKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2509,25 +1953,15 @@ items:
         - id: authorizationRuleName
           type:
             - string
-          description: |-
-            The connection string of the
-            NotificationHub for the specified authorizationRule.
+          description: "The connection string of the\rNotificationHub for the specified authorizationRule."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to regenerate the
-            NotificationHub Authorization Rule Key.
+          description: "Parameters supplied to regenerate the\rNotificationHub Authorization Rule Key."
         - id: parameters.policyKey
           type:
             - string
-          description: >-
-            Name of the key that has to be
-
-            regenerated for the Namespace/Notification Hub Authorization Rule.
-            The value
-
-            can be Primary Key/Secondary Key.
+          description: "Name of the key that has to be\rregenerated for the Namespace/Notification Hub Authorization Rule. The value\rcan be Primary Key/Secondary Key."
           optional: true
         - id: options
           type:
@@ -2537,9 +1971,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2550,11 +1982,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function regenerateKeys(resourceGroupName, namespaceName,
         notificationHubName, authorizationRuleName, parameters, options,
@@ -2609,9 +2037,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2639,34 +2065,8 @@ items:
         value: '{PnsCredentialsResource} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PnsCredentialsResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PnsCredentialsResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PnsCredentialsResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PnsCredentialsResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2690,9 +2090,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2703,11 +2101,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getPnsCredentials(resourceGroupName, namespaceName,
         notificationHubName, options, optionalCallback)
@@ -2742,9 +2136,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2753,9 +2145,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2779,43 +2169,15 @@ items:
         value: '{NotificationHubListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link NotificationHubListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link NotificationHubListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link NotificationHubListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link NotificationHubListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2824,9 +2186,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2837,11 +2197,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -2874,9 +2230,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2885,9 +2239,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2918,43 +2270,15 @@ items:
           object.
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedAccessAuthorizationRuleListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedAccessAuthorizationRuleListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleListResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleListResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2963,9 +2287,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2976,11 +2298,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listAuthorizationRulesNext(nextPageLink, options,
         optionalCallback)

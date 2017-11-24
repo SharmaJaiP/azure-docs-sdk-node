@@ -16,33 +16,6 @@ items:
     type: Class
     children:
       - 'azure-arm-datalake-store.Account.#ctor'
-      - 'azure-arm-datalake-store.Account#createWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#create'
-      - 'azure-arm-datalake-store.Account#updateWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#update'
-      - 'azure-arm-datalake-store.Account#deleteMethodWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#deleteMethod'
-      - 'azure-arm-datalake-store.Account#getWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#get'
-      - 'azure-arm-datalake-store.Account#enableKeyVaultWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#enableKeyVault'
-      - >-
-        azure-arm-datalake-store.Account#listByResourceGroupWithHttpOperationResponse
-      - 'azure-arm-datalake-store.Account#listByResourceGroup'
-      - 'azure-arm-datalake-store.Account#listWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#list'
-      - 'azure-arm-datalake-store.Account#beginCreateWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#beginCreate'
-      - 'azure-arm-datalake-store.Account#beginUpdateWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#beginUpdate'
-      - >-
-        azure-arm-datalake-store.Account#beginDeleteMethodWithHttpOperationResponse
-      - 'azure-arm-datalake-store.Account#beginDeleteMethod'
-      - >-
-        azure-arm-datalake-store.Account#listByResourceGroupNextWithHttpOperationResponse
-      - 'azure-arm-datalake-store.Account#listByResourceGroupNext'
-      - 'azure-arm-datalake-store.Account#listNextWithHttpOperationResponse'
-      - 'azure-arm-datalake-store.Account#listNext'
     langs:
       - js
   - id: 'azure-arm-datalake-store.Account.#ctor'
@@ -90,9 +63,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -100,140 +71,77 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to create the Data Lake Store
-            account.
+          description: "Parameters supplied to create the Data Lake Store\raccount."
         - id: parameters.identity
           type:
             - object
-          description: |-
-            The Key Vault encryption identity, if
-            any.
+          description: "The Key Vault encryption identity, if\rany."
           optional: true
         - id: parameters.encryptionState
           type:
             - string
-          description: >-
-            The current state of encryption
-
-            for this Data Lake store account. Possible values include:
-            'Enabled',
-
-            'Disabled'
+          description: "The current state of encryption\rfor this Data Lake store account. Possible values include: 'Enabled',\r'Disabled'"
           optional: true
         - id: parameters.encryptionConfig
           type:
             - object
-          description: |-
-            The Key Vault encryption
-            configuration.
+          description: "The Key Vault encryption\rconfiguration."
           optional: true
         - id: parameters.encryptionConfig.type
           type:
             - string
-          description: >-
-            The type of encryption
-
-            configuration being used. Currently the only supported types are
-
-            'UserManaged' and 'ServiceManaged'. Possible values include:
-            'UserManaged',
-
-            'ServiceManaged'
+          description: "The type of encryption\rconfiguration being used. Currently the only supported types are\r'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',\r'ServiceManaged'"
         - id: parameters.encryptionConfig.keyVaultMetaInfo
           type:
             - object
-          description: |-
-            The Key Vault
-            information for connecting to user managed encryption keys.
+          description: "The Key Vault\rinformation for connecting to user managed encryption keys."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId
           type:
             - string
-          description: |-
-            The resource
-            identifier for the user managed Key Vault being used to encrypt.
+          description: "The resource\ridentifier for the user managed Key Vault being used to encrypt."
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName
           type:
             - string
-          description: |-
-            The name of
-            the user managed encryption key.
+          description: "The name of\rthe user managed encryption key."
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion
           type:
             - string
-          description: |-
-            The
-            version of the user managed encryption key.
+          description: "The\rversion of the user managed encryption key."
         - id: parameters.firewallState
           type:
             - string
-          description: >-
-            The current state of the IP
-
-            address firewall for this Data Lake store account. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of the IP\raddress firewall for this Data Lake store account. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.firewallRules
           type:
             - array
-          description: |-
-            The list of firewall rules
-            associated with this Data Lake store account.
+          description: "The list of firewall rules\rassociated with this Data Lake store account."
           optional: true
         - id: parameters.trustedIdProviderState
           type:
             - string
-          description: >-
-            The current state of the
-
-            trusted identity provider feature for this Data Lake store account.
-            Possible
-
-            values include: 'Enabled', 'Disabled'
+          description: "The current state of the\rtrusted identity provider feature for this Data Lake store account. Possible\rvalues include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.trustedIdProviders
           type:
             - array
-          description: |-
-            The list of trusted identity
-            providers associated with this Data Lake store account.
+          description: "The list of trusted identity\rproviders associated with this Data Lake store account."
           optional: true
         - id: parameters.defaultGroup
           type:
             - string
-          description: |-
-            the default owner group for all
-            new folders and files created in the Data Lake Store account.
+          description: "the default owner group for all\rnew folders and files created in the Data Lake Store account."
           optional: true
         - id: parameters.newTier
           type:
             - string
-          description: >-
-            the commitment tier to use for next
-
-            month. Possible values include: 'Consumption', 'Commitment_1TB',
-
-            'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB',
-            'Commitment_1PB',
-
-            'Commitment_5PB'
+          description: "the commitment tier to use for next\rmonth. Possible values include: 'Consumption', 'Commitment_1TB',\r'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',\r'Commitment_5PB'"
           optional: true
         - id: parameters.firewallAllowAzureIps
           type:
             - string
-          description: >-
-            The current state of
-
-            allowing or disallowing IPs originating within Azure through the
-            firewall.
-
-            If the firewall is disabled, this is not enforced. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of\rallowing or disallowing IPs originating within Azure through the firewall.\rIf the firewall is disabled, this is not enforced. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.location
           type:
@@ -252,9 +160,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -280,41 +186,15 @@ items:
         value: '{DataLakeStoreAccount} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -322,140 +202,77 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to create the Data Lake Store
-            account.
+          description: "Parameters supplied to create the Data Lake Store\raccount."
         - id: parameters.identity
           type:
             - object
-          description: |-
-            The Key Vault encryption identity, if
-            any.
+          description: "The Key Vault encryption identity, if\rany."
           optional: true
         - id: parameters.encryptionState
           type:
             - string
-          description: >-
-            The current state of encryption
-
-            for this Data Lake store account. Possible values include:
-            'Enabled',
-
-            'Disabled'
+          description: "The current state of encryption\rfor this Data Lake store account. Possible values include: 'Enabled',\r'Disabled'"
           optional: true
         - id: parameters.encryptionConfig
           type:
             - object
-          description: |-
-            The Key Vault encryption
-            configuration.
+          description: "The Key Vault encryption\rconfiguration."
           optional: true
         - id: parameters.encryptionConfig.type
           type:
             - string
-          description: >-
-            The type of encryption
-
-            configuration being used. Currently the only supported types are
-
-            'UserManaged' and 'ServiceManaged'. Possible values include:
-            'UserManaged',
-
-            'ServiceManaged'
+          description: "The type of encryption\rconfiguration being used. Currently the only supported types are\r'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',\r'ServiceManaged'"
         - id: parameters.encryptionConfig.keyVaultMetaInfo
           type:
             - object
-          description: |-
-            The Key Vault
-            information for connecting to user managed encryption keys.
+          description: "The Key Vault\rinformation for connecting to user managed encryption keys."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId
           type:
             - string
-          description: |-
-            The resource
-            identifier for the user managed Key Vault being used to encrypt.
+          description: "The resource\ridentifier for the user managed Key Vault being used to encrypt."
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName
           type:
             - string
-          description: |-
-            The name of
-            the user managed encryption key.
+          description: "The name of\rthe user managed encryption key."
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion
           type:
             - string
-          description: |-
-            The
-            version of the user managed encryption key.
+          description: "The\rversion of the user managed encryption key."
         - id: parameters.firewallState
           type:
             - string
-          description: >-
-            The current state of the IP
-
-            address firewall for this Data Lake store account. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of the IP\raddress firewall for this Data Lake store account. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.firewallRules
           type:
             - array
-          description: |-
-            The list of firewall rules
-            associated with this Data Lake store account.
+          description: "The list of firewall rules\rassociated with this Data Lake store account."
           optional: true
         - id: parameters.trustedIdProviderState
           type:
             - string
-          description: >-
-            The current state of the
-
-            trusted identity provider feature for this Data Lake store account.
-            Possible
-
-            values include: 'Enabled', 'Disabled'
+          description: "The current state of the\rtrusted identity provider feature for this Data Lake store account. Possible\rvalues include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.trustedIdProviders
           type:
             - array
-          description: |-
-            The list of trusted identity
-            providers associated with this Data Lake store account.
+          description: "The list of trusted identity\rproviders associated with this Data Lake store account."
           optional: true
         - id: parameters.defaultGroup
           type:
             - string
-          description: |-
-            the default owner group for all
-            new folders and files created in the Data Lake Store account.
+          description: "the default owner group for all\rnew folders and files created in the Data Lake Store account."
           optional: true
         - id: parameters.newTier
           type:
             - string
-          description: >-
-            the commitment tier to use for next
-
-            month. Possible values include: 'Consumption', 'Commitment_1TB',
-
-            'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB',
-            'Commitment_1PB',
-
-            'Commitment_5PB'
+          description: "the commitment tier to use for next\rmonth. Possible values include: 'Consumption', 'Commitment_1TB',\r'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',\r'Commitment_5PB'"
           optional: true
         - id: parameters.firewallAllowAzureIps
           type:
             - string
-          description: >-
-            The current state of
-
-            allowing or disallowing IPs originating within Azure through the
-            firewall.
-
-            If the firewall is disabled, this is not enforced. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of\rallowing or disallowing IPs originating within Azure through the firewall.\rIf the firewall is disabled, this is not enforced. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.location
           type:
@@ -474,9 +291,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -487,11 +302,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function create(resourceGroupName, name, parameters, options,
         optionalCallback)
@@ -526,9 +337,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -536,9 +345,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to update the Data Lake Store
-            account.
+          description: "Parameters supplied to update the Data Lake Store\raccount."
         - id: parameters.tags
           type:
             - object
@@ -547,93 +354,42 @@ items:
         - id: parameters.firewallState
           type:
             - string
-          description: >-
-            The current state of the IP
-
-            address firewall for this Data Lake store account. Disabling the
-            firewall
-
-            does not remove existing rules, they will just be ignored until the
-            firewall
-
-            is re-enabled. Possible values include: 'Enabled', 'Disabled'
+          description: "The current state of the IP\raddress firewall for this Data Lake store account. Disabling the firewall\rdoes not remove existing rules, they will just be ignored until the firewall\ris re-enabled. Possible values include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.trustedIdProviderState
           type:
             - string
-          description: >-
-            The current state of the
-
-            trusted identity provider feature for this Data Lake store account.
-
-            Disabling trusted identity provider functionality does not remove
-            the
-
-            providers, they will just be ignored until this feature is
-            re-enabled.
-
-            Possible values include: 'Enabled', 'Disabled'
+          description: "The current state of the\rtrusted identity provider feature for this Data Lake store account.\rDisabling trusted identity provider functionality does not remove the\rproviders, they will just be ignored until this feature is re-enabled.\rPossible values include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.defaultGroup
           type:
             - string
-          description: |-
-            the default owner group for all
-            new folders and files created in the Data Lake Store account.
+          description: "the default owner group for all\rnew folders and files created in the Data Lake Store account."
           optional: true
         - id: parameters.newTier
           type:
             - string
-          description: >-
-            the commitment tier to use for next
-
-            month. Possible values include: 'Consumption', 'Commitment_1TB',
-
-            'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB',
-            'Commitment_1PB',
-
-            'Commitment_5PB'
+          description: "the commitment tier to use for next\rmonth. Possible values include: 'Consumption', 'Commitment_1TB',\r'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',\r'Commitment_5PB'"
           optional: true
         - id: parameters.firewallAllowAzureIps
           type:
             - string
-          description: >-
-            The current state of
-
-            allowing or disallowing IPs originating within Azure through the
-            firewall.
-
-            If the firewall is disabled, this is not enforced. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of\rallowing or disallowing IPs originating within Azure through the firewall.\rIf the firewall is disabled, this is not enforced. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.encryptionConfig
           type:
             - object
-          description: >-
-            Used for rotation of user
-
-            managed Key Vault keys. Can only be used to rotate a user managed
-            encryption
-
-            Key Vault key.
+          description: "Used for rotation of user\rmanaged Key Vault keys. Can only be used to rotate a user managed encryption\rKey Vault key."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo
           type:
             - object
-          description: |-
-            The updated
-            Key Vault key to use in user managed key rotation.
+          description: "The updated\rKey Vault key to use in user managed key rotation."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion
           type:
             - string
-          description: >-
-            The
-
-            version of the user managed encryption key to update through a key
-            rotation.
+          description: "The\rversion of the user managed encryption key to update through a key rotation."
           optional: true
         - id: options
           type:
@@ -643,9 +399,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -671,41 +425,15 @@ items:
         value: '{DataLakeStoreAccount} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -713,9 +441,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to update the Data Lake Store
-            account.
+          description: "Parameters supplied to update the Data Lake Store\raccount."
         - id: parameters.tags
           type:
             - object
@@ -724,93 +450,42 @@ items:
         - id: parameters.firewallState
           type:
             - string
-          description: >-
-            The current state of the IP
-
-            address firewall for this Data Lake store account. Disabling the
-            firewall
-
-            does not remove existing rules, they will just be ignored until the
-            firewall
-
-            is re-enabled. Possible values include: 'Enabled', 'Disabled'
+          description: "The current state of the IP\raddress firewall for this Data Lake store account. Disabling the firewall\rdoes not remove existing rules, they will just be ignored until the firewall\ris re-enabled. Possible values include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.trustedIdProviderState
           type:
             - string
-          description: >-
-            The current state of the
-
-            trusted identity provider feature for this Data Lake store account.
-
-            Disabling trusted identity provider functionality does not remove
-            the
-
-            providers, they will just be ignored until this feature is
-            re-enabled.
-
-            Possible values include: 'Enabled', 'Disabled'
+          description: "The current state of the\rtrusted identity provider feature for this Data Lake store account.\rDisabling trusted identity provider functionality does not remove the\rproviders, they will just be ignored until this feature is re-enabled.\rPossible values include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.defaultGroup
           type:
             - string
-          description: |-
-            the default owner group for all
-            new folders and files created in the Data Lake Store account.
+          description: "the default owner group for all\rnew folders and files created in the Data Lake Store account."
           optional: true
         - id: parameters.newTier
           type:
             - string
-          description: >-
-            the commitment tier to use for next
-
-            month. Possible values include: 'Consumption', 'Commitment_1TB',
-
-            'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB',
-            'Commitment_1PB',
-
-            'Commitment_5PB'
+          description: "the commitment tier to use for next\rmonth. Possible values include: 'Consumption', 'Commitment_1TB',\r'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',\r'Commitment_5PB'"
           optional: true
         - id: parameters.firewallAllowAzureIps
           type:
             - string
-          description: >-
-            The current state of
-
-            allowing or disallowing IPs originating within Azure through the
-            firewall.
-
-            If the firewall is disabled, this is not enforced. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of\rallowing or disallowing IPs originating within Azure through the firewall.\rIf the firewall is disabled, this is not enforced. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.encryptionConfig
           type:
             - object
-          description: >-
-            Used for rotation of user
-
-            managed Key Vault keys. Can only be used to rotate a user managed
-            encryption
-
-            Key Vault key.
+          description: "Used for rotation of user\rmanaged Key Vault keys. Can only be used to rotate a user managed encryption\rKey Vault key."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo
           type:
             - object
-          description: |-
-            The updated
-            Key Vault key to use in user managed key rotation.
+          description: "The updated\rKey Vault key to use in user managed key rotation."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion
           type:
             - string
-          description: >-
-            The
-
-            version of the user managed encryption key to update through a key
-            rotation.
+          description: "The\rversion of the user managed encryption key to update through a key rotation."
           optional: true
         - id: options
           type:
@@ -820,9 +495,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -833,11 +506,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function update(resourceGroupName, name, parameters, options,
         optionalCallback)
@@ -866,9 +535,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -881,9 +548,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -909,39 +574,15 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -954,9 +595,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -967,11 +606,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, name, options,
         optionalCallback)
@@ -1004,9 +639,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -1019,9 +652,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1045,41 +676,15 @@ items:
         value: '{DataLakeStoreAccount} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -1092,9 +697,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1105,11 +708,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function get(resourceGroupName, name, options, optionalCallback)'
     langs:
       - js
@@ -1119,11 +718,7 @@ items:
     name: >-
       enableKeyVaultWithHttpOperationResponse(resourceGroupName, accountName,
       options)
-    summary: >-
-      Attempts to enable a user managed Key Vault for encryption of the
-      specified
-
-      Data Lake Store account.
+    summary: "Attempts to enable a user managed Key Vault for encryption of the specified\rData Lake Store account."
     fullName: >-
       azure-arm-datalake-store.Account.enableKeyVaultWithHttpOperationResponse(resourceGroupName,
       accountName, options)
@@ -1142,15 +737,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: accountName
           type:
             - string
-          description: |-
-            The name of the Data Lake Store account to
-            attempt to enable the Key Vault for.
+          description: "The name of the Data Lake Store account to\rattempt to enable the Key Vault for."
         - id: options
           type:
             - object
@@ -1159,9 +750,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1176,11 +765,7 @@ items:
     id: 'azure-arm-datalake-store.Account#enableKeyVault'
     parent: azure-arm-datalake-store.Account
     name: 'enableKeyVault(resourceGroupName, accountName, options, optionalCallback)'
-    summary: >-
-      Attempts to enable a user managed Key Vault for encryption of the
-      specified
-
-      Data Lake Store account.
+    summary: "Attempts to enable a user managed Key Vault for encryption of the specified\rData Lake Store account."
     fullName: >-
       azure-arm-datalake-store.Account.enableKeyVault(resourceGroupName,
       accountName, options, optionalCallback)
@@ -1191,45 +776,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: accountName
           type:
             - string
-          description: |-
-            The name of the Data Lake Store account to
-            attempt to enable the Key Vault for.
+          description: "The name of the Data Lake Store account to\rattempt to enable the Key Vault for."
         - id: options
           type:
             - object
@@ -1238,9 +797,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1251,11 +808,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function enableKeyVault(resourceGroupName, accountName, options,
         optionalCallback)
@@ -1267,9 +820,7 @@ items:
       azure-arm-datalake-store.Account#listByResourceGroupWithHttpOperationResponse
     parent: azure-arm-datalake-store.Account
     name: 'listByResourceGroupWithHttpOperationResponse(resourceGroupName, options)'
-    summary: |-
-      Lists the Data Lake Store accounts within a specific resource group. The
-      response includes a link to the next page of results, if any.
+    summary: "Lists the Data Lake Store accounts within a specific resource group. The\rresponse includes a link to the next page of results, if any."
     fullName: >-
       azure-arm-datalake-store.Account.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
       options)
@@ -1292,9 +843,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account(s).
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account(s)."
         - id: options
           type:
             - object
@@ -1313,45 +862,27 @@ items:
         - id: options.skip
           type:
             - number
-          description: |-
-            The number of items to skip over before
-            returning elements. Optional.
+          description: "The number of items to skip over before\rreturning elements. Optional."
           optional: true
         - id: options.select
           type:
             - string
-          description: |-
-            OData Select statement. Limits the
-            properties on each entry to just those requested, e.g.
-            Categories?$select=CategoryName,Description. Optional.
+          description: "OData Select statement. Limits the\rproperties on each entry to just those requested, e.g.\rCategories?$select=CategoryName,Description. Optional."
           optional: true
         - id: options.orderby
           type:
             - string
-          description: >-
-            OrderBy clause. One or more
-
-            comma-separated expressions with an optional "asc" (the default) or
-            "desc"
-
-            depending on the order you'd like the values sorted, e.g.
-
-            Categories?$orderby=CategoryName desc. Optional.
+          description: "OrderBy clause. One or more\rcomma-separated expressions with an optional \"asc\" (the default) or \"desc\"\rdepending on the order you'd like the values sorted, e.g.\rCategories?$orderby=CategoryName desc. Optional."
           optional: true
         - id: options.count
           type:
             - boolean
-          description: |-
-            A Boolean value of true or false to request
-            a count of the matching resources included with the resources in the
-            response, e.g. Categories?$count=true. Optional.
+          description: "A Boolean value of true or false to request\ra count of the matching resources included with the resources in the\rresponse, e.g. Categories?$count=true. Optional."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1366,9 +897,7 @@ items:
     id: 'azure-arm-datalake-store.Account#listByResourceGroup'
     parent: azure-arm-datalake-store.Account
     name: 'listByResourceGroup(resourceGroupName, options, optionalCallback)'
-    summary: |-
-      Lists the Data Lake Store accounts within a specific resource group. The
-      response includes a link to the next page of results, if any.
+    summary: "Lists the Data Lake Store accounts within a specific resource group. The\rresponse includes a link to the next page of results, if any."
     fullName: >-
       azure-arm-datalake-store.Account.listByResourceGroup(resourceGroupName,
       options, optionalCallback)
@@ -1379,43 +908,15 @@ items:
         value: '{DataLakeStoreAccountListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccountListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccountListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccountListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccountListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account(s).
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account(s)."
         - id: options
           type:
             - object
@@ -1434,45 +935,27 @@ items:
         - id: options.skip
           type:
             - number
-          description: |-
-            The number of items to skip over before
-            returning elements. Optional.
+          description: "The number of items to skip over before\rreturning elements. Optional."
           optional: true
         - id: options.select
           type:
             - string
-          description: |-
-            OData Select statement. Limits the
-            properties on each entry to just those requested, e.g.
-            Categories?$select=CategoryName,Description. Optional.
+          description: "OData Select statement. Limits the\rproperties on each entry to just those requested, e.g.\rCategories?$select=CategoryName,Description. Optional."
           optional: true
         - id: options.orderby
           type:
             - string
-          description: >-
-            OrderBy clause. One or more
-
-            comma-separated expressions with an optional "asc" (the default) or
-            "desc"
-
-            depending on the order you'd like the values sorted, e.g.
-
-            Categories?$orderby=CategoryName desc. Optional.
+          description: "OrderBy clause. One or more\rcomma-separated expressions with an optional \"asc\" (the default) or \"desc\"\rdepending on the order you'd like the values sorted, e.g.\rCategories?$orderby=CategoryName desc. Optional."
           optional: true
         - id: options.count
           type:
             - boolean
-          description: |-
-            A Boolean value of true or false to request
-            a count of the matching resources included with the resources in the
-            response, e.g. Categories?$count=true. Optional.
+          description: "A Boolean value of true or false to request\ra count of the matching resources included with the resources in the\rresponse, e.g. Categories?$count=true. Optional."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1483,11 +966,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -1497,9 +976,7 @@ items:
     id: 'azure-arm-datalake-store.Account#listWithHttpOperationResponse'
     parent: azure-arm-datalake-store.Account
     name: listWithHttpOperationResponse(options)
-    summary: |-
-      Lists the Data Lake Store accounts within the subscription. The response
-      includes a link to the next page of results, if any.
+    summary: "Lists the Data Lake Store accounts within the subscription. The response\rincludes a link to the next page of results, if any."
     fullName: azure-arm-datalake-store.Account.listWithHttpOperationResponse(options)
     tags:
       - originalTitle: resolve
@@ -1535,48 +1012,27 @@ items:
         - id: options.skip
           type:
             - number
-          description: |-
-            The number of items to skip over before
-            returning elements. Optional.
+          description: "The number of items to skip over before\rreturning elements. Optional."
           optional: true
         - id: options.select
           type:
             - string
-          description: |-
-            OData Select statement. Limits the
-            properties on each entry to just those requested, e.g.
-            Categories?$select=CategoryName,Description. Optional.
+          description: "OData Select statement. Limits the\rproperties on each entry to just those requested, e.g.\rCategories?$select=CategoryName,Description. Optional."
           optional: true
         - id: options.orderby
           type:
             - string
-          description: >-
-            OrderBy clause. One or more
-
-            comma-separated expressions with an optional "asc" (the default) or
-            "desc"
-
-            depending on the order you'd like the values sorted, e.g.
-
-            Categories?$orderby=CategoryName desc. Optional.
+          description: "OrderBy clause. One or more\rcomma-separated expressions with an optional \"asc\" (the default) or \"desc\"\rdepending on the order you'd like the values sorted, e.g.\rCategories?$orderby=CategoryName desc. Optional."
           optional: true
         - id: options.count
           type:
             - boolean
-          description: >-
-            The Boolean value of true or false to
-
-            request a count of the matching resources included with the
-            resources in the
-
-            response, e.g. Categories?$count=true. Optional.
+          description: "The Boolean value of true or false to\rrequest a count of the matching resources included with the resources in the\rresponse, e.g. Categories?$count=true. Optional."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1589,9 +1045,7 @@ items:
     id: 'azure-arm-datalake-store.Account#list'
     parent: azure-arm-datalake-store.Account
     name: 'list(options, optionalCallback)'
-    summary: |-
-      Lists the Data Lake Store accounts within the subscription. The response
-      includes a link to the next page of results, if any.
+    summary: "Lists the Data Lake Store accounts within the subscription. The response\rincludes a link to the next page of results, if any."
     fullName: 'azure-arm-datalake-store.Account.list(options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -1600,34 +1054,8 @@ items:
         value: '{DataLakeStoreAccountListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccountListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccountListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccountListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccountListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1649,48 +1077,27 @@ items:
         - id: options.skip
           type:
             - number
-          description: |-
-            The number of items to skip over before
-            returning elements. Optional.
+          description: "The number of items to skip over before\rreturning elements. Optional."
           optional: true
         - id: options.select
           type:
             - string
-          description: |-
-            OData Select statement. Limits the
-            properties on each entry to just those requested, e.g.
-            Categories?$select=CategoryName,Description. Optional.
+          description: "OData Select statement. Limits the\rproperties on each entry to just those requested, e.g.\rCategories?$select=CategoryName,Description. Optional."
           optional: true
         - id: options.orderby
           type:
             - string
-          description: >-
-            OrderBy clause. One or more
-
-            comma-separated expressions with an optional "asc" (the default) or
-            "desc"
-
-            depending on the order you'd like the values sorted, e.g.
-
-            Categories?$orderby=CategoryName desc. Optional.
+          description: "OrderBy clause. One or more\rcomma-separated expressions with an optional \"asc\" (the default) or \"desc\"\rdepending on the order you'd like the values sorted, e.g.\rCategories?$orderby=CategoryName desc. Optional."
           optional: true
         - id: options.count
           type:
             - boolean
-          description: >-
-            The Boolean value of true or false to
-
-            request a count of the matching resources included with the
-            resources in the
-
-            response, e.g. Categories?$count=true. Optional.
+          description: "The Boolean value of true or false to\rrequest a count of the matching resources included with the resources in the\rresponse, e.g. Categories?$count=true. Optional."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1701,11 +1108,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -1738,9 +1141,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -1748,140 +1149,77 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to create the Data Lake Store
-            account.
+          description: "Parameters supplied to create the Data Lake Store\raccount."
         - id: parameters.identity
           type:
             - object
-          description: |-
-            The Key Vault encryption identity, if
-            any.
+          description: "The Key Vault encryption identity, if\rany."
           optional: true
         - id: parameters.encryptionState
           type:
             - string
-          description: >-
-            The current state of encryption
-
-            for this Data Lake store account. Possible values include:
-            'Enabled',
-
-            'Disabled'
+          description: "The current state of encryption\rfor this Data Lake store account. Possible values include: 'Enabled',\r'Disabled'"
           optional: true
         - id: parameters.encryptionConfig
           type:
             - object
-          description: |-
-            The Key Vault encryption
-            configuration.
+          description: "The Key Vault encryption\rconfiguration."
           optional: true
         - id: parameters.encryptionConfig.type
           type:
             - string
-          description: >-
-            The type of encryption
-
-            configuration being used. Currently the only supported types are
-
-            'UserManaged' and 'ServiceManaged'. Possible values include:
-            'UserManaged',
-
-            'ServiceManaged'
+          description: "The type of encryption\rconfiguration being used. Currently the only supported types are\r'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',\r'ServiceManaged'"
         - id: parameters.encryptionConfig.keyVaultMetaInfo
           type:
             - object
-          description: |-
-            The Key Vault
-            information for connecting to user managed encryption keys.
+          description: "The Key Vault\rinformation for connecting to user managed encryption keys."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId
           type:
             - string
-          description: |-
-            The resource
-            identifier for the user managed Key Vault being used to encrypt.
+          description: "The resource\ridentifier for the user managed Key Vault being used to encrypt."
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName
           type:
             - string
-          description: |-
-            The name of
-            the user managed encryption key.
+          description: "The name of\rthe user managed encryption key."
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion
           type:
             - string
-          description: |-
-            The
-            version of the user managed encryption key.
+          description: "The\rversion of the user managed encryption key."
         - id: parameters.firewallState
           type:
             - string
-          description: >-
-            The current state of the IP
-
-            address firewall for this Data Lake store account. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of the IP\raddress firewall for this Data Lake store account. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.firewallRules
           type:
             - array
-          description: |-
-            The list of firewall rules
-            associated with this Data Lake store account.
+          description: "The list of firewall rules\rassociated with this Data Lake store account."
           optional: true
         - id: parameters.trustedIdProviderState
           type:
             - string
-          description: >-
-            The current state of the
-
-            trusted identity provider feature for this Data Lake store account.
-            Possible
-
-            values include: 'Enabled', 'Disabled'
+          description: "The current state of the\rtrusted identity provider feature for this Data Lake store account. Possible\rvalues include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.trustedIdProviders
           type:
             - array
-          description: |-
-            The list of trusted identity
-            providers associated with this Data Lake store account.
+          description: "The list of trusted identity\rproviders associated with this Data Lake store account."
           optional: true
         - id: parameters.defaultGroup
           type:
             - string
-          description: |-
-            the default owner group for all
-            new folders and files created in the Data Lake Store account.
+          description: "the default owner group for all\rnew folders and files created in the Data Lake Store account."
           optional: true
         - id: parameters.newTier
           type:
             - string
-          description: >-
-            the commitment tier to use for next
-
-            month. Possible values include: 'Consumption', 'Commitment_1TB',
-
-            'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB',
-            'Commitment_1PB',
-
-            'Commitment_5PB'
+          description: "the commitment tier to use for next\rmonth. Possible values include: 'Consumption', 'Commitment_1TB',\r'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',\r'Commitment_5PB'"
           optional: true
         - id: parameters.firewallAllowAzureIps
           type:
             - string
-          description: >-
-            The current state of
-
-            allowing or disallowing IPs originating within Azure through the
-            firewall.
-
-            If the firewall is disabled, this is not enforced. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of\rallowing or disallowing IPs originating within Azure through the firewall.\rIf the firewall is disabled, this is not enforced. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.location
           type:
@@ -1900,9 +1238,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1930,41 +1266,15 @@ items:
         value: '{DataLakeStoreAccount} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -1972,140 +1282,77 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to create the Data Lake Store
-            account.
+          description: "Parameters supplied to create the Data Lake Store\raccount."
         - id: parameters.identity
           type:
             - object
-          description: |-
-            The Key Vault encryption identity, if
-            any.
+          description: "The Key Vault encryption identity, if\rany."
           optional: true
         - id: parameters.encryptionState
           type:
             - string
-          description: >-
-            The current state of encryption
-
-            for this Data Lake store account. Possible values include:
-            'Enabled',
-
-            'Disabled'
+          description: "The current state of encryption\rfor this Data Lake store account. Possible values include: 'Enabled',\r'Disabled'"
           optional: true
         - id: parameters.encryptionConfig
           type:
             - object
-          description: |-
-            The Key Vault encryption
-            configuration.
+          description: "The Key Vault encryption\rconfiguration."
           optional: true
         - id: parameters.encryptionConfig.type
           type:
             - string
-          description: >-
-            The type of encryption
-
-            configuration being used. Currently the only supported types are
-
-            'UserManaged' and 'ServiceManaged'. Possible values include:
-            'UserManaged',
-
-            'ServiceManaged'
+          description: "The type of encryption\rconfiguration being used. Currently the only supported types are\r'UserManaged' and 'ServiceManaged'. Possible values include: 'UserManaged',\r'ServiceManaged'"
         - id: parameters.encryptionConfig.keyVaultMetaInfo
           type:
             - object
-          description: |-
-            The Key Vault
-            information for connecting to user managed encryption keys.
+          description: "The Key Vault\rinformation for connecting to user managed encryption keys."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo.keyVaultResourceId
           type:
             - string
-          description: |-
-            The resource
-            identifier for the user managed Key Vault being used to encrypt.
+          description: "The resource\ridentifier for the user managed Key Vault being used to encrypt."
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyName
           type:
             - string
-          description: |-
-            The name of
-            the user managed encryption key.
+          description: "The name of\rthe user managed encryption key."
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion
           type:
             - string
-          description: |-
-            The
-            version of the user managed encryption key.
+          description: "The\rversion of the user managed encryption key."
         - id: parameters.firewallState
           type:
             - string
-          description: >-
-            The current state of the IP
-
-            address firewall for this Data Lake store account. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of the IP\raddress firewall for this Data Lake store account. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.firewallRules
           type:
             - array
-          description: |-
-            The list of firewall rules
-            associated with this Data Lake store account.
+          description: "The list of firewall rules\rassociated with this Data Lake store account."
           optional: true
         - id: parameters.trustedIdProviderState
           type:
             - string
-          description: >-
-            The current state of the
-
-            trusted identity provider feature for this Data Lake store account.
-            Possible
-
-            values include: 'Enabled', 'Disabled'
+          description: "The current state of the\rtrusted identity provider feature for this Data Lake store account. Possible\rvalues include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.trustedIdProviders
           type:
             - array
-          description: |-
-            The list of trusted identity
-            providers associated with this Data Lake store account.
+          description: "The list of trusted identity\rproviders associated with this Data Lake store account."
           optional: true
         - id: parameters.defaultGroup
           type:
             - string
-          description: |-
-            the default owner group for all
-            new folders and files created in the Data Lake Store account.
+          description: "the default owner group for all\rnew folders and files created in the Data Lake Store account."
           optional: true
         - id: parameters.newTier
           type:
             - string
-          description: >-
-            the commitment tier to use for next
-
-            month. Possible values include: 'Consumption', 'Commitment_1TB',
-
-            'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB',
-            'Commitment_1PB',
-
-            'Commitment_5PB'
+          description: "the commitment tier to use for next\rmonth. Possible values include: 'Consumption', 'Commitment_1TB',\r'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',\r'Commitment_5PB'"
           optional: true
         - id: parameters.firewallAllowAzureIps
           type:
             - string
-          description: >-
-            The current state of
-
-            allowing or disallowing IPs originating within Azure through the
-            firewall.
-
-            If the firewall is disabled, this is not enforced. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of\rallowing or disallowing IPs originating within Azure through the firewall.\rIf the firewall is disabled, this is not enforced. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.location
           type:
@@ -2124,9 +1371,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2137,11 +1382,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreate(resourceGroupName, name, parameters, options,
         optionalCallback)
@@ -2176,9 +1417,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -2186,9 +1425,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to update the Data Lake Store
-            account.
+          description: "Parameters supplied to update the Data Lake Store\raccount."
         - id: parameters.tags
           type:
             - object
@@ -2197,93 +1434,42 @@ items:
         - id: parameters.firewallState
           type:
             - string
-          description: >-
-            The current state of the IP
-
-            address firewall for this Data Lake store account. Disabling the
-            firewall
-
-            does not remove existing rules, they will just be ignored until the
-            firewall
-
-            is re-enabled. Possible values include: 'Enabled', 'Disabled'
+          description: "The current state of the IP\raddress firewall for this Data Lake store account. Disabling the firewall\rdoes not remove existing rules, they will just be ignored until the firewall\ris re-enabled. Possible values include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.trustedIdProviderState
           type:
             - string
-          description: >-
-            The current state of the
-
-            trusted identity provider feature for this Data Lake store account.
-
-            Disabling trusted identity provider functionality does not remove
-            the
-
-            providers, they will just be ignored until this feature is
-            re-enabled.
-
-            Possible values include: 'Enabled', 'Disabled'
+          description: "The current state of the\rtrusted identity provider feature for this Data Lake store account.\rDisabling trusted identity provider functionality does not remove the\rproviders, they will just be ignored until this feature is re-enabled.\rPossible values include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.defaultGroup
           type:
             - string
-          description: |-
-            the default owner group for all
-            new folders and files created in the Data Lake Store account.
+          description: "the default owner group for all\rnew folders and files created in the Data Lake Store account."
           optional: true
         - id: parameters.newTier
           type:
             - string
-          description: >-
-            the commitment tier to use for next
-
-            month. Possible values include: 'Consumption', 'Commitment_1TB',
-
-            'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB',
-            'Commitment_1PB',
-
-            'Commitment_5PB'
+          description: "the commitment tier to use for next\rmonth. Possible values include: 'Consumption', 'Commitment_1TB',\r'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',\r'Commitment_5PB'"
           optional: true
         - id: parameters.firewallAllowAzureIps
           type:
             - string
-          description: >-
-            The current state of
-
-            allowing or disallowing IPs originating within Azure through the
-            firewall.
-
-            If the firewall is disabled, this is not enforced. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of\rallowing or disallowing IPs originating within Azure through the firewall.\rIf the firewall is disabled, this is not enforced. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.encryptionConfig
           type:
             - object
-          description: >-
-            Used for rotation of user
-
-            managed Key Vault keys. Can only be used to rotate a user managed
-            encryption
-
-            Key Vault key.
+          description: "Used for rotation of user\rmanaged Key Vault keys. Can only be used to rotate a user managed encryption\rKey Vault key."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo
           type:
             - object
-          description: |-
-            The updated
-            Key Vault key to use in user managed key rotation.
+          description: "The updated\rKey Vault key to use in user managed key rotation."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion
           type:
             - string
-          description: >-
-            The
-
-            version of the user managed encryption key to update through a key
-            rotation.
+          description: "The\rversion of the user managed encryption key to update through a key rotation."
           optional: true
         - id: options
           type:
@@ -2293,9 +1479,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2323,41 +1507,15 @@ items:
         value: '{DataLakeStoreAccount} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccount} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -2365,9 +1523,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to update the Data Lake Store
-            account.
+          description: "Parameters supplied to update the Data Lake Store\raccount."
         - id: parameters.tags
           type:
             - object
@@ -2376,93 +1532,42 @@ items:
         - id: parameters.firewallState
           type:
             - string
-          description: >-
-            The current state of the IP
-
-            address firewall for this Data Lake store account. Disabling the
-            firewall
-
-            does not remove existing rules, they will just be ignored until the
-            firewall
-
-            is re-enabled. Possible values include: 'Enabled', 'Disabled'
+          description: "The current state of the IP\raddress firewall for this Data Lake store account. Disabling the firewall\rdoes not remove existing rules, they will just be ignored until the firewall\ris re-enabled. Possible values include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.trustedIdProviderState
           type:
             - string
-          description: >-
-            The current state of the
-
-            trusted identity provider feature for this Data Lake store account.
-
-            Disabling trusted identity provider functionality does not remove
-            the
-
-            providers, they will just be ignored until this feature is
-            re-enabled.
-
-            Possible values include: 'Enabled', 'Disabled'
+          description: "The current state of the\rtrusted identity provider feature for this Data Lake store account.\rDisabling trusted identity provider functionality does not remove the\rproviders, they will just be ignored until this feature is re-enabled.\rPossible values include: 'Enabled', 'Disabled'"
           optional: true
         - id: parameters.defaultGroup
           type:
             - string
-          description: |-
-            the default owner group for all
-            new folders and files created in the Data Lake Store account.
+          description: "the default owner group for all\rnew folders and files created in the Data Lake Store account."
           optional: true
         - id: parameters.newTier
           type:
             - string
-          description: >-
-            the commitment tier to use for next
-
-            month. Possible values include: 'Consumption', 'Commitment_1TB',
-
-            'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB',
-            'Commitment_1PB',
-
-            'Commitment_5PB'
+          description: "the commitment tier to use for next\rmonth. Possible values include: 'Consumption', 'Commitment_1TB',\r'Commitment_10TB', 'Commitment_100TB', 'Commitment_500TB', 'Commitment_1PB',\r'Commitment_5PB'"
           optional: true
         - id: parameters.firewallAllowAzureIps
           type:
             - string
-          description: >-
-            The current state of
-
-            allowing or disallowing IPs originating within Azure through the
-            firewall.
-
-            If the firewall is disabled, this is not enforced. Possible values
-            include:
-
-            'Enabled', 'Disabled'
+          description: "The current state of\rallowing or disallowing IPs originating within Azure through the firewall.\rIf the firewall is disabled, this is not enforced. Possible values include:\r'Enabled', 'Disabled'"
           optional: true
         - id: parameters.encryptionConfig
           type:
             - object
-          description: >-
-            Used for rotation of user
-
-            managed Key Vault keys. Can only be used to rotate a user managed
-            encryption
-
-            Key Vault key.
+          description: "Used for rotation of user\rmanaged Key Vault keys. Can only be used to rotate a user managed encryption\rKey Vault key."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo
           type:
             - object
-          description: |-
-            The updated
-            Key Vault key to use in user managed key rotation.
+          description: "The updated\rKey Vault key to use in user managed key rotation."
           optional: true
         - id: parameters.encryptionConfig.keyVaultMetaInfo.encryptionKeyVersion
           type:
             - string
-          description: >-
-            The
-
-            version of the user managed encryption key to update through a key
-            rotation.
+          description: "The\rversion of the user managed encryption key to update through a key rotation."
           optional: true
         - id: options
           type:
@@ -2472,9 +1577,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2485,11 +1588,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginUpdate(resourceGroupName, name, parameters, options,
         optionalCallback)
@@ -2522,9 +1621,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -2537,9 +1634,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2565,39 +1660,15 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the Azure resource group that
-            contains the Data Lake Store account.
+          description: "The name of the Azure resource group that\rcontains the Data Lake Store account."
         - id: name
           type:
             - string
@@ -2610,9 +1681,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2623,11 +1692,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginDeleteMethod(resourceGroupName, name, options,
         optionalCallback)
@@ -2639,9 +1704,7 @@ items:
       azure-arm-datalake-store.Account#listByResourceGroupNextWithHttpOperationResponse
     parent: azure-arm-datalake-store.Account
     name: 'listByResourceGroupNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: |-
-      Lists the Data Lake Store accounts within a specific resource group. The
-      response includes a link to the next page of results, if any.
+    summary: "Lists the Data Lake Store accounts within a specific resource group. The\rresponse includes a link to the next page of results, if any."
     fullName: >-
       azure-arm-datalake-store.Account.listByResourceGroupNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -2664,9 +1727,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2675,9 +1736,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2692,9 +1751,7 @@ items:
     id: 'azure-arm-datalake-store.Account#listByResourceGroupNext'
     parent: azure-arm-datalake-store.Account
     name: 'listByResourceGroupNext(nextPageLink, options, optionalCallback)'
-    summary: |-
-      Lists the Data Lake Store accounts within a specific resource group. The
-      response includes a link to the next page of results, if any.
+    summary: "Lists the Data Lake Store accounts within a specific resource group. The\rresponse includes a link to the next page of results, if any."
     fullName: >-
       azure-arm-datalake-store.Account.listByResourceGroupNext(nextPageLink,
       options, optionalCallback)
@@ -2705,43 +1762,15 @@ items:
         value: '{DataLakeStoreAccountListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccountListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccountListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccountListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccountListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2750,9 +1779,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2763,11 +1790,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
@@ -2777,9 +1800,7 @@ items:
     id: 'azure-arm-datalake-store.Account#listNextWithHttpOperationResponse'
     parent: azure-arm-datalake-store.Account
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: |-
-      Lists the Data Lake Store accounts within the subscription. The response
-      includes a link to the next page of results, if any.
+    summary: "Lists the Data Lake Store accounts within the subscription. The response\rincludes a link to the next page of results, if any."
     fullName: >-
       azure-arm-datalake-store.Account.listNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -2802,9 +1823,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2813,9 +1832,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2828,9 +1845,7 @@ items:
     id: 'azure-arm-datalake-store.Account#listNext'
     parent: azure-arm-datalake-store.Account
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: |-
-      Lists the Data Lake Store accounts within the subscription. The response
-      includes a link to the next page of results, if any.
+    summary: "Lists the Data Lake Store accounts within the subscription. The response\rincludes a link to the next page of results, if any."
     fullName: >-
       azure-arm-datalake-store.Account.listNext(nextPageLink, options,
       optionalCallback)
@@ -2841,43 +1856,15 @@ items:
         value: '{DataLakeStoreAccountListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccountListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeStoreAccountListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccountListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DataLakeStoreAccountListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2886,9 +1873,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2899,11 +1884,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

@@ -17,55 +17,6 @@ items:
     type: Class
     children:
       - 'azure-arm-operationalinsights.Workspaces.#ctor'
-      - >-
-        azure-arm-operationalinsights.Workspaces#disableIntelligencePackWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#disableIntelligencePack'
-      - >-
-        azure-arm-operationalinsights.Workspaces#enableIntelligencePackWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#enableIntelligencePack'
-      - >-
-        azure-arm-operationalinsights.Workspaces#listIntelligencePacksWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#listIntelligencePacks'
-      - >-
-        azure-arm-operationalinsights.Workspaces#getSharedKeysWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#getSharedKeys'
-      - >-
-        azure-arm-operationalinsights.Workspaces#listUsagesWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#listUsages'
-      - >-
-        azure-arm-operationalinsights.Workspaces#listManagementGroupsWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#listManagementGroups'
-      - >-
-        azure-arm-operationalinsights.Workspaces#listByResourceGroupWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#listByResourceGroup'
-      - 'azure-arm-operationalinsights.Workspaces#listWithHttpOperationResponse'
-      - 'azure-arm-operationalinsights.Workspaces#list'
-      - >-
-        azure-arm-operationalinsights.Workspaces#createOrUpdateWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#createOrUpdate'
-      - >-
-        azure-arm-operationalinsights.Workspaces#deleteMethodWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#deleteMethod'
-      - 'azure-arm-operationalinsights.Workspaces#getWithHttpOperationResponse'
-      - 'azure-arm-operationalinsights.Workspaces#get'
-      - >-
-        azure-arm-operationalinsights.Workspaces#listLinkTargetsWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#listLinkTargets'
-      - >-
-        azure-arm-operationalinsights.Workspaces#getSchemaWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#getSchema'
-      - >-
-        azure-arm-operationalinsights.Workspaces#getSearchResultsWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#getSearchResults'
-      - >-
-        azure-arm-operationalinsights.Workspaces#updateSearchResultsWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#updateSearchResults'
-      - >-
-        azure-arm-operationalinsights.Workspaces#beginCreateOrUpdateWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#beginCreateOrUpdate'
-      - >-
-        azure-arm-operationalinsights.Workspaces#beginGetSearchResultsWithHttpOperationResponse
-      - 'azure-arm-operationalinsights.Workspaces#beginGetSearchResults'
     langs:
       - js
   - id: 'azure-arm-operationalinsights.Workspaces.#ctor'
@@ -111,9 +62,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -121,9 +70,7 @@ items:
         - id: intelligencePackName
           type:
             - string
-          description: |-
-            The name of the intelligence pack to be
-            disabled.
+          description: "The name of the intelligence pack to be\rdisabled."
         - id: options
           type:
             - object
@@ -132,9 +79,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -163,39 +108,15 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -203,9 +124,7 @@ items:
         - id: intelligencePackName
           type:
             - string
-          description: |-
-            The name of the intelligence pack to be
-            disabled.
+          description: "The name of the intelligence pack to be\rdisabled."
         - id: options
           type:
             - object
@@ -214,9 +133,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -227,11 +144,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function disableIntelligencePack(resourceGroupName, workspaceName,
         intelligencePackName, options, optionalCallback)
@@ -264,9 +177,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -274,9 +185,7 @@ items:
         - id: intelligencePackName
           type:
             - string
-          description: |-
-            The name of the intelligence pack to be
-            enabled.
+          description: "The name of the intelligence pack to be\renabled."
         - id: options
           type:
             - object
@@ -285,9 +194,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -316,39 +223,15 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -356,9 +239,7 @@ items:
         - id: intelligencePackName
           type:
             - string
-          description: |-
-            The name of the intelligence pack to be
-            enabled.
+          description: "The name of the intelligence pack to be\renabled."
         - id: options
           type:
             - object
@@ -367,9 +248,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -380,11 +259,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function enableIntelligencePack(resourceGroupName, workspaceName,
         intelligencePackName, options, optionalCallback)
@@ -398,9 +273,7 @@ items:
     name: >-
       listIntelligencePacksWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
-    summary: |-
-      Lists all the intelligence packs possible and whether they are enabled or
-      disabled for a given workspace.
+    summary: "Lists all the intelligence packs possible and whether they are enabled or\rdisabled for a given workspace."
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listIntelligencePacksWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
@@ -419,9 +292,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -434,9 +305,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -454,9 +323,7 @@ items:
     name: >-
       listIntelligencePacks(resourceGroupName, workspaceName, options,
       optionalCallback)
-    summary: |-
-      Lists all the intelligence packs possible and whether they are enabled or
-      disabled for a given workspace.
+    summary: "Lists all the intelligence packs possible and whether they are enabled or\rdisabled for a given workspace."
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listIntelligencePacks(resourceGroupName,
       workspaceName, options, optionalCallback)
@@ -467,39 +334,15 @@ items:
         value: '{Array} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {array} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {array} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -512,9 +355,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -525,11 +366,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listIntelligencePacks(resourceGroupName, workspaceName,
         options, optionalCallback)
@@ -562,9 +399,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -577,9 +412,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -605,41 +438,15 @@ items:
         value: '{SharedKeys} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -652,9 +459,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -665,11 +470,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getSharedKeys(resourceGroupName, workspaceName, options,
         optionalCallback)
@@ -706,9 +507,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -721,9 +520,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -749,43 +546,15 @@ items:
         value: '{WorkspaceListUsagesResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListUsagesResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListUsagesResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link WorkspaceListUsagesResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link WorkspaceListUsagesResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -798,9 +567,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -811,11 +578,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listUsages(resourceGroupName, workspaceName, options,
         optionalCallback)
@@ -852,9 +615,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -867,9 +628,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -902,43 +661,15 @@ items:
           object.
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListManagementGroupsResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListManagementGroupsResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link WorkspaceListManagementGroupsResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link WorkspaceListManagementGroupsResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -951,9 +682,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -964,11 +693,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listManagementGroups(resourceGroupName, workspaceName, options,
         optionalCallback)
@@ -1003,9 +728,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: options
           type:
             - object
@@ -1014,9 +737,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1042,41 +763,15 @@ items:
         value: '{WorkspaceListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link WorkspaceListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link WorkspaceListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: options
           type:
             - object
@@ -1085,9 +780,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1098,11 +791,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -1139,9 +828,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1163,32 +850,8 @@ items:
         value: '{WorkspaceListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link WorkspaceListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link WorkspaceListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1200,9 +863,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1213,11 +874,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -1256,58 +913,26 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters required to create or update a
-            workspace.
+          description: "The parameters required to create or update a\rworkspace."
         - id: parameters.provisioningState
           type:
             - string
-          description: >-
-            The provisioning state of the
-
-            workspace. Possible values include: 'Creating', 'Succeeded',
-            'Failed',
-
-            'Canceled', 'Deleting', 'ProvisioningAccount'
+          description: "The provisioning state of the\rworkspace. Possible values include: 'Creating', 'Succeeded', 'Failed',\r'Canceled', 'Deleting', 'ProvisioningAccount'"
           optional: true
         - id: parameters.source
           type:
             - string
-          description: >-
-            The source of the workspace.  Source
-
-            defines where the workspace was created. 'Azure' implies it was
-            created in
-
-            Azure.  'External' implies it was created via the Operational
-            Insights
-
-            Portal. This value is set on the service side and read-only on the
-            client
-
-            side.
+          description: "The source of the workspace.  Source\rdefines where the workspace was created. 'Azure' implies it was created in\rAzure.  'External' implies it was created via the Operational Insights\rPortal. This value is set on the service side and read-only on the client\rside."
           optional: true
         - id: parameters.customerId
           type:
             - string
-          description: >-
-            The ID associated with the
-
-            workspace.  Setting this value at creation time allows the workspace
-            being
-
-            created to be linked to an existing workspace.
+          description: "The ID associated with the\rworkspace.  Setting this value at creation time allows the workspace being\rcreated to be linked to an existing workspace."
           optional: true
         - id: parameters.portalUrl
           type:
             - string
-          description: >-
-            The URL of the Operational Insights
-
-            portal for this workspace.  This value is set on the service side
-            and
-
-            read-only on the client side.
+          description: "The URL of the Operational Insights\rportal for this workspace.  This value is set on the service side and\rread-only on the client side."
           optional: true
         - id: parameters.sku
           type:
@@ -1317,21 +942,11 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: >-
-            The name of the SKU. Possible values
-
-            include: 'Free', 'Standard', 'Premium', 'Unlimited', 'PerNode',
-            'Standalone'
+          description: "The name of the SKU. Possible values\rinclude: 'Free', 'Standard', 'Premium', 'Unlimited', 'PerNode', 'Standalone'"
         - id: parameters.retentionInDays
           type:
             - number
-          description: >-
-            The workspace data retention in
-
-            days. -1 means Unlimited retention for the Unlimited Sku. 730 days
-            is the
-
-            maximum allowed for all other Skus.
+          description: "The workspace data retention in\rdays. -1 means Unlimited retention for the Unlimited Sku. 730 days is the\rmaximum allowed for all other Skus."
           optional: true
         - id: parameters.eTag
           type:
@@ -1355,9 +970,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1385,32 +998,8 @@ items:
         value: '{Workspace} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Workspace} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Workspace} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1425,58 +1014,26 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters required to create or update a
-            workspace.
+          description: "The parameters required to create or update a\rworkspace."
         - id: parameters.provisioningState
           type:
             - string
-          description: >-
-            The provisioning state of the
-
-            workspace. Possible values include: 'Creating', 'Succeeded',
-            'Failed',
-
-            'Canceled', 'Deleting', 'ProvisioningAccount'
+          description: "The provisioning state of the\rworkspace. Possible values include: 'Creating', 'Succeeded', 'Failed',\r'Canceled', 'Deleting', 'ProvisioningAccount'"
           optional: true
         - id: parameters.source
           type:
             - string
-          description: >-
-            The source of the workspace.  Source
-
-            defines where the workspace was created. 'Azure' implies it was
-            created in
-
-            Azure.  'External' implies it was created via the Operational
-            Insights
-
-            Portal. This value is set on the service side and read-only on the
-            client
-
-            side.
+          description: "The source of the workspace.  Source\rdefines where the workspace was created. 'Azure' implies it was created in\rAzure.  'External' implies it was created via the Operational Insights\rPortal. This value is set on the service side and read-only on the client\rside."
           optional: true
         - id: parameters.customerId
           type:
             - string
-          description: >-
-            The ID associated with the
-
-            workspace.  Setting this value at creation time allows the workspace
-            being
-
-            created to be linked to an existing workspace.
+          description: "The ID associated with the\rworkspace.  Setting this value at creation time allows the workspace being\rcreated to be linked to an existing workspace."
           optional: true
         - id: parameters.portalUrl
           type:
             - string
-          description: >-
-            The URL of the Operational Insights
-
-            portal for this workspace.  This value is set on the service side
-            and
-
-            read-only on the client side.
+          description: "The URL of the Operational Insights\rportal for this workspace.  This value is set on the service side and\rread-only on the client side."
           optional: true
         - id: parameters.sku
           type:
@@ -1486,21 +1043,11 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: >-
-            The name of the SKU. Possible values
-
-            include: 'Free', 'Standard', 'Premium', 'Unlimited', 'PerNode',
-            'Standalone'
+          description: "The name of the SKU. Possible values\rinclude: 'Free', 'Standard', 'Premium', 'Unlimited', 'PerNode', 'Standalone'"
         - id: parameters.retentionInDays
           type:
             - number
-          description: >-
-            The workspace data retention in
-
-            days. -1 means Unlimited retention for the Unlimited Sku. 730 days
-            is the
-
-            maximum allowed for all other Skus.
+          description: "The workspace data retention in\rdays. -1 means Unlimited retention for the Unlimited Sku. 730 days is the\rmaximum allowed for all other Skus."
           optional: true
         - id: parameters.eTag
           type:
@@ -1524,9 +1071,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1537,11 +1082,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, workspaceName, parameters,
         options, optionalCallback)
@@ -1587,9 +1128,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1615,30 +1154,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1658,9 +1175,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1671,11 +1186,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, workspaceName, options,
         optionalCallback)
@@ -1717,9 +1228,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1745,32 +1254,8 @@ items:
         value: '{Workspace} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Workspace} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Workspace} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1790,9 +1275,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1803,11 +1286,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, workspaceName, options,
         optionalCallback)
@@ -1819,13 +1298,7 @@ items:
       azure-arm-operationalinsights.Workspaces#listLinkTargetsWithHttpOperationResponse
     parent: azure-arm-operationalinsights.Workspaces
     name: listLinkTargetsWithHttpOperationResponse(options)
-    summary: >-
-      Get a list of workspaces which the current user has administrator
-      privileges
-
-      and are not associated with an Azure Subscription. The subscriptionId
-
-      parameter in the Url is ignored.
+    summary: "Get a list of workspaces which the current user has administrator privileges\rand are not associated with an Azure Subscription. The subscriptionId\rparameter in the Url is ignored."
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listLinkTargetsWithHttpOperationResponse(options)
     tags:
@@ -1848,9 +1321,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1863,13 +1334,7 @@ items:
     id: 'azure-arm-operationalinsights.Workspaces#listLinkTargets'
     parent: azure-arm-operationalinsights.Workspaces
     name: 'listLinkTargets(options, optionalCallback)'
-    summary: >-
-      Get a list of workspaces which the current user has administrator
-      privileges
-
-      and are not associated with an Azure Subscription. The subscriptionId
-
-      parameter in the Url is ignored.
+    summary: "Get a list of workspaces which the current user has administrator privileges\rand are not associated with an Azure Subscription. The subscriptionId\rparameter in the Url is ignored."
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listLinkTargets(options,
       optionalCallback)
@@ -1880,30 +1345,8 @@ items:
         value: '{Array} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {array} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {array} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1915,9 +1358,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1928,11 +1369,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listLinkTargets(options, optionalCallback)'
     langs:
       - js
@@ -1967,9 +1404,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -1982,9 +1417,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2010,43 +1443,15 @@ items:
         value: '{SearchGetSchemaResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchGetSchemaResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchGetSchemaResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SearchGetSchemaResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SearchGetSchemaResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -2059,9 +1464,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2072,11 +1475,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getSchema(resourceGroupName, workspaceName, options,
         optionalCallback)
@@ -2090,13 +1489,7 @@ items:
     name: >-
       getSearchResultsWithHttpOperationResponse(resourceGroupName,
       workspaceName, parameters, options)
-    summary: >-
-      Submit a search for a given workspace. The response will contain an id to
-
-      track the search. User can use the id to poll the search status and get
-      the
-
-      full search result later if the search takes long time to finish.
+    summary: "Submit a search for a given workspace. The response will contain an id to\rtrack the search. User can use the id to poll the search status and get the\rfull search result later if the search takes long time to finish."
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getSearchResultsWithHttpOperationResponse(resourceGroupName,
       workspaceName, parameters, options)
@@ -2119,9 +1512,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -2129,9 +1520,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters required to execute a search
-            query.
+          description: "The parameters required to execute a search\rquery."
         - id: parameters.top
           type:
             - number
@@ -2140,23 +1529,17 @@ items:
         - id: parameters.highlight
           type:
             - object
-          description: |-
-            The highlight that looks for all
-            occurences of a string.
+          description: "The highlight that looks for all\roccurences of a string."
           optional: true
         - id: parameters.highlight.pre
           type:
             - string
-          description: |-
-            The string that is put before a
-            matched result.
+          description: "The string that is put before a\rmatched result."
           optional: true
         - id: parameters.highlight.post
           type:
             - string
-          description: |-
-            The string that is put after a
-            matched result.
+          description: "The string that is put after a\rmatched result."
           optional: true
         - id: parameters.query
           type:
@@ -2165,16 +1548,12 @@ items:
         - id: parameters.start
           type:
             - date
-          description: |-
-            The start date filter, so the only query
-            results returned are after this date.
+          description: "The start date filter, so the only query\rresults returned are after this date."
           optional: true
         - id: parameters.end
           type:
             - date
-          description: |-
-            The end date filter, so the only query
-            results returned are before this date.
+          description: "The end date filter, so the only query\rresults returned are before this date."
           optional: true
         - id: options
           type:
@@ -2184,9 +1563,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2203,13 +1580,7 @@ items:
     name: >-
       getSearchResults(resourceGroupName, workspaceName, parameters, options,
       optionalCallback)
-    summary: >-
-      Submit a search for a given workspace. The response will contain an id to
-
-      track the search. User can use the id to poll the search status and get
-      the
-
-      full search result later if the search takes long time to finish.
+    summary: "Submit a search for a given workspace. The response will contain an id to\rtrack the search. User can use the id to poll the search status and get the\rfull search result later if the search takes long time to finish."
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getSearchResults(resourceGroupName,
       workspaceName, parameters, options, optionalCallback)
@@ -2220,41 +1591,15 @@ items:
         value: '{SearchResultsResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SearchResultsResponse} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SearchResultsResponse} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -2262,9 +1607,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters required to execute a search
-            query.
+          description: "The parameters required to execute a search\rquery."
         - id: parameters.top
           type:
             - number
@@ -2273,23 +1616,17 @@ items:
         - id: parameters.highlight
           type:
             - object
-          description: |-
-            The highlight that looks for all
-            occurences of a string.
+          description: "The highlight that looks for all\roccurences of a string."
           optional: true
         - id: parameters.highlight.pre
           type:
             - string
-          description: |-
-            The string that is put before a
-            matched result.
+          description: "The string that is put before a\rmatched result."
           optional: true
         - id: parameters.highlight.post
           type:
             - string
-          description: |-
-            The string that is put after a
-            matched result.
+          description: "The string that is put after a\rmatched result."
           optional: true
         - id: parameters.query
           type:
@@ -2298,16 +1635,12 @@ items:
         - id: parameters.start
           type:
             - date
-          description: |-
-            The start date filter, so the only query
-            results returned are after this date.
+          description: "The start date filter, so the only query\rresults returned are after this date."
           optional: true
         - id: parameters.end
           type:
             - date
-          description: |-
-            The end date filter, so the only query
-            results returned are before this date.
+          description: "The end date filter, so the only query\rresults returned are before this date."
           optional: true
         - id: options
           type:
@@ -2317,9 +1650,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2330,11 +1661,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getSearchResults(resourceGroupName, workspaceName, parameters,
         options, optionalCallback)
@@ -2371,9 +1698,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -2381,9 +1706,7 @@ items:
         - id: id
           type:
             - string
-          description: |-
-            The id of the search that will have results updated. You
-            can get the id from the response of the GetResults call.
+          description: "The id of the search that will have results updated. You\rcan get the id from the response of the GetResults call."
         - id: options
           type:
             - object
@@ -2392,9 +1715,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2422,41 +1743,15 @@ items:
         value: '{SearchResultsResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SearchResultsResponse} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SearchResultsResponse} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -2464,9 +1759,7 @@ items:
         - id: id
           type:
             - string
-          description: |-
-            The id of the search that will have results updated. You
-            can get the id from the response of the GetResults call.
+          description: "The id of the search that will have results updated. You\rcan get the id from the response of the GetResults call."
         - id: options
           type:
             - object
@@ -2475,9 +1768,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2488,11 +1779,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function updateSearchResults(resourceGroupName, workspaceName, id,
         options, optionalCallback)
@@ -2533,58 +1820,26 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters required to create or update a
-            workspace.
+          description: "The parameters required to create or update a\rworkspace."
         - id: parameters.provisioningState
           type:
             - string
-          description: >-
-            The provisioning state of the
-
-            workspace. Possible values include: 'Creating', 'Succeeded',
-            'Failed',
-
-            'Canceled', 'Deleting', 'ProvisioningAccount'
+          description: "The provisioning state of the\rworkspace. Possible values include: 'Creating', 'Succeeded', 'Failed',\r'Canceled', 'Deleting', 'ProvisioningAccount'"
           optional: true
         - id: parameters.source
           type:
             - string
-          description: >-
-            The source of the workspace.  Source
-
-            defines where the workspace was created. 'Azure' implies it was
-            created in
-
-            Azure.  'External' implies it was created via the Operational
-            Insights
-
-            Portal. This value is set on the service side and read-only on the
-            client
-
-            side.
+          description: "The source of the workspace.  Source\rdefines where the workspace was created. 'Azure' implies it was created in\rAzure.  'External' implies it was created via the Operational Insights\rPortal. This value is set on the service side and read-only on the client\rside."
           optional: true
         - id: parameters.customerId
           type:
             - string
-          description: >-
-            The ID associated with the
-
-            workspace.  Setting this value at creation time allows the workspace
-            being
-
-            created to be linked to an existing workspace.
+          description: "The ID associated with the\rworkspace.  Setting this value at creation time allows the workspace being\rcreated to be linked to an existing workspace."
           optional: true
         - id: parameters.portalUrl
           type:
             - string
-          description: >-
-            The URL of the Operational Insights
-
-            portal for this workspace.  This value is set on the service side
-            and
-
-            read-only on the client side.
+          description: "The URL of the Operational Insights\rportal for this workspace.  This value is set on the service side and\rread-only on the client side."
           optional: true
         - id: parameters.sku
           type:
@@ -2594,21 +1849,11 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: >-
-            The name of the SKU. Possible values
-
-            include: 'Free', 'Standard', 'Premium', 'Unlimited', 'PerNode',
-            'Standalone'
+          description: "The name of the SKU. Possible values\rinclude: 'Free', 'Standard', 'Premium', 'Unlimited', 'PerNode', 'Standalone'"
         - id: parameters.retentionInDays
           type:
             - number
-          description: >-
-            The workspace data retention in
-
-            days. -1 means Unlimited retention for the Unlimited Sku. 730 days
-            is the
-
-            maximum allowed for all other Skus.
+          description: "The workspace data retention in\rdays. -1 means Unlimited retention for the Unlimited Sku. 730 days is the\rmaximum allowed for all other Skus."
           optional: true
         - id: parameters.eTag
           type:
@@ -2632,9 +1877,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2662,32 +1905,8 @@ items:
         value: '{Workspace} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Workspace} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Workspace} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2702,58 +1921,26 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters required to create or update a
-            workspace.
+          description: "The parameters required to create or update a\rworkspace."
         - id: parameters.provisioningState
           type:
             - string
-          description: >-
-            The provisioning state of the
-
-            workspace. Possible values include: 'Creating', 'Succeeded',
-            'Failed',
-
-            'Canceled', 'Deleting', 'ProvisioningAccount'
+          description: "The provisioning state of the\rworkspace. Possible values include: 'Creating', 'Succeeded', 'Failed',\r'Canceled', 'Deleting', 'ProvisioningAccount'"
           optional: true
         - id: parameters.source
           type:
             - string
-          description: >-
-            The source of the workspace.  Source
-
-            defines where the workspace was created. 'Azure' implies it was
-            created in
-
-            Azure.  'External' implies it was created via the Operational
-            Insights
-
-            Portal. This value is set on the service side and read-only on the
-            client
-
-            side.
+          description: "The source of the workspace.  Source\rdefines where the workspace was created. 'Azure' implies it was created in\rAzure.  'External' implies it was created via the Operational Insights\rPortal. This value is set on the service side and read-only on the client\rside."
           optional: true
         - id: parameters.customerId
           type:
             - string
-          description: >-
-            The ID associated with the
-
-            workspace.  Setting this value at creation time allows the workspace
-            being
-
-            created to be linked to an existing workspace.
+          description: "The ID associated with the\rworkspace.  Setting this value at creation time allows the workspace being\rcreated to be linked to an existing workspace."
           optional: true
         - id: parameters.portalUrl
           type:
             - string
-          description: >-
-            The URL of the Operational Insights
-
-            portal for this workspace.  This value is set on the service side
-            and
-
-            read-only on the client side.
+          description: "The URL of the Operational Insights\rportal for this workspace.  This value is set on the service side and\rread-only on the client side."
           optional: true
         - id: parameters.sku
           type:
@@ -2763,21 +1950,11 @@ items:
         - id: parameters.sku.name
           type:
             - string
-          description: >-
-            The name of the SKU. Possible values
-
-            include: 'Free', 'Standard', 'Premium', 'Unlimited', 'PerNode',
-            'Standalone'
+          description: "The name of the SKU. Possible values\rinclude: 'Free', 'Standard', 'Premium', 'Unlimited', 'PerNode', 'Standalone'"
         - id: parameters.retentionInDays
           type:
             - number
-          description: >-
-            The workspace data retention in
-
-            days. -1 means Unlimited retention for the Unlimited Sku. 730 days
-            is the
-
-            maximum allowed for all other Skus.
+          description: "The workspace data retention in\rdays. -1 means Unlimited retention for the Unlimited Sku. 730 days is the\rmaximum allowed for all other Skus."
           optional: true
         - id: parameters.eTag
           type:
@@ -2801,9 +1978,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2814,11 +1989,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreateOrUpdate(resourceGroupName, workspaceName,
         parameters, options, optionalCallback)
@@ -2832,13 +2003,7 @@ items:
     name: >-
       beginGetSearchResultsWithHttpOperationResponse(resourceGroupName,
       workspaceName, parameters, options)
-    summary: >-
-      Submit a search for a given workspace. The response will contain an id to
-
-      track the search. User can use the id to poll the search status and get
-      the
-
-      full search result later if the search takes long time to finish.
+    summary: "Submit a search for a given workspace. The response will contain an id to\rtrack the search. User can use the id to poll the search status and get the\rfull search result later if the search takes long time to finish."
     fullName: >-
       azure-arm-operationalinsights.Workspaces.beginGetSearchResultsWithHttpOperationResponse(resourceGroupName,
       workspaceName, parameters, options)
@@ -2861,9 +2026,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -2871,9 +2034,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters required to execute a search
-            query.
+          description: "The parameters required to execute a search\rquery."
         - id: parameters.top
           type:
             - number
@@ -2882,23 +2043,17 @@ items:
         - id: parameters.highlight
           type:
             - object
-          description: |-
-            The highlight that looks for all
-            occurences of a string.
+          description: "The highlight that looks for all\roccurences of a string."
           optional: true
         - id: parameters.highlight.pre
           type:
             - string
-          description: |-
-            The string that is put before a
-            matched result.
+          description: "The string that is put before a\rmatched result."
           optional: true
         - id: parameters.highlight.post
           type:
             - string
-          description: |-
-            The string that is put after a
-            matched result.
+          description: "The string that is put after a\rmatched result."
           optional: true
         - id: parameters.query
           type:
@@ -2907,16 +2062,12 @@ items:
         - id: parameters.start
           type:
             - date
-          description: |-
-            The start date filter, so the only query
-            results returned are after this date.
+          description: "The start date filter, so the only query\rresults returned are after this date."
           optional: true
         - id: parameters.end
           type:
             - date
-          description: |-
-            The end date filter, so the only query
-            results returned are before this date.
+          description: "The end date filter, so the only query\rresults returned are before this date."
           optional: true
         - id: options
           type:
@@ -2926,9 +2077,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2946,13 +2095,7 @@ items:
     name: >-
       beginGetSearchResults(resourceGroupName, workspaceName, parameters,
       options, optionalCallback)
-    summary: >-
-      Submit a search for a given workspace. The response will contain an id to
-
-      track the search. User can use the id to poll the search status and get
-      the
-
-      full search result later if the search takes long time to finish.
+    summary: "Submit a search for a given workspace. The response will contain an id to\rtrack the search. User can use the id to poll the search status and get the\rfull search result later if the search takes long time to finish."
     fullName: >-
       azure-arm-operationalinsights.Workspaces.beginGetSearchResults(resourceGroupName,
       workspaceName, parameters, options, optionalCallback)
@@ -2963,41 +2106,15 @@ items:
         value: '{SearchResultsResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SearchResultsResponse} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SearchResultsResponse} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to get. The
-            name is case insensitive.
+          description: "The name of the resource group to get. The\rname is case insensitive."
         - id: workspaceName
           type:
             - string
@@ -3005,9 +2122,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters required to execute a search
-            query.
+          description: "The parameters required to execute a search\rquery."
         - id: parameters.top
           type:
             - number
@@ -3016,23 +2131,17 @@ items:
         - id: parameters.highlight
           type:
             - object
-          description: |-
-            The highlight that looks for all
-            occurences of a string.
+          description: "The highlight that looks for all\roccurences of a string."
           optional: true
         - id: parameters.highlight.pre
           type:
             - string
-          description: |-
-            The string that is put before a
-            matched result.
+          description: "The string that is put before a\rmatched result."
           optional: true
         - id: parameters.highlight.post
           type:
             - string
-          description: |-
-            The string that is put after a
-            matched result.
+          description: "The string that is put after a\rmatched result."
           optional: true
         - id: parameters.query
           type:
@@ -3041,16 +2150,12 @@ items:
         - id: parameters.start
           type:
             - date
-          description: |-
-            The start date filter, so the only query
-            results returned are after this date.
+          description: "The start date filter, so the only query\rresults returned are after this date."
           optional: true
         - id: parameters.end
           type:
             - date
-          description: |-
-            The end date filter, so the only query
-            results returned are before this date.
+          description: "The end date filter, so the only query\rresults returned are before this date."
           optional: true
         - id: options
           type:
@@ -3060,9 +2165,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -3073,11 +2176,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginGetSearchResults(resourceGroupName, workspaceName,
         parameters, options, optionalCallback)

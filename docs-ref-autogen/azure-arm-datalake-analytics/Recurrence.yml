@@ -16,13 +16,6 @@ items:
     type: Class
     children:
       - 'azure-arm-datalake-analytics.Recurrence.#ctor'
-      - 'azure-arm-datalake-analytics.Recurrence#listWithHttpOperationResponse'
-      - 'azure-arm-datalake-analytics.Recurrence#list'
-      - 'azure-arm-datalake-analytics.Recurrence#getWithHttpOperationResponse'
-      - 'azure-arm-datalake-analytics.Recurrence#get'
-      - >-
-        azure-arm-datalake-analytics.Recurrence#listNextWithHttpOperationResponse
-      - 'azure-arm-datalake-analytics.Recurrence#listNext'
     langs:
       - js
   - id: 'azure-arm-datalake-analytics.Recurrence.#ctor'
@@ -68,9 +61,7 @@ items:
         - id: accountName
           type:
             - string
-          description: |-
-            The Azure Data Lake Analytics account to execute
-            job operations on.
+          description: "The Azure Data Lake Analytics account to execute\rjob operations on."
         - id: options
           type:
             - object
@@ -79,31 +70,17 @@ items:
         - id: options.startDateTime
           type:
             - date
-          description: >-
-            The start date for when to get the
-
-            list of recurrences. The startDateTime and endDateTime can be no
-            more than
-
-            30 days apart.
+          description: "The start date for when to get the\rlist of recurrences. The startDateTime and endDateTime can be no more than\r30 days apart."
           optional: true
         - id: options.endDateTime
           type:
             - date
-          description: >-
-            The end date for when to get the list of
-
-            recurrences. The startDateTime and endDateTime can be no more than
-            30 days
-
-            apart.
+          description: "The end date for when to get the list of\rrecurrences. The startDateTime and endDateTime can be no more than 30 days\rapart."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -127,43 +104,15 @@ items:
         value: '{JobRecurrenceInformationListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobRecurrenceInformationListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobRecurrenceInformationListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobRecurrenceInformationListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobRecurrenceInformationListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: accountName
           type:
             - string
-          description: |-
-            The Azure Data Lake Analytics account to execute
-            job operations on.
+          description: "The Azure Data Lake Analytics account to execute\rjob operations on."
         - id: options
           type:
             - object
@@ -172,31 +121,17 @@ items:
         - id: options.startDateTime
           type:
             - date
-          description: >-
-            The start date for when to get the
-
-            list of recurrences. The startDateTime and endDateTime can be no
-            more than
-
-            30 days apart.
+          description: "The start date for when to get the\rlist of recurrences. The startDateTime and endDateTime can be no more than\r30 days apart."
           optional: true
         - id: options.endDateTime
           type:
             - date
-          description: >-
-            The end date for when to get the list of
-
-            recurrences. The startDateTime and endDateTime can be no more than
-            30 days
-
-            apart.
+          description: "The end date for when to get the list of\rrecurrences. The startDateTime and endDateTime can be no more than 30 days\rapart."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -207,11 +142,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(accountName, options, optionalCallback)'
     langs:
       - js
@@ -242,9 +173,7 @@ items:
         - id: accountName
           type:
             - string
-          description: |-
-            The Azure Data Lake Analytics account to execute
-            job operations on.
+          description: "The Azure Data Lake Analytics account to execute\rjob operations on."
         - id: recurrenceIdentity
           type:
             - azure-arm-datalake-analytics.uuid
@@ -257,31 +186,17 @@ items:
         - id: options.startDateTime
           type:
             - date
-          description: >-
-            The start date for when to get the
-
-            recurrence and aggregate its data. The startDateTime and endDateTime
-            can be
-
-            no more than 30 days apart.
+          description: "The start date for when to get the\rrecurrence and aggregate its data. The startDateTime and endDateTime can be\rno more than 30 days apart."
           optional: true
         - id: options.endDateTime
           type:
             - date
-          description: >-
-            The end date for when to get recurrence
-
-            and aggregate its data. The startDateTime and endDateTime can be no
-            more
-
-            than 30 days apart.
+          description: "The end date for when to get recurrence\rand aggregate its data. The startDateTime and endDateTime can be no more\rthan 30 days apart."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -307,43 +222,15 @@ items:
         value: '{JobRecurrenceInformation} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobRecurrenceInformation} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobRecurrenceInformation} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobRecurrenceInformation} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobRecurrenceInformation} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: accountName
           type:
             - string
-          description: |-
-            The Azure Data Lake Analytics account to execute
-            job operations on.
+          description: "The Azure Data Lake Analytics account to execute\rjob operations on."
         - id: recurrenceIdentity
           type:
             - azure-arm-datalake-analytics.uuid
@@ -356,31 +243,17 @@ items:
         - id: options.startDateTime
           type:
             - date
-          description: >-
-            The start date for when to get the
-
-            recurrence and aggregate its data. The startDateTime and endDateTime
-            can be
-
-            no more than 30 days apart.
+          description: "The start date for when to get the\rrecurrence and aggregate its data. The startDateTime and endDateTime can be\rno more than 30 days apart."
           optional: true
         - id: options.endDateTime
           type:
             - date
-          description: >-
-            The end date for when to get recurrence
-
-            and aggregate its data. The startDateTime and endDateTime can be no
-            more
-
-            than 30 days apart.
+          description: "The end date for when to get recurrence\rand aggregate its data. The startDateTime and endDateTime can be no more\rthan 30 days apart."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -391,11 +264,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function get(accountName, recurrenceIdentity, options, optionalCallback)'
     langs:
       - js
@@ -426,9 +295,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -437,9 +304,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -463,43 +328,15 @@ items:
         value: '{JobRecurrenceInformationListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobRecurrenceInformationListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobRecurrenceInformationListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobRecurrenceInformationListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobRecurrenceInformationListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -508,9 +345,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -521,11 +356,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

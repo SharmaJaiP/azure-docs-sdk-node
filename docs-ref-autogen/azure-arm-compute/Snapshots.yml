@@ -16,37 +16,6 @@ items:
     type: Class
     children:
       - 'azure-arm-compute.Snapshots.#ctor'
-      - 'azure-arm-compute.Snapshots#createOrUpdateWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#createOrUpdate'
-      - 'azure-arm-compute.Snapshots#updateWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#update'
-      - 'azure-arm-compute.Snapshots#getWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#get'
-      - 'azure-arm-compute.Snapshots#deleteMethodWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#deleteMethod'
-      - 'azure-arm-compute.Snapshots#listByResourceGroupWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#listByResourceGroup'
-      - 'azure-arm-compute.Snapshots#listWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#list'
-      - 'azure-arm-compute.Snapshots#grantAccessWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#grantAccess'
-      - 'azure-arm-compute.Snapshots#revokeAccessWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#revokeAccess'
-      - 'azure-arm-compute.Snapshots#beginCreateOrUpdateWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#beginCreateOrUpdate'
-      - 'azure-arm-compute.Snapshots#beginUpdateWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#beginUpdate'
-      - 'azure-arm-compute.Snapshots#beginDeleteMethodWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#beginDeleteMethod'
-      - 'azure-arm-compute.Snapshots#beginGrantAccessWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#beginGrantAccess'
-      - 'azure-arm-compute.Snapshots#beginRevokeAccessWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#beginRevokeAccess'
-      - >-
-        azure-arm-compute.Snapshots#listByResourceGroupNextWithHttpOperationResponse
-      - 'azure-arm-compute.Snapshots#listByResourceGroupNext'
-      - 'azure-arm-compute.Snapshots#listNextWithHttpOperationResponse'
-      - 'azure-arm-compute.Snapshots#listNext'
     langs:
       - js
   - id: 'azure-arm-compute.Snapshots.#ctor'
@@ -94,15 +63,11 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: snapshot
           type:
             - object
-          description: |-
-            Snapshot object supplied in the body of the Put
-            disk operation.
+          description: "Snapshot object supplied in the body of the Put\rdisk operation."
         - id: snapshot.sku
           type:
             - object
@@ -111,134 +76,69 @@ items:
         - id: snapshot.sku.name
           type:
             - string
-          description: |-
-            The sku name. Possible values include:
-            'Standard_LRS', 'Premium_LRS'
+          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
           optional: true
         - id: snapshot.osType
           type:
             - string
-          description: |-
-            The Operating System type. Possible values
-            include: 'Windows', 'Linux'
+          description: "The Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
           optional: true
         - id: snapshot.creationData
           type:
             - object
-          description: |-
-            Disk source information. CreationData
-            information cannot be changed after the disk has been created.
+          description: "Disk source information. CreationData\rinformation cannot be changed after the disk has been created."
         - id: snapshot.creationData.createOption
           type:
             - string
-          description: >-
-            This enumerates the
-
-            possible sources of a disk's creation. Possible values include:
-            'Empty',
-
-            'Attach', 'FromImage', 'Import', 'Copy'
+          description: "This enumerates the\rpossible sources of a disk's creation. Possible values include: 'Empty',\r'Attach', 'FromImage', 'Import', 'Copy'"
         - id: snapshot.creationData.storageAccountId
           type:
             - string
-          description: >-
-            If createOption is
-
-            Import, the Azure Resource Manager identifier of the storage account
-
-            containing the blob to import as a disk. Required only if the blob
-            is in a
-
-            different subscription
+          description: "If createOption is\rImport, the Azure Resource Manager identifier of the storage account\rcontaining the blob to import as a disk. Required only if the blob is in a\rdifferent subscription"
           optional: true
         - id: snapshot.creationData.imageReference
           type:
             - object
-          description: |-
-            Disk source
-            information.
+          description: "Disk source\rinformation."
           optional: true
         - id: snapshot.creationData.imageReference.id
           type:
             - string
-          description: >-
-            A relative uri
-
-            containing either a Platform Imgage Repository or user image
-            reference.
+          description: "A relative uri\rcontaining either a Platform Imgage Repository or user image reference."
         - id: snapshot.creationData.imageReference.lun
           type:
             - number
-          description: >-
-            If the disk is
-
-            created from an image's data disk, this is an index that indicates
-            which of
-
-            the data disks in the image to use. For OS disks, this field is
-            null.
+          description: "If the disk is\rcreated from an image's data disk, this is an index that indicates which of\rthe data disks in the image to use. For OS disks, this field is null."
           optional: true
         - id: snapshot.creationData.sourceUri
           type:
             - string
-          description: >-
-            If creationOption is
-
-            Import, this is the URI of a blob to be imported into a managed
-            disk.
+          description: "If creationOption is\rImport, this is the URI of a blob to be imported into a managed disk."
           optional: true
         - id: snapshot.creationData.sourceResourceId
           type:
             - string
-          description: |-
-            If createOption is
-            Copy, this is the ARM id of the source snapshot or disk.
+          description: "If createOption is\rCopy, this is the ARM id of the source snapshot or disk."
           optional: true
         - id: snapshot.diskSizeGB
           type:
             - number
-          description: >-
-            If creationData.createOption is Empty,
-
-            this field is mandatory and it indicates the size of the VHD to
-            create. If
-
-            this field is present for updates or creation with other options, it
-
-            indicates a resize. Resizes are only allowed if the disk is not
-            attached to
-
-            a running VM, and can only increase the disk's size.
+          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
           optional: true
         - id: snapshot.encryptionSettings
           type:
             - object
-          description: |-
-            Encryption settings for disk
-            or snapshot
+          description: "Encryption settings for disk\ror snapshot"
           optional: true
         - id: snapshot.encryptionSettings.enabled
           type:
             - boolean
-          description: >-
-            Set this flag to true
-
-            and provide DiskEncryptionKey and optional KeyEncryptionKey to
-            enable
-
-            encryption. Set this flag to false and remove DiskEncryptionKey and
-
-            KeyEncryptionKey to disable encryption. If EncryptionSettings is
-            null in the
-
-            request object, the existing settings remain unchanged.
+          description: "Set this flag to true\rand provide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault
-            Secret Url and vault id of the disk encryption key
+          description: "Key Vault\rSecret Url and vault id of the disk encryption key"
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -247,15 +147,11 @@ items:
         - id: snapshot.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault Key
-            Url and vault id of the key encryption key
+          description: "Key Vault Key\rUrl and vault id of the key encryption key"
           optional: true
         - id: snapshot.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -269,9 +165,7 @@ items:
         - id: snapshot.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.location
           type:
             - string
@@ -289,9 +183,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -319,32 +211,8 @@ items:
         value: '{Snapshot} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -355,15 +223,11 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: snapshot
           type:
             - object
-          description: |-
-            Snapshot object supplied in the body of the Put
-            disk operation.
+          description: "Snapshot object supplied in the body of the Put\rdisk operation."
         - id: snapshot.sku
           type:
             - object
@@ -372,134 +236,69 @@ items:
         - id: snapshot.sku.name
           type:
             - string
-          description: |-
-            The sku name. Possible values include:
-            'Standard_LRS', 'Premium_LRS'
+          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
           optional: true
         - id: snapshot.osType
           type:
             - string
-          description: |-
-            The Operating System type. Possible values
-            include: 'Windows', 'Linux'
+          description: "The Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
           optional: true
         - id: snapshot.creationData
           type:
             - object
-          description: |-
-            Disk source information. CreationData
-            information cannot be changed after the disk has been created.
+          description: "Disk source information. CreationData\rinformation cannot be changed after the disk has been created."
         - id: snapshot.creationData.createOption
           type:
             - string
-          description: >-
-            This enumerates the
-
-            possible sources of a disk's creation. Possible values include:
-            'Empty',
-
-            'Attach', 'FromImage', 'Import', 'Copy'
+          description: "This enumerates the\rpossible sources of a disk's creation. Possible values include: 'Empty',\r'Attach', 'FromImage', 'Import', 'Copy'"
         - id: snapshot.creationData.storageAccountId
           type:
             - string
-          description: >-
-            If createOption is
-
-            Import, the Azure Resource Manager identifier of the storage account
-
-            containing the blob to import as a disk. Required only if the blob
-            is in a
-
-            different subscription
+          description: "If createOption is\rImport, the Azure Resource Manager identifier of the storage account\rcontaining the blob to import as a disk. Required only if the blob is in a\rdifferent subscription"
           optional: true
         - id: snapshot.creationData.imageReference
           type:
             - object
-          description: |-
-            Disk source
-            information.
+          description: "Disk source\rinformation."
           optional: true
         - id: snapshot.creationData.imageReference.id
           type:
             - string
-          description: >-
-            A relative uri
-
-            containing either a Platform Imgage Repository or user image
-            reference.
+          description: "A relative uri\rcontaining either a Platform Imgage Repository or user image reference."
         - id: snapshot.creationData.imageReference.lun
           type:
             - number
-          description: >-
-            If the disk is
-
-            created from an image's data disk, this is an index that indicates
-            which of
-
-            the data disks in the image to use. For OS disks, this field is
-            null.
+          description: "If the disk is\rcreated from an image's data disk, this is an index that indicates which of\rthe data disks in the image to use. For OS disks, this field is null."
           optional: true
         - id: snapshot.creationData.sourceUri
           type:
             - string
-          description: >-
-            If creationOption is
-
-            Import, this is the URI of a blob to be imported into a managed
-            disk.
+          description: "If creationOption is\rImport, this is the URI of a blob to be imported into a managed disk."
           optional: true
         - id: snapshot.creationData.sourceResourceId
           type:
             - string
-          description: |-
-            If createOption is
-            Copy, this is the ARM id of the source snapshot or disk.
+          description: "If createOption is\rCopy, this is the ARM id of the source snapshot or disk."
           optional: true
         - id: snapshot.diskSizeGB
           type:
             - number
-          description: >-
-            If creationData.createOption is Empty,
-
-            this field is mandatory and it indicates the size of the VHD to
-            create. If
-
-            this field is present for updates or creation with other options, it
-
-            indicates a resize. Resizes are only allowed if the disk is not
-            attached to
-
-            a running VM, and can only increase the disk's size.
+          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
           optional: true
         - id: snapshot.encryptionSettings
           type:
             - object
-          description: |-
-            Encryption settings for disk
-            or snapshot
+          description: "Encryption settings for disk\ror snapshot"
           optional: true
         - id: snapshot.encryptionSettings.enabled
           type:
             - boolean
-          description: >-
-            Set this flag to true
-
-            and provide DiskEncryptionKey and optional KeyEncryptionKey to
-            enable
-
-            encryption. Set this flag to false and remove DiskEncryptionKey and
-
-            KeyEncryptionKey to disable encryption. If EncryptionSettings is
-            null in the
-
-            request object, the existing settings remain unchanged.
+          description: "Set this flag to true\rand provide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault
-            Secret Url and vault id of the disk encryption key
+          description: "Key Vault\rSecret Url and vault id of the disk encryption key"
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -508,15 +307,11 @@ items:
         - id: snapshot.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault Key
-            Url and vault id of the key encryption key
+          description: "Key Vault Key\rUrl and vault id of the key encryption key"
           optional: true
         - id: snapshot.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -530,9 +325,7 @@ items:
         - id: snapshot.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.location
           type:
             - string
@@ -550,9 +343,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -563,11 +354,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, snapshotName, snapshot,
         options, optionalCallback)
@@ -602,67 +389,35 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: snapshot
           type:
             - object
-          description: |-
-            Snapshot object supplied in the body of the Patch
-            snapshot operation.
+          description: "Snapshot object supplied in the body of the Patch\rsnapshot operation."
         - id: snapshot.osType
           type:
             - string
-          description: |-
-            the Operating System type. Possible values
-            include: 'Windows', 'Linux'
+          description: "the Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
           optional: true
         - id: snapshot.diskSizeGB
           type:
             - number
-          description: >-
-            If creationData.createOption is Empty,
-
-            this field is mandatory and it indicates the size of the VHD to
-            create. If
-
-            this field is present for updates or creation with other options, it
-
-            indicates a resize. Resizes are only allowed if the disk is not
-            attached to
-
-            a running VM, and can only increase the disk's size.
+          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
           optional: true
         - id: snapshot.encryptionSettings
           type:
             - object
-          description: |-
-            Encryption settings for disk
-            or snapshot
+          description: "Encryption settings for disk\ror snapshot"
           optional: true
         - id: snapshot.encryptionSettings.enabled
           type:
             - boolean
-          description: >-
-            Set this flag to true
-
-            and provide DiskEncryptionKey and optional KeyEncryptionKey to
-            enable
-
-            encryption. Set this flag to false and remove DiskEncryptionKey and
-
-            KeyEncryptionKey to disable encryption. If EncryptionSettings is
-            null in the
-
-            request object, the existing settings remain unchanged.
+          description: "Set this flag to true\rand provide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault
-            Secret Url and vault id of the disk encryption key
+          description: "Key Vault\rSecret Url and vault id of the disk encryption key"
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -671,15 +426,11 @@ items:
         - id: snapshot.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault Key
-            Url and vault id of the key encryption key
+          description: "Key Vault Key\rUrl and vault id of the key encryption key"
           optional: true
         - id: snapshot.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -693,9 +444,7 @@ items:
         - id: snapshot.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.tags
           type:
             - object
@@ -709,9 +458,7 @@ items:
         - id: snapshot.sku.name
           type:
             - string
-          description: |-
-            The sku name. Possible values include:
-            'Standard_LRS', 'Premium_LRS'
+          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
           optional: true
         - id: options
           type:
@@ -721,9 +468,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -751,32 +496,8 @@ items:
         value: '{Snapshot} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -787,67 +508,35 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: snapshot
           type:
             - object
-          description: |-
-            Snapshot object supplied in the body of the Patch
-            snapshot operation.
+          description: "Snapshot object supplied in the body of the Patch\rsnapshot operation."
         - id: snapshot.osType
           type:
             - string
-          description: |-
-            the Operating System type. Possible values
-            include: 'Windows', 'Linux'
+          description: "the Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
           optional: true
         - id: snapshot.diskSizeGB
           type:
             - number
-          description: >-
-            If creationData.createOption is Empty,
-
-            this field is mandatory and it indicates the size of the VHD to
-            create. If
-
-            this field is present for updates or creation with other options, it
-
-            indicates a resize. Resizes are only allowed if the disk is not
-            attached to
-
-            a running VM, and can only increase the disk's size.
+          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
           optional: true
         - id: snapshot.encryptionSettings
           type:
             - object
-          description: |-
-            Encryption settings for disk
-            or snapshot
+          description: "Encryption settings for disk\ror snapshot"
           optional: true
         - id: snapshot.encryptionSettings.enabled
           type:
             - boolean
-          description: >-
-            Set this flag to true
-
-            and provide DiskEncryptionKey and optional KeyEncryptionKey to
-            enable
-
-            encryption. Set this flag to false and remove DiskEncryptionKey and
-
-            KeyEncryptionKey to disable encryption. If EncryptionSettings is
-            null in the
-
-            request object, the existing settings remain unchanged.
+          description: "Set this flag to true\rand provide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault
-            Secret Url and vault id of the disk encryption key
+          description: "Key Vault\rSecret Url and vault id of the disk encryption key"
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -856,15 +545,11 @@ items:
         - id: snapshot.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault Key
-            Url and vault id of the key encryption key
+          description: "Key Vault Key\rUrl and vault id of the key encryption key"
           optional: true
         - id: snapshot.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -878,9 +563,7 @@ items:
         - id: snapshot.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.tags
           type:
             - object
@@ -894,9 +577,7 @@ items:
         - id: snapshot.sku.name
           type:
             - string
-          description: |-
-            The sku name. Possible values include:
-            'Standard_LRS', 'Premium_LRS'
+          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
           optional: true
         - id: options
           type:
@@ -906,9 +587,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -919,11 +598,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function update(resourceGroupName, snapshotName, snapshot, options,
         optionalCallback)
@@ -956,9 +631,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -967,9 +640,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -995,32 +666,8 @@ items:
         value: '{Snapshot} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1031,9 +678,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -1042,9 +687,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1055,11 +698,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function get(resourceGroupName, snapshotName, options, optionalCallback)'
     langs:
       - js
@@ -1096,9 +735,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -1107,9 +744,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1135,34 +770,8 @@ items:
         value: '{OperationStatusResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link OperationStatusResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link OperationStatusResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1173,9 +782,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -1184,9 +791,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1197,11 +802,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, snapshotName, options,
         optionalCallback)
@@ -1243,9 +844,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1271,32 +870,8 @@ items:
         value: '{SnapshotList} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SnapshotList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SnapshotList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SnapshotList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SnapshotList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1312,9 +887,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1325,11 +898,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -1365,9 +934,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1389,32 +956,8 @@ items:
         value: '{SnapshotList} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SnapshotList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SnapshotList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SnapshotList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SnapshotList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1426,9 +969,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1439,11 +980,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -1476,27 +1013,19 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: grantAccessData
           type:
             - object
-          description: |-
-            Access data object supplied in the body of
-            the get snapshot access operation.
+          description: "Access data object supplied in the body of\rthe get snapshot access operation."
         - id: grantAccessData.access
           type:
             - string
-          description: |-
-            Possible values include: 'None',
-            'Read'
+          description: "Possible values include: 'None',\r'Read'"
         - id: grantAccessData.durationInSeconds
           type:
             - number
-          description: |-
-            Time duration in seconds
-            until the SAS access expires.
+          description: "Time duration in seconds\runtil the SAS access expires."
         - id: options
           type:
             - object
@@ -1505,9 +1034,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1535,32 +1062,8 @@ items:
         value: '{AccessUri} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AccessUri} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AccessUri} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AccessUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AccessUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1571,27 +1074,19 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: grantAccessData
           type:
             - object
-          description: |-
-            Access data object supplied in the body of
-            the get snapshot access operation.
+          description: "Access data object supplied in the body of\rthe get snapshot access operation."
         - id: grantAccessData.access
           type:
             - string
-          description: |-
-            Possible values include: 'None',
-            'Read'
+          description: "Possible values include: 'None',\r'Read'"
         - id: grantAccessData.durationInSeconds
           type:
             - number
-          description: |-
-            Time duration in seconds
-            until the SAS access expires.
+          description: "Time duration in seconds\runtil the SAS access expires."
         - id: options
           type:
             - object
@@ -1600,9 +1095,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1613,11 +1106,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function grantAccess(resourceGroupName, snapshotName, grantAccessData,
         options, optionalCallback)
@@ -1656,9 +1145,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -1667,9 +1154,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1695,34 +1180,8 @@ items:
         value: '{OperationStatusResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link OperationStatusResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link OperationStatusResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1733,9 +1192,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -1744,9 +1201,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1757,11 +1212,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function revokeAccess(resourceGroupName, snapshotName, options,
         optionalCallback)
@@ -1796,15 +1247,11 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: snapshot
           type:
             - object
-          description: |-
-            Snapshot object supplied in the body of the Put
-            disk operation.
+          description: "Snapshot object supplied in the body of the Put\rdisk operation."
         - id: snapshot.sku
           type:
             - object
@@ -1813,134 +1260,69 @@ items:
         - id: snapshot.sku.name
           type:
             - string
-          description: |-
-            The sku name. Possible values include:
-            'Standard_LRS', 'Premium_LRS'
+          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
           optional: true
         - id: snapshot.osType
           type:
             - string
-          description: |-
-            The Operating System type. Possible values
-            include: 'Windows', 'Linux'
+          description: "The Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
           optional: true
         - id: snapshot.creationData
           type:
             - object
-          description: |-
-            Disk source information. CreationData
-            information cannot be changed after the disk has been created.
+          description: "Disk source information. CreationData\rinformation cannot be changed after the disk has been created."
         - id: snapshot.creationData.createOption
           type:
             - string
-          description: >-
-            This enumerates the
-
-            possible sources of a disk's creation. Possible values include:
-            'Empty',
-
-            'Attach', 'FromImage', 'Import', 'Copy'
+          description: "This enumerates the\rpossible sources of a disk's creation. Possible values include: 'Empty',\r'Attach', 'FromImage', 'Import', 'Copy'"
         - id: snapshot.creationData.storageAccountId
           type:
             - string
-          description: >-
-            If createOption is
-
-            Import, the Azure Resource Manager identifier of the storage account
-
-            containing the blob to import as a disk. Required only if the blob
-            is in a
-
-            different subscription
+          description: "If createOption is\rImport, the Azure Resource Manager identifier of the storage account\rcontaining the blob to import as a disk. Required only if the blob is in a\rdifferent subscription"
           optional: true
         - id: snapshot.creationData.imageReference
           type:
             - object
-          description: |-
-            Disk source
-            information.
+          description: "Disk source\rinformation."
           optional: true
         - id: snapshot.creationData.imageReference.id
           type:
             - string
-          description: >-
-            A relative uri
-
-            containing either a Platform Imgage Repository or user image
-            reference.
+          description: "A relative uri\rcontaining either a Platform Imgage Repository or user image reference."
         - id: snapshot.creationData.imageReference.lun
           type:
             - number
-          description: >-
-            If the disk is
-
-            created from an image's data disk, this is an index that indicates
-            which of
-
-            the data disks in the image to use. For OS disks, this field is
-            null.
+          description: "If the disk is\rcreated from an image's data disk, this is an index that indicates which of\rthe data disks in the image to use. For OS disks, this field is null."
           optional: true
         - id: snapshot.creationData.sourceUri
           type:
             - string
-          description: >-
-            If creationOption is
-
-            Import, this is the URI of a blob to be imported into a managed
-            disk.
+          description: "If creationOption is\rImport, this is the URI of a blob to be imported into a managed disk."
           optional: true
         - id: snapshot.creationData.sourceResourceId
           type:
             - string
-          description: |-
-            If createOption is
-            Copy, this is the ARM id of the source snapshot or disk.
+          description: "If createOption is\rCopy, this is the ARM id of the source snapshot or disk."
           optional: true
         - id: snapshot.diskSizeGB
           type:
             - number
-          description: >-
-            If creationData.createOption is Empty,
-
-            this field is mandatory and it indicates the size of the VHD to
-            create. If
-
-            this field is present for updates or creation with other options, it
-
-            indicates a resize. Resizes are only allowed if the disk is not
-            attached to
-
-            a running VM, and can only increase the disk's size.
+          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
           optional: true
         - id: snapshot.encryptionSettings
           type:
             - object
-          description: |-
-            Encryption settings for disk
-            or snapshot
+          description: "Encryption settings for disk\ror snapshot"
           optional: true
         - id: snapshot.encryptionSettings.enabled
           type:
             - boolean
-          description: >-
-            Set this flag to true
-
-            and provide DiskEncryptionKey and optional KeyEncryptionKey to
-            enable
-
-            encryption. Set this flag to false and remove DiskEncryptionKey and
-
-            KeyEncryptionKey to disable encryption. If EncryptionSettings is
-            null in the
-
-            request object, the existing settings remain unchanged.
+          description: "Set this flag to true\rand provide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault
-            Secret Url and vault id of the disk encryption key
+          description: "Key Vault\rSecret Url and vault id of the disk encryption key"
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -1949,15 +1331,11 @@ items:
         - id: snapshot.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault Key
-            Url and vault id of the key encryption key
+          description: "Key Vault Key\rUrl and vault id of the key encryption key"
           optional: true
         - id: snapshot.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -1971,9 +1349,7 @@ items:
         - id: snapshot.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.location
           type:
             - string
@@ -1991,9 +1367,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2021,32 +1395,8 @@ items:
         value: '{Snapshot} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2057,15 +1407,11 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: snapshot
           type:
             - object
-          description: |-
-            Snapshot object supplied in the body of the Put
-            disk operation.
+          description: "Snapshot object supplied in the body of the Put\rdisk operation."
         - id: snapshot.sku
           type:
             - object
@@ -2074,134 +1420,69 @@ items:
         - id: snapshot.sku.name
           type:
             - string
-          description: |-
-            The sku name. Possible values include:
-            'Standard_LRS', 'Premium_LRS'
+          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
           optional: true
         - id: snapshot.osType
           type:
             - string
-          description: |-
-            The Operating System type. Possible values
-            include: 'Windows', 'Linux'
+          description: "The Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
           optional: true
         - id: snapshot.creationData
           type:
             - object
-          description: |-
-            Disk source information. CreationData
-            information cannot be changed after the disk has been created.
+          description: "Disk source information. CreationData\rinformation cannot be changed after the disk has been created."
         - id: snapshot.creationData.createOption
           type:
             - string
-          description: >-
-            This enumerates the
-
-            possible sources of a disk's creation. Possible values include:
-            'Empty',
-
-            'Attach', 'FromImage', 'Import', 'Copy'
+          description: "This enumerates the\rpossible sources of a disk's creation. Possible values include: 'Empty',\r'Attach', 'FromImage', 'Import', 'Copy'"
         - id: snapshot.creationData.storageAccountId
           type:
             - string
-          description: >-
-            If createOption is
-
-            Import, the Azure Resource Manager identifier of the storage account
-
-            containing the blob to import as a disk. Required only if the blob
-            is in a
-
-            different subscription
+          description: "If createOption is\rImport, the Azure Resource Manager identifier of the storage account\rcontaining the blob to import as a disk. Required only if the blob is in a\rdifferent subscription"
           optional: true
         - id: snapshot.creationData.imageReference
           type:
             - object
-          description: |-
-            Disk source
-            information.
+          description: "Disk source\rinformation."
           optional: true
         - id: snapshot.creationData.imageReference.id
           type:
             - string
-          description: >-
-            A relative uri
-
-            containing either a Platform Imgage Repository or user image
-            reference.
+          description: "A relative uri\rcontaining either a Platform Imgage Repository or user image reference."
         - id: snapshot.creationData.imageReference.lun
           type:
             - number
-          description: >-
-            If the disk is
-
-            created from an image's data disk, this is an index that indicates
-            which of
-
-            the data disks in the image to use. For OS disks, this field is
-            null.
+          description: "If the disk is\rcreated from an image's data disk, this is an index that indicates which of\rthe data disks in the image to use. For OS disks, this field is null."
           optional: true
         - id: snapshot.creationData.sourceUri
           type:
             - string
-          description: >-
-            If creationOption is
-
-            Import, this is the URI of a blob to be imported into a managed
-            disk.
+          description: "If creationOption is\rImport, this is the URI of a blob to be imported into a managed disk."
           optional: true
         - id: snapshot.creationData.sourceResourceId
           type:
             - string
-          description: |-
-            If createOption is
-            Copy, this is the ARM id of the source snapshot or disk.
+          description: "If createOption is\rCopy, this is the ARM id of the source snapshot or disk."
           optional: true
         - id: snapshot.diskSizeGB
           type:
             - number
-          description: >-
-            If creationData.createOption is Empty,
-
-            this field is mandatory and it indicates the size of the VHD to
-            create. If
-
-            this field is present for updates or creation with other options, it
-
-            indicates a resize. Resizes are only allowed if the disk is not
-            attached to
-
-            a running VM, and can only increase the disk's size.
+          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
           optional: true
         - id: snapshot.encryptionSettings
           type:
             - object
-          description: |-
-            Encryption settings for disk
-            or snapshot
+          description: "Encryption settings for disk\ror snapshot"
           optional: true
         - id: snapshot.encryptionSettings.enabled
           type:
             - boolean
-          description: >-
-            Set this flag to true
-
-            and provide DiskEncryptionKey and optional KeyEncryptionKey to
-            enable
-
-            encryption. Set this flag to false and remove DiskEncryptionKey and
-
-            KeyEncryptionKey to disable encryption. If EncryptionSettings is
-            null in the
-
-            request object, the existing settings remain unchanged.
+          description: "Set this flag to true\rand provide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault
-            Secret Url and vault id of the disk encryption key
+          description: "Key Vault\rSecret Url and vault id of the disk encryption key"
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -2210,15 +1491,11 @@ items:
         - id: snapshot.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault Key
-            Url and vault id of the key encryption key
+          description: "Key Vault Key\rUrl and vault id of the key encryption key"
           optional: true
         - id: snapshot.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -2232,9 +1509,7 @@ items:
         - id: snapshot.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.location
           type:
             - string
@@ -2252,9 +1527,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2265,11 +1538,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreateOrUpdate(resourceGroupName, snapshotName, snapshot,
         options, optionalCallback)
@@ -2304,67 +1573,35 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: snapshot
           type:
             - object
-          description: |-
-            Snapshot object supplied in the body of the Patch
-            snapshot operation.
+          description: "Snapshot object supplied in the body of the Patch\rsnapshot operation."
         - id: snapshot.osType
           type:
             - string
-          description: |-
-            the Operating System type. Possible values
-            include: 'Windows', 'Linux'
+          description: "the Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
           optional: true
         - id: snapshot.diskSizeGB
           type:
             - number
-          description: >-
-            If creationData.createOption is Empty,
-
-            this field is mandatory and it indicates the size of the VHD to
-            create. If
-
-            this field is present for updates or creation with other options, it
-
-            indicates a resize. Resizes are only allowed if the disk is not
-            attached to
-
-            a running VM, and can only increase the disk's size.
+          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
           optional: true
         - id: snapshot.encryptionSettings
           type:
             - object
-          description: |-
-            Encryption settings for disk
-            or snapshot
+          description: "Encryption settings for disk\ror snapshot"
           optional: true
         - id: snapshot.encryptionSettings.enabled
           type:
             - boolean
-          description: >-
-            Set this flag to true
-
-            and provide DiskEncryptionKey and optional KeyEncryptionKey to
-            enable
-
-            encryption. Set this flag to false and remove DiskEncryptionKey and
-
-            KeyEncryptionKey to disable encryption. If EncryptionSettings is
-            null in the
-
-            request object, the existing settings remain unchanged.
+          description: "Set this flag to true\rand provide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault
-            Secret Url and vault id of the disk encryption key
+          description: "Key Vault\rSecret Url and vault id of the disk encryption key"
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -2373,15 +1610,11 @@ items:
         - id: snapshot.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault Key
-            Url and vault id of the key encryption key
+          description: "Key Vault Key\rUrl and vault id of the key encryption key"
           optional: true
         - id: snapshot.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -2395,9 +1628,7 @@ items:
         - id: snapshot.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.tags
           type:
             - object
@@ -2411,9 +1642,7 @@ items:
         - id: snapshot.sku.name
           type:
             - string
-          description: |-
-            The sku name. Possible values include:
-            'Standard_LRS', 'Premium_LRS'
+          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
           optional: true
         - id: options
           type:
@@ -2423,9 +1652,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2453,32 +1680,8 @@ items:
         value: '{Snapshot} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Snapshot} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Snapshot} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2489,67 +1692,35 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: snapshot
           type:
             - object
-          description: |-
-            Snapshot object supplied in the body of the Patch
-            snapshot operation.
+          description: "Snapshot object supplied in the body of the Patch\rsnapshot operation."
         - id: snapshot.osType
           type:
             - string
-          description: |-
-            the Operating System type. Possible values
-            include: 'Windows', 'Linux'
+          description: "the Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
           optional: true
         - id: snapshot.diskSizeGB
           type:
             - number
-          description: >-
-            If creationData.createOption is Empty,
-
-            this field is mandatory and it indicates the size of the VHD to
-            create. If
-
-            this field is present for updates or creation with other options, it
-
-            indicates a resize. Resizes are only allowed if the disk is not
-            attached to
-
-            a running VM, and can only increase the disk's size.
+          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
           optional: true
         - id: snapshot.encryptionSettings
           type:
             - object
-          description: |-
-            Encryption settings for disk
-            or snapshot
+          description: "Encryption settings for disk\ror snapshot"
           optional: true
         - id: snapshot.encryptionSettings.enabled
           type:
             - boolean
-          description: >-
-            Set this flag to true
-
-            and provide DiskEncryptionKey and optional KeyEncryptionKey to
-            enable
-
-            encryption. Set this flag to false and remove DiskEncryptionKey and
-
-            KeyEncryptionKey to disable encryption. If EncryptionSettings is
-            null in the
-
-            request object, the existing settings remain unchanged.
+          description: "Set this flag to true\rand provide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault
-            Secret Url and vault id of the disk encryption key
+          description: "Key Vault\rSecret Url and vault id of the disk encryption key"
           optional: true
         - id: snapshot.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -2558,15 +1729,11 @@ items:
         - id: snapshot.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: |-
-            Key Vault Key
-            Url and vault id of the key encryption key
+          description: "Key Vault Key\rUrl and vault id of the key encryption key"
           optional: true
         - id: snapshot.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -2580,9 +1747,7 @@ items:
         - id: snapshot.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: |-
-            Url
-            pointing to a key or secret in KeyVault
+          description: "Url\rpointing to a key or secret in KeyVault"
         - id: snapshot.tags
           type:
             - object
@@ -2596,9 +1761,7 @@ items:
         - id: snapshot.sku.name
           type:
             - string
-          description: |-
-            The sku name. Possible values include:
-            'Standard_LRS', 'Premium_LRS'
+          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
           optional: true
         - id: options
           type:
@@ -2608,9 +1771,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2621,11 +1782,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginUpdate(resourceGroupName, snapshotName, snapshot, options,
         optionalCallback)
@@ -2664,9 +1821,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -2675,9 +1830,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2705,34 +1858,8 @@ items:
         value: '{OperationStatusResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link OperationStatusResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link OperationStatusResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2743,9 +1870,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -2754,9 +1879,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2767,11 +1890,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginDeleteMethod(resourceGroupName, snapshotName, options,
         optionalCallback)
@@ -2806,27 +1925,19 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: grantAccessData
           type:
             - object
-          description: |-
-            Access data object supplied in the body of
-            the get snapshot access operation.
+          description: "Access data object supplied in the body of\rthe get snapshot access operation."
         - id: grantAccessData.access
           type:
             - string
-          description: |-
-            Possible values include: 'None',
-            'Read'
+          description: "Possible values include: 'None',\r'Read'"
         - id: grantAccessData.durationInSeconds
           type:
             - number
-          description: |-
-            Time duration in seconds
-            until the SAS access expires.
+          description: "Time duration in seconds\runtil the SAS access expires."
         - id: options
           type:
             - object
@@ -2835,9 +1946,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2865,32 +1974,8 @@ items:
         value: '{AccessUri} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AccessUri} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AccessUri} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AccessUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AccessUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2901,27 +1986,19 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: grantAccessData
           type:
             - object
-          description: |-
-            Access data object supplied in the body of
-            the get snapshot access operation.
+          description: "Access data object supplied in the body of\rthe get snapshot access operation."
         - id: grantAccessData.access
           type:
             - string
-          description: |-
-            Possible values include: 'None',
-            'Read'
+          description: "Possible values include: 'None',\r'Read'"
         - id: grantAccessData.durationInSeconds
           type:
             - number
-          description: |-
-            Time duration in seconds
-            until the SAS access expires.
+          description: "Time duration in seconds\runtil the SAS access expires."
         - id: options
           type:
             - object
@@ -2930,9 +2007,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2943,11 +2018,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginGrantAccess(resourceGroupName, snapshotName,
         grantAccessData, options, optionalCallback)
@@ -2986,9 +2057,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -2997,9 +2066,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -3027,34 +2094,8 @@ items:
         value: '{OperationStatusResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link OperationStatusResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link OperationStatusResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -3065,9 +2106,7 @@ items:
         - id: snapshotName
           type:
             - string
-          description: |-
-            The name of the snapshot within the given
-            subscription and resource group.
+          description: "The name of the snapshot within the given\rsubscription and resource group."
         - id: options
           type:
             - object
@@ -3076,9 +2115,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -3089,11 +2126,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginRevokeAccess(resourceGroupName, snapshotName, options,
         optionalCallback)
@@ -3128,9 +2161,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -3139,9 +2170,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -3167,41 +2196,15 @@ items:
         value: '{SnapshotList} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SnapshotList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SnapshotList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SnapshotList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SnapshotList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -3210,9 +2213,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -3223,11 +2224,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
@@ -3260,9 +2257,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -3271,9 +2266,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -3297,41 +2290,15 @@ items:
         value: '{SnapshotList} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SnapshotList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SnapshotList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SnapshotList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SnapshotList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -3340,9 +2307,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -3353,11 +2318,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

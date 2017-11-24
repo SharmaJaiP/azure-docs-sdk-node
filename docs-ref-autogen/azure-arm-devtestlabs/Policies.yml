@@ -16,18 +16,6 @@ items:
     type: Class
     children:
       - 'azure-arm-devtestlabs.Policies.#ctor'
-      - 'azure-arm-devtestlabs.Policies#listWithHttpOperationResponse'
-      - 'azure-arm-devtestlabs.Policies#list'
-      - 'azure-arm-devtestlabs.Policies#getWithHttpOperationResponse'
-      - 'azure-arm-devtestlabs.Policies#get'
-      - 'azure-arm-devtestlabs.Policies#createOrUpdateWithHttpOperationResponse'
-      - 'azure-arm-devtestlabs.Policies#createOrUpdate'
-      - 'azure-arm-devtestlabs.Policies#deleteMethodWithHttpOperationResponse'
-      - 'azure-arm-devtestlabs.Policies#deleteMethod'
-      - 'azure-arm-devtestlabs.Policies#updateWithHttpOperationResponse'
-      - 'azure-arm-devtestlabs.Policies#update'
-      - 'azure-arm-devtestlabs.Policies#listNextWithHttpOperationResponse'
-      - 'azure-arm-devtestlabs.Policies#listNext'
     langs:
       - js
   - id: 'azure-arm-devtestlabs.Policies.#ctor'
@@ -92,9 +80,7 @@ items:
         - id: options.expand
           type:
             - string
-          description: |-
-            Specify the $expand query. Example:
-            'properties($select=description)'
+          description: "Specify the $expand query. Example:\r'properties($select=description)'"
           optional: true
         - id: options.filter
           type:
@@ -104,23 +90,17 @@ items:
         - id: options.top
           type:
             - number
-          description: |-
-            The maximum number of resources to return from
-            the operation.
+          description: "The maximum number of resources to return from\rthe operation."
           optional: true
         - id: options.orderby
           type:
             - string
-          description: |-
-            The ordering expression for the results,
-            using OData notation.
+          description: "The ordering expression for the results,\rusing OData notation."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -146,34 +126,8 @@ items:
         value: '{ResponseWithContinuationPolicy} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResponseWithContinuationPolicy} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResponseWithContinuationPolicy} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResponseWithContinuationPolicy} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResponseWithContinuationPolicy} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -197,9 +151,7 @@ items:
         - id: options.expand
           type:
             - string
-          description: |-
-            Specify the $expand query. Example:
-            'properties($select=description)'
+          description: "Specify the $expand query. Example:\r'properties($select=description)'"
           optional: true
         - id: options.filter
           type:
@@ -209,23 +161,17 @@ items:
         - id: options.top
           type:
             - number
-          description: |-
-            The maximum number of resources to return from
-            the operation.
+          description: "The maximum number of resources to return from\rthe operation."
           optional: true
         - id: options.orderby
           type:
             - string
-          description: |-
-            The ordering expression for the results,
-            using OData notation.
+          description: "The ordering expression for the results,\rusing OData notation."
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -236,11 +182,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function list(resourceGroupName, labName, policySetName, options,
         optionalCallback)
@@ -292,16 +234,12 @@ items:
         - id: options.expand
           type:
             - string
-          description: |-
-            Specify the $expand query. Example:
-            'properties($select=description)'
+          description: "Specify the $expand query. Example:\r'properties($select=description)'"
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -329,32 +267,8 @@ items:
         value: '{Policy} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Policy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Policy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Policy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Policy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -382,16 +296,12 @@ items:
         - id: options.expand
           type:
             - string
-          description: |-
-            Specify the $expand query. Example:
-            'properties($select=description)'
+          description: "Specify the $expand query. Example:\r'properties($select=description)'"
           optional: true
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -402,11 +312,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, labName, policySetName, name, options,
         optionalCallback)
@@ -462,24 +368,12 @@ items:
         - id: policy.status
           type:
             - string
-          description: |-
-            The status of the policy. Possible values
-            include: 'Enabled', 'Disabled'
+          description: "The status of the policy. Possible values\rinclude: 'Enabled', 'Disabled'"
           optional: true
         - id: policy.factName
           type:
             - string
-          description: >-
-            The fact name of the policy (e.g.
-
-            LabVmCount, LabVmSize, MaxVmsAllowedPerLab, etc. Possible values
-            include:
-
-            'UserOwnedLabVmCount', 'UserOwnedLabPremiumVmCount', 'LabVmCount',
-
-            'LabPremiumVmCount', 'LabVmSize', 'GalleryImage',
-
-            'UserOwnedLabVmCountInSubnet', 'LabTargetCost'
+          description: "The fact name of the policy (e.g.\rLabVmCount, LabVmSize, MaxVmsAllowedPerLab, etc. Possible values include:\r'UserOwnedLabVmCount', 'UserOwnedLabPremiumVmCount', 'LabVmCount',\r'LabPremiumVmCount', 'LabVmSize', 'GalleryImage',\r'UserOwnedLabVmCountInSubnet', 'LabTargetCost'"
           optional: true
         - id: policy.factData
           type:
@@ -489,32 +383,22 @@ items:
         - id: policy.threshold
           type:
             - string
-          description: |-
-            The threshold of the policy (i.e. a
-            number for MaxValuePolicy, and a JSON array of values for
-            AllowedValuesPolicy).
+          description: "The threshold of the policy (i.e. a\rnumber for MaxValuePolicy, and a JSON array of values for\rAllowedValuesPolicy)."
           optional: true
         - id: policy.evaluatorType
           type:
             - string
-          description: |-
-            The evaluator type of the policy
-            (i.e. AllowedValuesPolicy, MaxValuePolicy). Possible values include:
-            'AllowedValuesPolicy', 'MaxValuePolicy'
+          description: "The evaluator type of the policy\r(i.e. AllowedValuesPolicy, MaxValuePolicy). Possible values include:\r'AllowedValuesPolicy', 'MaxValuePolicy'"
           optional: true
         - id: policy.provisioningState
           type:
             - string
-          description: |-
-            The provisioning status of the
-            resource.
+          description: "The provisioning status of the\rresource."
           optional: true
         - id: policy.uniqueIdentifier
           type:
             - string
-          description: |-
-            The unique immutable identifier of
-            a resource (Guid).
+          description: "The unique immutable identifier of\ra resource (Guid)."
           optional: true
         - id: policy.location
           type:
@@ -534,9 +418,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -564,32 +446,8 @@ items:
         value: '{Policy} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Policy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Policy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Policy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Policy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -621,24 +479,12 @@ items:
         - id: policy.status
           type:
             - string
-          description: |-
-            The status of the policy. Possible values
-            include: 'Enabled', 'Disabled'
+          description: "The status of the policy. Possible values\rinclude: 'Enabled', 'Disabled'"
           optional: true
         - id: policy.factName
           type:
             - string
-          description: >-
-            The fact name of the policy (e.g.
-
-            LabVmCount, LabVmSize, MaxVmsAllowedPerLab, etc. Possible values
-            include:
-
-            'UserOwnedLabVmCount', 'UserOwnedLabPremiumVmCount', 'LabVmCount',
-
-            'LabPremiumVmCount', 'LabVmSize', 'GalleryImage',
-
-            'UserOwnedLabVmCountInSubnet', 'LabTargetCost'
+          description: "The fact name of the policy (e.g.\rLabVmCount, LabVmSize, MaxVmsAllowedPerLab, etc. Possible values include:\r'UserOwnedLabVmCount', 'UserOwnedLabPremiumVmCount', 'LabVmCount',\r'LabPremiumVmCount', 'LabVmSize', 'GalleryImage',\r'UserOwnedLabVmCountInSubnet', 'LabTargetCost'"
           optional: true
         - id: policy.factData
           type:
@@ -648,32 +494,22 @@ items:
         - id: policy.threshold
           type:
             - string
-          description: |-
-            The threshold of the policy (i.e. a
-            number for MaxValuePolicy, and a JSON array of values for
-            AllowedValuesPolicy).
+          description: "The threshold of the policy (i.e. a\rnumber for MaxValuePolicy, and a JSON array of values for\rAllowedValuesPolicy)."
           optional: true
         - id: policy.evaluatorType
           type:
             - string
-          description: |-
-            The evaluator type of the policy
-            (i.e. AllowedValuesPolicy, MaxValuePolicy). Possible values include:
-            'AllowedValuesPolicy', 'MaxValuePolicy'
+          description: "The evaluator type of the policy\r(i.e. AllowedValuesPolicy, MaxValuePolicy). Possible values include:\r'AllowedValuesPolicy', 'MaxValuePolicy'"
           optional: true
         - id: policy.provisioningState
           type:
             - string
-          description: |-
-            The provisioning status of the
-            resource.
+          description: "The provisioning status of the\rresource."
           optional: true
         - id: policy.uniqueIdentifier
           type:
             - string
-          description: |-
-            The unique immutable identifier of
-            a resource (Guid).
+          description: "The unique immutable identifier of\ra resource (Guid)."
           optional: true
         - id: policy.location
           type:
@@ -693,9 +529,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -706,11 +540,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, labName, policySetName, name,
         policy, options, optionalCallback)
@@ -762,9 +592,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -792,30 +620,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -843,9 +649,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -856,11 +660,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, labName, policySetName, name,
         options, optionalCallback)
@@ -916,24 +716,12 @@ items:
         - id: policy.status
           type:
             - string
-          description: |-
-            The status of the policy. Possible values
-            include: 'Enabled', 'Disabled'
+          description: "The status of the policy. Possible values\rinclude: 'Enabled', 'Disabled'"
           optional: true
         - id: policy.factName
           type:
             - string
-          description: >-
-            The fact name of the policy (e.g.
-
-            LabVmCount, LabVmSize, MaxVmsAllowedPerLab, etc. Possible values
-            include:
-
-            'UserOwnedLabVmCount', 'UserOwnedLabPremiumVmCount', 'LabVmCount',
-
-            'LabPremiumVmCount', 'LabVmSize', 'GalleryImage',
-
-            'UserOwnedLabVmCountInSubnet', 'LabTargetCost'
+          description: "The fact name of the policy (e.g.\rLabVmCount, LabVmSize, MaxVmsAllowedPerLab, etc. Possible values include:\r'UserOwnedLabVmCount', 'UserOwnedLabPremiumVmCount', 'LabVmCount',\r'LabPremiumVmCount', 'LabVmSize', 'GalleryImage',\r'UserOwnedLabVmCountInSubnet', 'LabTargetCost'"
           optional: true
         - id: policy.factData
           type:
@@ -943,32 +731,22 @@ items:
         - id: policy.threshold
           type:
             - string
-          description: |-
-            The threshold of the policy (i.e. a
-            number for MaxValuePolicy, and a JSON array of values for
-            AllowedValuesPolicy).
+          description: "The threshold of the policy (i.e. a\rnumber for MaxValuePolicy, and a JSON array of values for\rAllowedValuesPolicy)."
           optional: true
         - id: policy.evaluatorType
           type:
             - string
-          description: |-
-            The evaluator type of the policy
-            (i.e. AllowedValuesPolicy, MaxValuePolicy). Possible values include:
-            'AllowedValuesPolicy', 'MaxValuePolicy'
+          description: "The evaluator type of the policy\r(i.e. AllowedValuesPolicy, MaxValuePolicy). Possible values include:\r'AllowedValuesPolicy', 'MaxValuePolicy'"
           optional: true
         - id: policy.provisioningState
           type:
             - string
-          description: |-
-            The provisioning status of the
-            resource.
+          description: "The provisioning status of the\rresource."
           optional: true
         - id: policy.uniqueIdentifier
           type:
             - string
-          description: |-
-            The unique immutable identifier of
-            a resource (Guid).
+          description: "The unique immutable identifier of\ra resource (Guid)."
           optional: true
         - id: policy.location
           type:
@@ -988,9 +766,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1018,32 +794,8 @@ items:
         value: '{Policy} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Policy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Policy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Policy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Policy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1075,24 +827,12 @@ items:
         - id: policy.status
           type:
             - string
-          description: |-
-            The status of the policy. Possible values
-            include: 'Enabled', 'Disabled'
+          description: "The status of the policy. Possible values\rinclude: 'Enabled', 'Disabled'"
           optional: true
         - id: policy.factName
           type:
             - string
-          description: >-
-            The fact name of the policy (e.g.
-
-            LabVmCount, LabVmSize, MaxVmsAllowedPerLab, etc. Possible values
-            include:
-
-            'UserOwnedLabVmCount', 'UserOwnedLabPremiumVmCount', 'LabVmCount',
-
-            'LabPremiumVmCount', 'LabVmSize', 'GalleryImage',
-
-            'UserOwnedLabVmCountInSubnet', 'LabTargetCost'
+          description: "The fact name of the policy (e.g.\rLabVmCount, LabVmSize, MaxVmsAllowedPerLab, etc. Possible values include:\r'UserOwnedLabVmCount', 'UserOwnedLabPremiumVmCount', 'LabVmCount',\r'LabPremiumVmCount', 'LabVmSize', 'GalleryImage',\r'UserOwnedLabVmCountInSubnet', 'LabTargetCost'"
           optional: true
         - id: policy.factData
           type:
@@ -1102,32 +842,22 @@ items:
         - id: policy.threshold
           type:
             - string
-          description: |-
-            The threshold of the policy (i.e. a
-            number for MaxValuePolicy, and a JSON array of values for
-            AllowedValuesPolicy).
+          description: "The threshold of the policy (i.e. a\rnumber for MaxValuePolicy, and a JSON array of values for\rAllowedValuesPolicy)."
           optional: true
         - id: policy.evaluatorType
           type:
             - string
-          description: |-
-            The evaluator type of the policy
-            (i.e. AllowedValuesPolicy, MaxValuePolicy). Possible values include:
-            'AllowedValuesPolicy', 'MaxValuePolicy'
+          description: "The evaluator type of the policy\r(i.e. AllowedValuesPolicy, MaxValuePolicy). Possible values include:\r'AllowedValuesPolicy', 'MaxValuePolicy'"
           optional: true
         - id: policy.provisioningState
           type:
             - string
-          description: |-
-            The provisioning status of the
-            resource.
+          description: "The provisioning status of the\rresource."
           optional: true
         - id: policy.uniqueIdentifier
           type:
             - string
-          description: |-
-            The unique immutable identifier of
-            a resource (Guid).
+          description: "The unique immutable identifier of\ra resource (Guid)."
           optional: true
         - id: policy.location
           type:
@@ -1147,9 +877,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1160,11 +888,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function update(resourceGroupName, labName, policySetName, name, policy,
         options, optionalCallback)
@@ -1197,9 +921,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1208,9 +930,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1234,43 +954,15 @@ items:
         value: '{ResponseWithContinuationPolicy} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResponseWithContinuationPolicy} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResponseWithContinuationPolicy} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResponseWithContinuationPolicy} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResponseWithContinuationPolicy} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1279,9 +971,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1292,11 +982,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

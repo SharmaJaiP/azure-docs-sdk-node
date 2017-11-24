@@ -16,11 +16,6 @@ items:
     type: Class
     children:
       - 'azure-arm-apimanagement.QuotaByPeriodKeys.#ctor'
-      - 'azure-arm-apimanagement.QuotaByPeriodKeys#getWithHttpOperationResponse'
-      - 'azure-arm-apimanagement.QuotaByPeriodKeys#get'
-      - >-
-        azure-arm-apimanagement.QuotaByPeriodKeys#updateWithHttpOperationResponse
-      - 'azure-arm-apimanagement.QuotaByPeriodKeys#update'
     langs:
       - js
   - id: 'azure-arm-apimanagement.QuotaByPeriodKeys.#ctor'
@@ -45,9 +40,7 @@ items:
     name: >-
       getWithHttpOperationResponse(resourceGroupName, serviceName,
       quotaCounterKey, quotaPeriodKey, options)
-    summary: |-
-      Gets the value of the quota counter associated with the counter-key in the
-      policy for the specific period in service instance.
+    summary: "Gets the value of the quota counter associated with the counter-key in the\rpolicy for the specific period in service instance."
     fullName: >-
       azure-arm-apimanagement.QuotaByPeriodKeys.getWithHttpOperationResponse(resourceGroupName,
       serviceName, quotaCounterKey, quotaPeriodKey, options)
@@ -78,18 +71,7 @@ items:
         - id: quotaCounterKey
           type:
             - string
-          description: >-
-            Quota counter key identifier.This is the
-
-            result of expression defined in counter-key attribute of the
-            quota-by-key
-
-            policy.For Example, if you specify counter-key="boo" in the policy,
-            then
-
-            it’s accessible by "boo" counter key. But if it’s defined as
-
-            counter-key="@("b"+"a")" then it will be accessible by "ba" key
+          description: "Quota counter key identifier.This is the\rresult of expression defined in counter-key attribute of the quota-by-key\rpolicy.For Example, if you specify counter-key=\"boo\" in the policy, then\rit’s accessible by \"boo\" counter key. But if it’s defined as\rcounter-key=\"@(\"b\"+\"a\")\" then it will be accessible by \"ba\" key"
         - id: quotaPeriodKey
           type:
             - string
@@ -102,9 +84,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -121,9 +101,7 @@ items:
     name: >-
       get(resourceGroupName, serviceName, quotaCounterKey, quotaPeriodKey,
       options, optionalCallback)
-    summary: |-
-      Gets the value of the quota counter associated with the counter-key in the
-      policy for the specific period in service instance.
+    summary: "Gets the value of the quota counter associated with the counter-key in the\rpolicy for the specific period in service instance."
     fullName: >-
       azure-arm-apimanagement.QuotaByPeriodKeys.get(resourceGroupName,
       serviceName, quotaCounterKey, quotaPeriodKey, options, optionalCallback)
@@ -134,32 +112,8 @@ items:
         value: '{QuotaCounterContract} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link QuotaCounterContract} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link QuotaCounterContract} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link QuotaCounterContract} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link QuotaCounterContract} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -174,18 +128,7 @@ items:
         - id: quotaCounterKey
           type:
             - string
-          description: >-
-            Quota counter key identifier.This is the
-
-            result of expression defined in counter-key attribute of the
-            quota-by-key
-
-            policy.For Example, if you specify counter-key="boo" in the policy,
-            then
-
-            it’s accessible by "boo" counter key. But if it’s defined as
-
-            counter-key="@("b"+"a")" then it will be accessible by "ba" key
+          description: "Quota counter key identifier.This is the\rresult of expression defined in counter-key attribute of the quota-by-key\rpolicy.For Example, if you specify counter-key=\"boo\" in the policy, then\rit’s accessible by \"boo\" counter key. But if it’s defined as\rcounter-key=\"@(\"b\"+\"a\")\" then it will be accessible by \"ba\" key"
         - id: quotaPeriodKey
           type:
             - string
@@ -198,9 +141,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -211,11 +152,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, serviceName, quotaCounterKey,
         quotaPeriodKey, options, optionalCallback)
@@ -254,18 +191,7 @@ items:
         - id: quotaCounterKey
           type:
             - string
-          description: >-
-            Quota counter key identifier.This is the
-
-            result of expression defined in counter-key attribute of the
-            quota-by-key
-
-            policy.For Example, if you specify counter-key="boo" in the policy,
-            then
-
-            it’s accessible by "boo" counter key. But if it’s defined as
-
-            counter-key="@("b"+"a")" then it will be accessible by "ba" key
+          description: "Quota counter key identifier.This is the\rresult of expression defined in counter-key attribute of the quota-by-key\rpolicy.For Example, if you specify counter-key=\"boo\" in the policy, then\rit’s accessible by \"boo\" counter key. But if it’s defined as\rcounter-key=\"@(\"b\"+\"a\")\" then it will be accessible by \"ba\" key"
         - id: quotaPeriodKey
           type:
             - string
@@ -273,9 +199,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The value of the Quota counter to be applied on
-            the specified period.
+          description: "The value of the Quota counter to be applied on\rthe specified period."
         - id: parameters.callsCount
           type:
             - number
@@ -294,9 +218,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -325,30 +247,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -363,18 +263,7 @@ items:
         - id: quotaCounterKey
           type:
             - string
-          description: >-
-            Quota counter key identifier.This is the
-
-            result of expression defined in counter-key attribute of the
-            quota-by-key
-
-            policy.For Example, if you specify counter-key="boo" in the policy,
-            then
-
-            it’s accessible by "boo" counter key. But if it’s defined as
-
-            counter-key="@("b"+"a")" then it will be accessible by "ba" key
+          description: "Quota counter key identifier.This is the\rresult of expression defined in counter-key attribute of the quota-by-key\rpolicy.For Example, if you specify counter-key=\"boo\" in the policy, then\rit’s accessible by \"boo\" counter key. But if it’s defined as\rcounter-key=\"@(\"b\"+\"a\")\" then it will be accessible by \"ba\" key"
         - id: quotaPeriodKey
           type:
             - string
@@ -382,9 +271,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The value of the Quota counter to be applied on
-            the specified period.
+          description: "The value of the Quota counter to be applied on\rthe specified period."
         - id: parameters.callsCount
           type:
             - number
@@ -403,9 +290,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -416,11 +301,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function update(resourceGroupName, serviceName, quotaCounterKey,
         quotaPeriodKey, parameters, options, optionalCallback)

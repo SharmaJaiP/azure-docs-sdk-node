@@ -16,38 +16,6 @@ items:
     type: Class
     children:
       - 'azure-arm-scheduler.JobCollections.#ctor'
-      - >-
-        azure-arm-scheduler.JobCollections#listBySubscriptionWithHttpOperationResponse
-      - 'azure-arm-scheduler.JobCollections#listBySubscription'
-      - >-
-        azure-arm-scheduler.JobCollections#listByResourceGroupWithHttpOperationResponse
-      - 'azure-arm-scheduler.JobCollections#listByResourceGroup'
-      - 'azure-arm-scheduler.JobCollections#getWithHttpOperationResponse'
-      - 'azure-arm-scheduler.JobCollections#get'
-      - >-
-        azure-arm-scheduler.JobCollections#createOrUpdateWithHttpOperationResponse
-      - 'azure-arm-scheduler.JobCollections#createOrUpdate'
-      - 'azure-arm-scheduler.JobCollections#patchWithHttpOperationResponse'
-      - 'azure-arm-scheduler.JobCollections#patch'
-      - 'azure-arm-scheduler.JobCollections#deleteMethodWithHttpOperationResponse'
-      - 'azure-arm-scheduler.JobCollections#deleteMethod'
-      - 'azure-arm-scheduler.JobCollections#enableWithHttpOperationResponse'
-      - 'azure-arm-scheduler.JobCollections#enable'
-      - 'azure-arm-scheduler.JobCollections#disableWithHttpOperationResponse'
-      - 'azure-arm-scheduler.JobCollections#disable'
-      - >-
-        azure-arm-scheduler.JobCollections#beginDeleteMethodWithHttpOperationResponse
-      - 'azure-arm-scheduler.JobCollections#beginDeleteMethod'
-      - 'azure-arm-scheduler.JobCollections#beginEnableWithHttpOperationResponse'
-      - 'azure-arm-scheduler.JobCollections#beginEnable'
-      - 'azure-arm-scheduler.JobCollections#beginDisableWithHttpOperationResponse'
-      - 'azure-arm-scheduler.JobCollections#beginDisable'
-      - >-
-        azure-arm-scheduler.JobCollections#listBySubscriptionNextWithHttpOperationResponse
-      - 'azure-arm-scheduler.JobCollections#listBySubscriptionNext'
-      - >-
-        azure-arm-scheduler.JobCollections#listByResourceGroupNextWithHttpOperationResponse
-      - 'azure-arm-scheduler.JobCollections#listByResourceGroupNext'
     langs:
       - js
   - id: 'azure-arm-scheduler.JobCollections.#ctor'
@@ -99,9 +67,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -125,34 +91,8 @@ items:
         value: '{JobCollectionListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -164,9 +104,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -177,11 +115,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listBySubscription(options, optionalCallback)'
     langs:
       - js
@@ -223,9 +157,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -251,34 +183,8 @@ items:
         value: '{JobCollectionListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -294,9 +200,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -307,11 +211,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -359,9 +259,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -387,34 +285,8 @@ items:
         value: '{JobCollectionDefinition} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionDefinition} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionDefinition} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionDefinition} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionDefinition} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -434,9 +306,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -447,11 +317,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, jobCollectionName, options,
         optionalCallback)
@@ -498,16 +364,12 @@ items:
         - id: jobCollection.name
           type:
             - string
-          description: |-
-            Gets or sets the job collection
-            resource name.
+          description: "Gets or sets the job collection\rresource name."
           optional: true
         - id: jobCollection.location
           type:
             - string
-          description: |-
-            Gets or sets the storage account
-            location.
+          description: "Gets or sets the storage account\rlocation."
           optional: true
         - id: jobCollection.tags
           type:
@@ -517,9 +379,7 @@ items:
         - id: jobCollection.properties
           type:
             - object
-          description: |-
-            Gets or sets the job collection
-            properties.
+          description: "Gets or sets the job collection\rproperties."
           optional: true
         - id: jobCollection.properties.sku
           type:
@@ -529,65 +389,42 @@ items:
         - id: jobCollection.properties.sku.name
           type:
             - string
-          description: >-
-            Gets or set the SKU.
-
-            Possible values include: 'Standard', 'Free', 'P10Premium',
-            'P20Premium'
+          description: "Gets or set the SKU.\rPossible values include: 'Standard', 'Free', 'P10Premium', 'P20Premium'"
           optional: true
         - id: jobCollection.properties.state
           type:
             - string
-          description: >-
-            Gets or sets the state.
-
-            Possible values include: 'Enabled', 'Disabled', 'Suspended',
-            'Deleted'
+          description: "Gets or sets the state.\rPossible values include: 'Enabled', 'Disabled', 'Suspended', 'Deleted'"
           optional: true
         - id: jobCollection.properties.quota
           type:
             - object
-          description: |-
-            Gets or sets the job
-            collection quota.
+          description: "Gets or sets the job\rcollection quota."
           optional: true
         - id: jobCollection.properties.quota.maxJobCount
           type:
             - number
-          description: |-
-            Gets or set the
-            maximum job count.
+          description: "Gets or set the\rmaximum job count."
           optional: true
         - id: jobCollection.properties.quota.maxJobOccurrence
           type:
             - number
-          description: |-
-            Gets or
-            sets the maximum job occurrence.
+          description: "Gets or\rsets the maximum job occurrence."
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence
           type:
             - object
-          description: |-
-            Gets or set
-            the maximum recurrence.
+          description: "Gets or set\rthe maximum recurrence."
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence.frequency
           type:
             - string
-          description: >-
-            Gets or sets the frequency of recurrence (second, minute, hour, day,
-            week,
-
-            month). Possible values include: 'Minute', 'Hour', 'Day', 'Week',
-            'Month'
+          description: "Gets or sets the frequency of recurrence (second, minute, hour, day, week,\rmonth). Possible values include: 'Minute', 'Hour', 'Day', 'Week', 'Month'"
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence.interval
           type:
             - number
-          description: |-
-            Gets
-            or sets the interval between retries.
+          description: "Gets\ror sets the interval between retries."
           optional: true
         - id: options
           type:
@@ -597,9 +434,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -627,34 +462,8 @@ items:
         value: '{JobCollectionDefinition} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionDefinition} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionDefinition} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionDefinition} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionDefinition} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -673,16 +482,12 @@ items:
         - id: jobCollection.name
           type:
             - string
-          description: |-
-            Gets or sets the job collection
-            resource name.
+          description: "Gets or sets the job collection\rresource name."
           optional: true
         - id: jobCollection.location
           type:
             - string
-          description: |-
-            Gets or sets the storage account
-            location.
+          description: "Gets or sets the storage account\rlocation."
           optional: true
         - id: jobCollection.tags
           type:
@@ -692,9 +497,7 @@ items:
         - id: jobCollection.properties
           type:
             - object
-          description: |-
-            Gets or sets the job collection
-            properties.
+          description: "Gets or sets the job collection\rproperties."
           optional: true
         - id: jobCollection.properties.sku
           type:
@@ -704,65 +507,42 @@ items:
         - id: jobCollection.properties.sku.name
           type:
             - string
-          description: >-
-            Gets or set the SKU.
-
-            Possible values include: 'Standard', 'Free', 'P10Premium',
-            'P20Premium'
+          description: "Gets or set the SKU.\rPossible values include: 'Standard', 'Free', 'P10Premium', 'P20Premium'"
           optional: true
         - id: jobCollection.properties.state
           type:
             - string
-          description: >-
-            Gets or sets the state.
-
-            Possible values include: 'Enabled', 'Disabled', 'Suspended',
-            'Deleted'
+          description: "Gets or sets the state.\rPossible values include: 'Enabled', 'Disabled', 'Suspended', 'Deleted'"
           optional: true
         - id: jobCollection.properties.quota
           type:
             - object
-          description: |-
-            Gets or sets the job
-            collection quota.
+          description: "Gets or sets the job\rcollection quota."
           optional: true
         - id: jobCollection.properties.quota.maxJobCount
           type:
             - number
-          description: |-
-            Gets or set the
-            maximum job count.
+          description: "Gets or set the\rmaximum job count."
           optional: true
         - id: jobCollection.properties.quota.maxJobOccurrence
           type:
             - number
-          description: |-
-            Gets or
-            sets the maximum job occurrence.
+          description: "Gets or\rsets the maximum job occurrence."
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence
           type:
             - object
-          description: |-
-            Gets or set
-            the maximum recurrence.
+          description: "Gets or set\rthe maximum recurrence."
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence.frequency
           type:
             - string
-          description: >-
-            Gets or sets the frequency of recurrence (second, minute, hour, day,
-            week,
-
-            month). Possible values include: 'Minute', 'Hour', 'Day', 'Week',
-            'Month'
+          description: "Gets or sets the frequency of recurrence (second, minute, hour, day, week,\rmonth). Possible values include: 'Minute', 'Hour', 'Day', 'Week', 'Month'"
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence.interval
           type:
             - number
-          description: |-
-            Gets
-            or sets the interval between retries.
+          description: "Gets\ror sets the interval between retries."
           optional: true
         - id: options
           type:
@@ -772,9 +552,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -785,11 +563,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, jobCollectionName,
         jobCollection, options, optionalCallback)
@@ -836,16 +610,12 @@ items:
         - id: jobCollection.name
           type:
             - string
-          description: |-
-            Gets or sets the job collection
-            resource name.
+          description: "Gets or sets the job collection\rresource name."
           optional: true
         - id: jobCollection.location
           type:
             - string
-          description: |-
-            Gets or sets the storage account
-            location.
+          description: "Gets or sets the storage account\rlocation."
           optional: true
         - id: jobCollection.tags
           type:
@@ -855,9 +625,7 @@ items:
         - id: jobCollection.properties
           type:
             - object
-          description: |-
-            Gets or sets the job collection
-            properties.
+          description: "Gets or sets the job collection\rproperties."
           optional: true
         - id: jobCollection.properties.sku
           type:
@@ -867,65 +635,42 @@ items:
         - id: jobCollection.properties.sku.name
           type:
             - string
-          description: >-
-            Gets or set the SKU.
-
-            Possible values include: 'Standard', 'Free', 'P10Premium',
-            'P20Premium'
+          description: "Gets or set the SKU.\rPossible values include: 'Standard', 'Free', 'P10Premium', 'P20Premium'"
           optional: true
         - id: jobCollection.properties.state
           type:
             - string
-          description: >-
-            Gets or sets the state.
-
-            Possible values include: 'Enabled', 'Disabled', 'Suspended',
-            'Deleted'
+          description: "Gets or sets the state.\rPossible values include: 'Enabled', 'Disabled', 'Suspended', 'Deleted'"
           optional: true
         - id: jobCollection.properties.quota
           type:
             - object
-          description: |-
-            Gets or sets the job
-            collection quota.
+          description: "Gets or sets the job\rcollection quota."
           optional: true
         - id: jobCollection.properties.quota.maxJobCount
           type:
             - number
-          description: |-
-            Gets or set the
-            maximum job count.
+          description: "Gets or set the\rmaximum job count."
           optional: true
         - id: jobCollection.properties.quota.maxJobOccurrence
           type:
             - number
-          description: |-
-            Gets or
-            sets the maximum job occurrence.
+          description: "Gets or\rsets the maximum job occurrence."
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence
           type:
             - object
-          description: |-
-            Gets or set
-            the maximum recurrence.
+          description: "Gets or set\rthe maximum recurrence."
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence.frequency
           type:
             - string
-          description: >-
-            Gets or sets the frequency of recurrence (second, minute, hour, day,
-            week,
-
-            month). Possible values include: 'Minute', 'Hour', 'Day', 'Week',
-            'Month'
+          description: "Gets or sets the frequency of recurrence (second, minute, hour, day, week,\rmonth). Possible values include: 'Minute', 'Hour', 'Day', 'Week', 'Month'"
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence.interval
           type:
             - number
-          description: |-
-            Gets
-            or sets the interval between retries.
+          description: "Gets\ror sets the interval between retries."
           optional: true
         - id: options
           type:
@@ -935,9 +680,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -965,34 +708,8 @@ items:
         value: '{JobCollectionDefinition} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionDefinition} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionDefinition} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionDefinition} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionDefinition} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1011,16 +728,12 @@ items:
         - id: jobCollection.name
           type:
             - string
-          description: |-
-            Gets or sets the job collection
-            resource name.
+          description: "Gets or sets the job collection\rresource name."
           optional: true
         - id: jobCollection.location
           type:
             - string
-          description: |-
-            Gets or sets the storage account
-            location.
+          description: "Gets or sets the storage account\rlocation."
           optional: true
         - id: jobCollection.tags
           type:
@@ -1030,9 +743,7 @@ items:
         - id: jobCollection.properties
           type:
             - object
-          description: |-
-            Gets or sets the job collection
-            properties.
+          description: "Gets or sets the job collection\rproperties."
           optional: true
         - id: jobCollection.properties.sku
           type:
@@ -1042,65 +753,42 @@ items:
         - id: jobCollection.properties.sku.name
           type:
             - string
-          description: >-
-            Gets or set the SKU.
-
-            Possible values include: 'Standard', 'Free', 'P10Premium',
-            'P20Premium'
+          description: "Gets or set the SKU.\rPossible values include: 'Standard', 'Free', 'P10Premium', 'P20Premium'"
           optional: true
         - id: jobCollection.properties.state
           type:
             - string
-          description: >-
-            Gets or sets the state.
-
-            Possible values include: 'Enabled', 'Disabled', 'Suspended',
-            'Deleted'
+          description: "Gets or sets the state.\rPossible values include: 'Enabled', 'Disabled', 'Suspended', 'Deleted'"
           optional: true
         - id: jobCollection.properties.quota
           type:
             - object
-          description: |-
-            Gets or sets the job
-            collection quota.
+          description: "Gets or sets the job\rcollection quota."
           optional: true
         - id: jobCollection.properties.quota.maxJobCount
           type:
             - number
-          description: |-
-            Gets or set the
-            maximum job count.
+          description: "Gets or set the\rmaximum job count."
           optional: true
         - id: jobCollection.properties.quota.maxJobOccurrence
           type:
             - number
-          description: |-
-            Gets or
-            sets the maximum job occurrence.
+          description: "Gets or\rsets the maximum job occurrence."
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence
           type:
             - object
-          description: |-
-            Gets or set
-            the maximum recurrence.
+          description: "Gets or set\rthe maximum recurrence."
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence.frequency
           type:
             - string
-          description: >-
-            Gets or sets the frequency of recurrence (second, minute, hour, day,
-            week,
-
-            month). Possible values include: 'Minute', 'Hour', 'Day', 'Week',
-            'Month'
+          description: "Gets or sets the frequency of recurrence (second, minute, hour, day, week,\rmonth). Possible values include: 'Minute', 'Hour', 'Day', 'Week', 'Month'"
           optional: true
         - id: jobCollection.properties.quota.maxRecurrence.interval
           type:
             - number
-          description: |-
-            Gets
-            or sets the interval between retries.
+          description: "Gets\ror sets the interval between retries."
           optional: true
         - id: options
           type:
@@ -1110,9 +798,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1123,11 +809,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function patch(resourceGroupName, jobCollectionName, jobCollection,
         options, optionalCallback)
@@ -1171,9 +853,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1201,30 +881,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1244,9 +902,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1257,11 +913,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, jobCollectionName, options,
         optionalCallback)
@@ -1305,9 +957,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1333,30 +983,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1376,9 +1004,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1389,11 +1015,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function enable(resourceGroupName, jobCollectionName, options,
         optionalCallback)
@@ -1437,9 +1059,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1465,30 +1085,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1508,9 +1106,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1521,11 +1117,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function disable(resourceGroupName, jobCollectionName, options,
         optionalCallback)
@@ -1571,9 +1163,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1601,30 +1191,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1644,9 +1212,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1657,11 +1223,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginDeleteMethod(resourceGroupName, jobCollectionName,
         options, optionalCallback)
@@ -1705,9 +1267,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1735,30 +1295,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1778,9 +1316,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1791,11 +1327,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginEnable(resourceGroupName, jobCollectionName, options,
         optionalCallback)
@@ -1839,9 +1371,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1869,30 +1399,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1912,9 +1420,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1925,11 +1431,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginDisable(resourceGroupName, jobCollectionName, options,
         optionalCallback)
@@ -1964,9 +1466,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1975,9 +1475,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2003,43 +1501,15 @@ items:
         value: '{JobCollectionListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2048,9 +1518,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2061,11 +1529,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listBySubscriptionNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -2098,9 +1562,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2109,9 +1571,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2137,43 +1597,15 @@ items:
         value: '{JobCollectionListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link JobCollectionListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link JobCollectionListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2182,9 +1614,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2195,11 +1625,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)

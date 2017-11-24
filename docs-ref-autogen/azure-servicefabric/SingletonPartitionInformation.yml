@@ -3,10 +3,7 @@ items:
   - uid: azure-servicefabric.SingletonPartitionInformation
     id: azure-servicefabric.SingletonPartitionInformation
     name: SingletonPartitionInformation
-    summary: |-
-      Information about a partition that is singleton. The services with
-      singletone partitioning scheme are effectively non-partitioned. They only
-      have one partition.
+    summary: "Information about a partition that is singleton. The services with\rsingletone partitioning scheme are effectively non-partitioned. They only\rhave one partition."
     fullName: azure-servicefabric.SingletonPartitionInformation
     source:
       id: azure-servicefabric.SingletonPartitionInformation
@@ -19,7 +16,6 @@ items:
     type: Class
     children:
       - 'azure-servicefabric.SingletonPartitionInformation.#ctor'
-      - 'azure-servicefabric.SingletonPartitionInformation#mapper'
     langs:
       - js
   - id: 'azure-servicefabric.SingletonPartitionInformation.#ctor'

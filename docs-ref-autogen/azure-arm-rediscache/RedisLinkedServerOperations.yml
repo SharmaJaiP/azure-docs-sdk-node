@@ -18,21 +18,6 @@ items:
     type: Class
     children:
       - 'azure-arm-rediscache.RedisLinkedServerOperations.#ctor'
-      - >-
-        azure-arm-rediscache.RedisLinkedServerOperations#createWithHttpOperationResponse
-      - 'azure-arm-rediscache.RedisLinkedServerOperations#create'
-      - >-
-        azure-arm-rediscache.RedisLinkedServerOperations#deleteMethodWithHttpOperationResponse
-      - 'azure-arm-rediscache.RedisLinkedServerOperations#deleteMethod'
-      - >-
-        azure-arm-rediscache.RedisLinkedServerOperations#getWithHttpOperationResponse
-      - 'azure-arm-rediscache.RedisLinkedServerOperations#get'
-      - >-
-        azure-arm-rediscache.RedisLinkedServerOperations#listWithHttpOperationResponse
-      - 'azure-arm-rediscache.RedisLinkedServerOperations#list'
-      - >-
-        azure-arm-rediscache.RedisLinkedServerOperations#beginCreateWithHttpOperationResponse
-      - 'azure-arm-rediscache.RedisLinkedServerOperations#beginCreate'
     langs:
       - js
   - id: 'azure-arm-rediscache.RedisLinkedServerOperations.#ctor'
@@ -91,33 +76,23 @@ items:
         - id: linkedServerName
           type:
             - string
-          description: |-
-            The name of the linked server that is being
-            added to the Redis cache.
+          description: "The name of the linked server that is being\radded to the Redis cache."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create Linked server
-            operation.
+          description: "Parameters supplied to the Create Linked server\roperation."
         - id: parameters.linkedRedisCacheId
           type:
             - string
-          description: |-
-            Fully qualified resourceId of
-            the linked redis cache.
+          description: "Fully qualified resourceId of\rthe linked redis cache."
         - id: parameters.linkedRedisCacheLocation
           type:
             - string
-          description: |-
-            Location of the linked
-            redis cache.
+          description: "Location of the linked\rredis cache."
         - id: parameters.serverRole
           type:
             - string
-          description: |-
-            Role of the linked server. Possible
-            values include: 'Primary', 'Secondary'
+          description: "Role of the linked server. Possible\rvalues include: 'Primary', 'Secondary'"
         - id: options
           type:
             - object
@@ -126,9 +101,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -156,34 +129,8 @@ items:
         value: '{RedisLinkedServerWithProperties} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RedisLinkedServerWithProperties} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RedisLinkedServerWithProperties} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisLinkedServerWithProperties} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisLinkedServerWithProperties} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -198,33 +145,23 @@ items:
         - id: linkedServerName
           type:
             - string
-          description: |-
-            The name of the linked server that is being
-            added to the Redis cache.
+          description: "The name of the linked server that is being\radded to the Redis cache."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create Linked server
-            operation.
+          description: "Parameters supplied to the Create Linked server\roperation."
         - id: parameters.linkedRedisCacheId
           type:
             - string
-          description: |-
-            Fully qualified resourceId of
-            the linked redis cache.
+          description: "Fully qualified resourceId of\rthe linked redis cache."
         - id: parameters.linkedRedisCacheLocation
           type:
             - string
-          description: |-
-            Location of the linked
-            redis cache.
+          description: "Location of the linked\rredis cache."
         - id: parameters.serverRole
           type:
             - string
-          description: |-
-            Role of the linked server. Possible
-            values include: 'Primary', 'Secondary'
+          description: "Role of the linked server. Possible\rvalues include: 'Primary', 'Secondary'"
         - id: options
           type:
             - object
@@ -233,9 +170,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -246,11 +181,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function create(resourceGroupName, name, linkedServerName, parameters,
         options, optionalCallback)
@@ -291,9 +222,7 @@ items:
         - id: linkedServerName
           type:
             - string
-          description: |-
-            The name of the linked server that is being
-            added to the Redis cache.
+          description: "The name of the linked server that is being\radded to the Redis cache."
         - id: options
           type:
             - object
@@ -302,9 +231,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -332,30 +259,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -370,9 +275,7 @@ items:
         - id: linkedServerName
           type:
             - string
-          description: |-
-            The name of the linked server that is being
-            added to the Redis cache.
+          description: "The name of the linked server that is being\radded to the Redis cache."
         - id: options
           type:
             - object
@@ -381,9 +284,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -394,11 +295,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, name, linkedServerName,
         options, optionalCallback)
@@ -412,9 +309,7 @@ items:
     name: >-
       getWithHttpOperationResponse(resourceGroupName, name, linkedServerName,
       options)
-    summary: |-
-      Gets the detailed information about a linked server of a redis cache
-      (requires Premium SKU).
+    summary: "Gets the detailed information about a linked server of a redis cache\r(requires Premium SKU)."
     fullName: >-
       azure-arm-rediscache.RedisLinkedServerOperations.getWithHttpOperationResponse(resourceGroupName,
       name, linkedServerName, options)
@@ -454,9 +349,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -471,9 +364,7 @@ items:
     id: 'azure-arm-rediscache.RedisLinkedServerOperations#get'
     parent: azure-arm-rediscache.RedisLinkedServerOperations
     name: 'get(resourceGroupName, name, linkedServerName, options, optionalCallback)'
-    summary: |-
-      Gets the detailed information about a linked server of a redis cache
-      (requires Premium SKU).
+    summary: "Gets the detailed information about a linked server of a redis cache\r(requires Premium SKU)."
     fullName: >-
       azure-arm-rediscache.RedisLinkedServerOperations.get(resourceGroupName,
       name, linkedServerName, options, optionalCallback)
@@ -484,34 +375,8 @@ items:
         value: '{RedisLinkedServerWithProperties} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RedisLinkedServerWithProperties} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RedisLinkedServerWithProperties} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisLinkedServerWithProperties} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisLinkedServerWithProperties} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -535,9 +400,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -548,11 +411,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, name, linkedServerName, options,
         optionalCallback)
@@ -564,9 +423,7 @@ items:
       azure-arm-rediscache.RedisLinkedServerOperations#listWithHttpOperationResponse
     parent: azure-arm-rediscache.RedisLinkedServerOperations
     name: 'listWithHttpOperationResponse(resourceGroupName, name, options)'
-    summary: |-
-      Gets the list of linked servers associated with this redis cache (requires
-      Premium SKU).
+    summary: "Gets the list of linked servers associated with this redis cache (requires\rPremium SKU)."
     fullName: >-
       azure-arm-rediscache.RedisLinkedServerOperations.listWithHttpOperationResponse(resourceGroupName,
       name, options)
@@ -602,9 +459,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -617,9 +472,7 @@ items:
     id: 'azure-arm-rediscache.RedisLinkedServerOperations#list'
     parent: azure-arm-rediscache.RedisLinkedServerOperations
     name: 'list(resourceGroupName, name, options, optionalCallback)'
-    summary: |-
-      Gets the list of linked servers associated with this redis cache (requires
-      Premium SKU).
+    summary: "Gets the list of linked servers associated with this redis cache (requires\rPremium SKU)."
     fullName: >-
       azure-arm-rediscache.RedisLinkedServerOperations.list(resourceGroupName,
       name, options, optionalCallback)
@@ -634,34 +487,8 @@ items:
           object.
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RedisLinkedServerWithPropertiesList} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RedisLinkedServerWithPropertiesList} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisLinkedServerWithPropertiesList} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisLinkedServerWithPropertiesList} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -681,9 +508,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -694,11 +519,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(resourceGroupName, name, options, optionalCallback)'
     langs:
       - js
@@ -741,33 +562,23 @@ items:
         - id: linkedServerName
           type:
             - string
-          description: |-
-            The name of the linked server that is being
-            added to the Redis cache.
+          description: "The name of the linked server that is being\radded to the Redis cache."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create Linked server
-            operation.
+          description: "Parameters supplied to the Create Linked server\roperation."
         - id: parameters.linkedRedisCacheId
           type:
             - string
-          description: |-
-            Fully qualified resourceId of
-            the linked redis cache.
+          description: "Fully qualified resourceId of\rthe linked redis cache."
         - id: parameters.linkedRedisCacheLocation
           type:
             - string
-          description: |-
-            Location of the linked
-            redis cache.
+          description: "Location of the linked\rredis cache."
         - id: parameters.serverRole
           type:
             - string
-          description: |-
-            Role of the linked server. Possible
-            values include: 'Primary', 'Secondary'
+          description: "Role of the linked server. Possible\rvalues include: 'Primary', 'Secondary'"
         - id: options
           type:
             - object
@@ -776,9 +587,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -806,34 +615,8 @@ items:
         value: '{RedisLinkedServerWithProperties} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RedisLinkedServerWithProperties} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RedisLinkedServerWithProperties} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisLinkedServerWithProperties} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisLinkedServerWithProperties} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -848,33 +631,23 @@ items:
         - id: linkedServerName
           type:
             - string
-          description: |-
-            The name of the linked server that is being
-            added to the Redis cache.
+          description: "The name of the linked server that is being\radded to the Redis cache."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create Linked server
-            operation.
+          description: "Parameters supplied to the Create Linked server\roperation."
         - id: parameters.linkedRedisCacheId
           type:
             - string
-          description: |-
-            Fully qualified resourceId of
-            the linked redis cache.
+          description: "Fully qualified resourceId of\rthe linked redis cache."
         - id: parameters.linkedRedisCacheLocation
           type:
             - string
-          description: |-
-            Location of the linked
-            redis cache.
+          description: "Location of the linked\rredis cache."
         - id: parameters.serverRole
           type:
             - string
-          description: |-
-            Role of the linked server. Possible
-            values include: 'Primary', 'Secondary'
+          description: "Role of the linked server. Possible\rvalues include: 'Primary', 'Secondary'"
         - id: options
           type:
             - object
@@ -883,9 +656,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -896,11 +667,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreate(resourceGroupName, name, linkedServerName,
         parameters, options, optionalCallback)

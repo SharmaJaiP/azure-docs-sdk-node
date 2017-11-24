@@ -3,9 +3,7 @@ items:
   - uid: azure-servicefabric.WaitForPrimaryPlacementSafetyCheck
     id: azure-servicefabric.WaitForPrimaryPlacementSafetyCheck
     name: WaitForPrimaryPlacementSafetyCheck
-    summary: |-
-      Safety check that waits for the primary replica that was moved out of the
-      node due to upgrade to be placed back again on that node.
+    summary: "Safety check that waits for the primary replica that was moved out of the\rnode due to upgrade to be placed back again on that node."
     fullName: azure-servicefabric.WaitForPrimaryPlacementSafetyCheck
     source:
       id: azure-servicefabric.WaitForPrimaryPlacementSafetyCheck
@@ -20,7 +18,6 @@ items:
     type: Class
     children:
       - 'azure-servicefabric.WaitForPrimaryPlacementSafetyCheck.#ctor'
-      - 'azure-servicefabric.WaitForPrimaryPlacementSafetyCheck#mapper'
     langs:
       - js
   - id: 'azure-servicefabric.WaitForPrimaryPlacementSafetyCheck.#ctor'

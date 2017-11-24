@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-datafactory.WebAnonymousAuthentication
     id: azure-arm-datafactory.WebAnonymousAuthentication
     name: WebAnonymousAuthentication
-    summary: >-
-      A WebLinkedService that uses anonymous authentication to communicate with
-      an
-
-      HTTP endpoint.
+    summary: "A WebLinkedService that uses anonymous authentication to communicate with an\rHTTP endpoint."
     fullName: azure-arm-datafactory.WebAnonymousAuthentication
     source:
       id: azure-arm-datafactory.WebAnonymousAuthentication
@@ -22,7 +18,6 @@ items:
     type: Class
     children:
       - 'azure-arm-datafactory.WebAnonymousAuthentication.#ctor'
-      - 'azure-arm-datafactory.WebAnonymousAuthentication#mapper'
     langs:
       - js
   - id: 'azure-arm-datafactory.WebAnonymousAuthentication.#ctor'

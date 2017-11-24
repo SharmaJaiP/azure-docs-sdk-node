@@ -18,15 +18,6 @@ items:
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.ProtectionPolicies.#ctor'
-      - >-
-        azure-arm-recoveryservicesbackup.ProtectionPolicies#getWithHttpOperationResponse
-      - 'azure-arm-recoveryservicesbackup.ProtectionPolicies#get'
-      - >-
-        azure-arm-recoveryservicesbackup.ProtectionPolicies#createOrUpdateWithHttpOperationResponse
-      - 'azure-arm-recoveryservicesbackup.ProtectionPolicies#createOrUpdate'
-      - >-
-        azure-arm-recoveryservicesbackup.ProtectionPolicies#deleteMethodWithHttpOperationResponse
-      - 'azure-arm-recoveryservicesbackup.ProtectionPolicies#deleteMethod'
     langs:
       - js
   - id: 'azure-arm-recoveryservicesbackup.ProtectionPolicies.#ctor'
@@ -54,13 +45,7 @@ items:
     name: >-
       getWithHttpOperationResponse(vaultName, resourceGroupName, policyName,
       options)
-    summary: >-
-      Provides the details of the backup policies associated to Recovery
-      Services
-
-      Vault. This is an asynchronous operation. Status of the operation can be
-
-      fetched using GetPolicyOperationResult API.
+    summary: "Provides the details of the backup policies associated to Recovery Services\rVault. This is an asynchronous operation. Status of the operation can be\rfetched using GetPolicyOperationResult API."
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicies.getWithHttpOperationResponse(vaultName,
       resourceGroupName, policyName, options)
@@ -87,9 +72,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group where the
-            recovery services vault is present.
+          description: "The name of the resource group where the\rrecovery services vault is present."
         - id: policyName
           type:
             - string
@@ -102,9 +85,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -119,13 +100,7 @@ items:
     id: 'azure-arm-recoveryservicesbackup.ProtectionPolicies#get'
     parent: azure-arm-recoveryservicesbackup.ProtectionPolicies
     name: 'get(vaultName, resourceGroupName, policyName, options, optionalCallback)'
-    summary: >-
-      Provides the details of the backup policies associated to Recovery
-      Services
-
-      Vault. This is an asynchronous operation. Status of the operation can be
-
-      fetched using GetPolicyOperationResult API.
+    summary: "Provides the details of the backup policies associated to Recovery Services\rVault. This is an asynchronous operation. Status of the operation can be\rfetched using GetPolicyOperationResult API."
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicies.get(vaultName,
       resourceGroupName, policyName, options, optionalCallback)
@@ -136,34 +111,8 @@ items:
         value: '{ProtectionPolicyResource} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProtectionPolicyResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProtectionPolicyResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProtectionPolicyResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProtectionPolicyResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -174,9 +123,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group where the
-            recovery services vault is present.
+          description: "The name of the resource group where the\rrecovery services vault is present."
         - id: policyName
           type:
             - string
@@ -189,9 +136,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -202,11 +147,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(vaultName, resourceGroupName, policyName, options,
         optionalCallback)
@@ -220,9 +161,7 @@ items:
     name: >-
       createOrUpdateWithHttpOperationResponse(vaultName, resourceGroupName,
       policyName, parameters, options)
-    summary: |-
-      Creates or modifies a backup policy. This is an asynchronous operation.
-      Status of the operation can be fetched using GetPolicyOperationResult API.
+    summary: "Creates or modifies a backup policy. This is an asynchronous operation.\rStatus of the operation can be fetched using GetPolicyOperationResult API."
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicies.createOrUpdateWithHttpOperationResponse(vaultName,
       resourceGroupName, policyName, parameters, options)
@@ -249,9 +188,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group where the
-            recovery services vault is present.
+          description: "The name of the resource group where the\rrecovery services vault is present."
         - id: policyName
           type:
             - string
@@ -268,16 +205,12 @@ items:
         - id: parameters.properties.protectedItemsCount
           type:
             - number
-          description: |-
-            Number of items
-            associated with this policy.
+          description: "Number of items\rassociated with this policy."
           optional: true
         - id: parameters.properties.backupManagementType
           type:
             - string
-          description: |-
-            Polymorphic
-            Discriminator
+          description: "Polymorphic\rDiscriminator"
         - id: parameters.location
           type:
             - string
@@ -301,9 +234,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -320,9 +251,7 @@ items:
     name: >-
       createOrUpdate(vaultName, resourceGroupName, policyName, parameters,
       options, optionalCallback)
-    summary: |-
-      Creates or modifies a backup policy. This is an asynchronous operation.
-      Status of the operation can be fetched using GetPolicyOperationResult API.
+    summary: "Creates or modifies a backup policy. This is an asynchronous operation.\rStatus of the operation can be fetched using GetPolicyOperationResult API."
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicies.createOrUpdate(vaultName,
       resourceGroupName, policyName, parameters, options, optionalCallback)
@@ -333,34 +262,8 @@ items:
         value: '{ProtectionPolicyResource} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProtectionPolicyResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProtectionPolicyResource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProtectionPolicyResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProtectionPolicyResource} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -371,9 +274,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group where the
-            recovery services vault is present.
+          description: "The name of the resource group where the\rrecovery services vault is present."
         - id: policyName
           type:
             - string
@@ -390,16 +291,12 @@ items:
         - id: parameters.properties.protectedItemsCount
           type:
             - number
-          description: |-
-            Number of items
-            associated with this policy.
+          description: "Number of items\rassociated with this policy."
           optional: true
         - id: parameters.properties.backupManagementType
           type:
             - string
-          description: |-
-            Polymorphic
-            Discriminator
+          description: "Polymorphic\rDiscriminator"
         - id: parameters.location
           type:
             - string
@@ -423,9 +320,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -436,11 +331,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(vaultName, resourceGroupName, policyName,
         parameters, options, optionalCallback)
@@ -454,10 +345,7 @@ items:
     name: >-
       deleteMethodWithHttpOperationResponse(vaultName, resourceGroupName,
       policyName, options)
-    summary: |-
-      Deletes specified backup policy from your Recovery Services Vault. This is
-      an asynchronous operation. Status of the operation can be fetched using
-      GetPolicyOperationResult API.
+    summary: "Deletes specified backup policy from your Recovery Services Vault. This is\ran asynchronous operation. Status of the operation can be fetched using\rGetPolicyOperationResult API."
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicies.deleteMethodWithHttpOperationResponse(vaultName,
       resourceGroupName, policyName, options)
@@ -480,9 +368,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group where the
-            recovery services vault is present.
+          description: "The name of the resource group where the\rrecovery services vault is present."
         - id: policyName
           type:
             - string
@@ -495,9 +381,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -514,10 +398,7 @@ items:
     name: >-
       deleteMethod(vaultName, resourceGroupName, policyName, options,
       optionalCallback)
-    summary: |-
-      Deletes specified backup policy from your Recovery Services Vault. This is
-      an asynchronous operation. Status of the operation can be fetched using
-      GetPolicyOperationResult API.
+    summary: "Deletes specified backup policy from your Recovery Services Vault. This is\ran asynchronous operation. Status of the operation can be fetched using\rGetPolicyOperationResult API."
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicies.deleteMethod(vaultName,
       resourceGroupName, policyName, options, optionalCallback)
@@ -528,30 +409,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -562,9 +421,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group where the
-            recovery services vault is present.
+          description: "The name of the resource group where the\rrecovery services vault is present."
         - id: policyName
           type:
             - string
@@ -577,9 +434,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -590,11 +445,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(vaultName, resourceGroupName, policyName, options,
         optionalCallback)
