@@ -12,7 +12,7 @@
     "fs-extra": "^1.0.0",
     "glob": "^7.1.2",
     "js-yaml": "^3.10.0",
-    "node2docfx": "^1.0.35"
+    "node2docfx": "^1.0.36"
   },
   "repository": {
     "type": "git",
