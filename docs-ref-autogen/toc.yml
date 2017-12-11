@@ -1,5 +1,5 @@
-- name: azure-arm-advisor
-  uid: azure-arm-advisor
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-advisor.AdvisorManagementClient
@@ -28,8 +28,8 @@
       name: SuppressionContractListResult
     - uid: azure-arm-advisor.Suppressions
       name: Suppressions
-- name: azure-arm-analysisservices
-  uid: azure-arm-analysisservices
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-analysisservices.AnalysisServicesManagementClient
@@ -76,8 +76,8 @@
       name: SkuEnumerationForExistingResourceResult
     - uid: azure-arm-analysisservices.SkuEnumerationForNewResourceResult
       name: SkuEnumerationForNewResourceResult
-- name: azure-arm-apimanagement
-  uid: azure-arm-apimanagement
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-apimanagement.AccessInformationContract
@@ -420,8 +420,8 @@
       name: VirtualNetworkConfiguration
     - uid: azure-arm-apimanagement.X509CertificateName
       name: X509CertificateName
-- name: azure-arm-appinsights
-  uid: azure-arm-appinsights
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-appinsights.APIKeyRequest
@@ -480,8 +480,8 @@
       name: WebTestPropertiesConfiguration
     - uid: azure-arm-appinsights.WebTests
       name: WebTests
-- name: azure-arm-authorization
-  uid: azure-arm-authorization
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-authorization.AuthorizationManagementClient
@@ -534,8 +534,8 @@
       name: RoleDefinitionProperties
     - uid: azure-arm-authorization.RoleDefinitions
       name: RoleDefinitions
-- name: azure-arm-automation
-  uid: azure-arm-automation
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-automation.Activity
@@ -822,8 +822,8 @@
       name: WebhookOperations
     - uid: azure-arm-automation.WebhookUpdateParameters
       name: WebhookUpdateParameters
-- name: azure-arm-batch
-  uid: azure-arm-batch
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-batch.ActivateApplicationPackageParameters
@@ -960,8 +960,8 @@
       name: VirtualMachineConfiguration
     - uid: azure-arm-batch.WindowsConfiguration
       name: WindowsConfiguration
-- name: azure-arm-batchai
-  uid: azure-arm-batchai
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-batchai.AutoScaleSettings
@@ -1104,8 +1104,8 @@
       name: UserAccountSettings
     - uid: azure-arm-batchai.VirtualMachineConfiguration
       name: VirtualMachineConfiguration
-- name: azure-arm-billing
-  uid: azure-arm-billing
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-billing.BillingManagementClient
@@ -1138,8 +1138,8 @@
       name: Operations
     - uid: azure-arm-billing.Resource
       name: Resource
-- name: azure-arm-cdn
-  uid: azure-arm-cdn
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-cdn.CdnManagementClient
@@ -1230,8 +1230,8 @@
       name: ValidateProbeInput
     - uid: azure-arm-cdn.ValidateProbeOutput
       name: ValidateProbeOutput
-- name: azure-arm-cognitiveservices
-  uid: azure-arm-cognitiveservices
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-cognitiveservices.Accounts
@@ -1276,8 +1276,8 @@
       name: RegenerateKeyParameters
     - uid: azure-arm-cognitiveservices.Sku
       name: Sku
-- name: azure-arm-commerce
-  uid: azure-arm-commerce
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-commerce.ErrorResponse
@@ -1308,8 +1308,8 @@
       name: UsageAggregationListResult
     - uid: azure-arm-commerce.UsageManagementClient
       name: UsageManagementClient
-- name: azure-arm-compute
-  uid: azure-arm-compute
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-compute.AccessUri
@@ -1662,8 +1662,8 @@
       name: WinRMConfiguration
     - uid: azure-arm-compute.WinRMListener
       name: WinRMListener
-- name: azure-arm-consumption
-  uid: azure-arm-consumption
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-consumption.ConsumptionManagementClient
@@ -1690,8 +1690,8 @@
       name: UsageDetails
     - uid: azure-arm-consumption.UsageDetailsListResult
       name: UsageDetailsListResult
-- name: azure-arm-containerinstance
-  uid: azure-arm-containerinstance
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-containerinstance.AzureFileVolume
@@ -1748,8 +1748,8 @@
       name: Volume
     - uid: azure-arm-containerinstance.VolumeMount
       name: VolumeMount
-- name: azure-arm-containerregistry
-  uid: azure-arm-containerregistry
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-containerregistry.Actor
@@ -1832,8 +1832,8 @@
       name: Webhooks
     - uid: azure-arm-containerregistry.WebhookUpdateParameters
       name: WebhookUpdateParameters
-- name: azure-arm-cosmosdb
-  uid: azure-arm-cosmosdb
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-cosmosdb.ConsistencyPolicy
@@ -1876,8 +1876,8 @@
       name: Operations
     - uid: azure-arm-cosmosdb.Resource
       name: Resource
-- name: azure-arm-customerinsights
-  uid: azure-arm-customerinsights
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-customerinsights.AssignmentPrincipal
@@ -2077,8 +2077,8 @@
       name: WidgetTypeResourceFormat
     - uid: azure-arm-customerinsights.WidgetTypes
       name: WidgetTypes
-- name: azure-arm-datafactory
-  uid: azure-arm-datafactory
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-datafactory.Activity
@@ -2711,8 +2711,8 @@
       name: ZohoObjectDataset
     - uid: azure-arm-datafactory.ZohoSource
       name: ZohoSource
-- name: azure-arm-datalake-analytics
-  uid: azure-arm-datalake-analytics
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-datalake-analytics.Account
@@ -2939,8 +2939,8 @@
       name: USqlView
     - uid: azure-arm-datalake-analytics.USqlViewList
       name: USqlViewList
-- name: azure-arm-datalake-store
-  uid: azure-arm-datalake-store
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-datalake-store.Account
@@ -3033,8 +3033,8 @@
       name: UpdateKeyVaultMetaInfo
     - uid: azure-arm-datalake-store.UpdateTrustedIdProviderParameters
       name: UpdateTrustedIdProviderParameters
-- name: azure-arm-devtestlabs
-  uid: azure-arm-devtestlabs
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-devtestlabs.ApplicableSchedule
@@ -3339,8 +3339,8 @@
       name: WeekDetailsFragment
     - uid: azure-arm-devtestlabs.WindowsOsInfo
       name: WindowsOsInfo
-- name: azure-arm-dns
-  uid: azure-arm-dns
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-dns.AaaaRecord
@@ -3381,26 +3381,18 @@
       name: ZoneListResult
     - uid: azure-arm-dns.Zones
       name: Zones
-- name: azure-arm-documentdb
-  uid: azure-arm-documentdb
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-documentdb.DatabaseAccounts
       name: DatabaseAccounts
     - uid: azure-arm-documentdb.DocumentdbManagementClient
       name: DocumentdbManagementClient
-    - uid: >-
-        azure-arm-documentdb.The List operation response, that contains the
-        database accounts and their
-
-        properties.
-      name: >-
-        The List operation response, that contains the database accounts and
-        their
-
-        properties.
-- name: azure-arm-domainservices
-  uid: azure-arm-domainservices
+    - uid: "azure-arm-documentdb.The List operation response, that contains the database accounts and their\rproperties."
+      name: "The List operation response, that contains the database accounts and their\rproperties."
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-domainservices.DomainService
@@ -3427,8 +3419,8 @@
       name: OperationEntityListResult
     - uid: azure-arm-domainservices.Resource
       name: Resource
-- name: azure-arm-eventgrid
-  uid: azure-arm-eventgrid
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-eventgrid.EventGridManagementClient
@@ -3483,8 +3475,8 @@
       name: TrackedResource
     - uid: azure-arm-eventgrid.WebHookEventSubscriptionDestination
       name: WebHookEventSubscriptionDestination
-- name: azure-arm-eventhub
-  uid: azure-arm-eventhub
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-eventhub.AccessKeys
@@ -3545,8 +3537,8 @@
       name: Sku
     - uid: azure-arm-eventhub.TrackedResource
       name: TrackedResource
-- name: azure-arm-hdinsight-jobs
-  uid: azure-arm-hdinsight-jobs
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-hdinsight-jobs.createHDInsightJobManagementClient
@@ -3556,8 +3548,8 @@
       name: HDInsightJobManagementClient
     - uid: azure-arm-hdinsight-jobs.JobOperations~JobOperations
       name: JobOperations
-- name: azure-arm-hdinsight
-  uid: azure-arm-hdinsight
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-hdinsight.ClusterOperations~ClusterOperations
@@ -3566,8 +3558,8 @@
       name: createHDInsightManagementClient
     - uid: azure-arm-hdinsight.HDInsightManagementClient~HDInsightManagementClient
       name: HDInsightManagementClient
-- name: azure-arm-insights
-  uid: azure-arm-insights
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-insights.AlertRuleIncidents
@@ -3588,8 +3580,8 @@
       name: ServiceDiagnosticSettingsOperations
     - uid: azure-arm-insights.The List incidents operation response.
       name: The List incidents operation response.
-- name: azure-arm-iothub
-  uid: azure-arm-iothub
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-iothub.CloudToDeviceProperties
@@ -3678,8 +3670,8 @@
       name: SharedAccessSignatureAuthorizationRuleListResult
     - uid: azure-arm-iothub.StorageEndpointProperties
       name: StorageEndpointProperties
-- name: azure-arm-keyvault
-  uid: azure-arm-keyvault
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-keyvault.AccessPolicyEntry
@@ -3710,8 +3702,8 @@
       name: VaultProperties
     - uid: azure-arm-keyvault.Vaults
       name: Vaults
-- name: azure-arm-logic
-  uid: azure-arm-logic
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-logic.AgreementContent
@@ -3958,8 +3950,8 @@
       name: X12ValidationOverride
     - uid: azure-arm-logic.X12ValidationSettings
       name: X12ValidationSettings
-- name: azure-arm-machinelearning
-  uid: azure-arm-machinelearning
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-machinelearning.AssetItem
@@ -4054,8 +4046,8 @@
       name: WebServicePropertiesForGraph
     - uid: azure-arm-machinelearning.WebServices
       name: WebServices
-- name: azure-arm-machinelearningcompute
-  uid: azure-arm-machinelearningcompute
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-machinelearningcompute.AcsClusterProperties
@@ -4122,8 +4114,8 @@
       name: SystemService
     - uid: azure-arm-machinelearningcompute.UpdateSystemServicesResponse
       name: UpdateSystemServicesResponse
-- name: azure-arm-marketplaceordering
-  uid: azure-arm-marketplaceordering
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-marketplaceordering.AgreementTerms
@@ -4146,8 +4138,8 @@
       name: Operations
     - uid: azure-arm-marketplaceordering.Resource
       name: Resource
-- name: azure-arm-mediaservices
-  uid: azure-arm-mediaservices
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-mediaservices.ApiEndpoint
@@ -4186,8 +4178,8 @@
       name: StorageAccount
     - uid: azure-arm-mediaservices.SyncStorageKeysInput
       name: SyncStorageKeysInput
-- name: azure-arm-mobileengagement
-  uid: azure-arm-mobileengagement
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-mobileengagement.AnnouncementFeedbackCriterion
@@ -4356,8 +4348,8 @@
       name: SupportedPlatforms
     - uid: azure-arm-mobileengagement.SupportedPlatformsListResult
       name: SupportedPlatformsListResult
-- name: azure-arm-monitor
-  uid: azure-arm-monitor
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-monitor.ActionGroupList
@@ -4500,8 +4492,8 @@
       name: WebhookNotification
     - uid: azure-arm-monitor.WebhookReceiver
       name: WebhookReceiver
-- name: azure-arm-mysql
-  uid: azure-arm-mysql
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-mysql.CheckNameAvailability
@@ -4576,8 +4568,8 @@
       name: Sku
     - uid: azure-arm-mysql.TrackedResource
       name: TrackedResource
-- name: azure-arm-network
-  uid: azure-arm-network
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-network.AddressSpace
@@ -5074,8 +5066,8 @@
       name: VpnClientRootCertificate
     - uid: azure-arm-network.VpnDeviceScriptParameters
       name: VpnDeviceScriptParameters
-- name: azure-arm-notificationhubs
-  uid: azure-arm-notificationhubs
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-notificationhubs.AdmCredential
@@ -5143,8 +5135,8 @@
       name: SubResource
     - uid: azure-arm-notificationhubs.WnsCredential
       name: WnsCredential
-- name: azure-arm-operationalinsights
-  uid: azure-arm-operationalinsights
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-operationalinsights.CoreSummary
@@ -5229,8 +5221,8 @@
       name: WorkspaceListUsagesResult
     - uid: azure-arm-operationalinsights.Workspaces
       name: Workspaces
-- name: azure-arm-operations
-  uid: azure-arm-operations
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-operations.CodeMessageError
@@ -5257,8 +5249,8 @@
       name: SolutionPropertiesList
     - uid: azure-arm-operations.Solutions
       name: Solutions
-- name: azure-arm-postgresql
-  uid: azure-arm-postgresql
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-postgresql.CheckNameAvailability
@@ -5333,8 +5325,8 @@
       name: Sku
     - uid: azure-arm-postgresql.TrackedResource
       name: TrackedResource
-- name: azure-arm-powerbiembedded
-  uid: azure-arm-powerbiembedded
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-powerbiembedded.AzureSku
@@ -5377,8 +5369,8 @@
       name: WorkspaceList
     - uid: azure-arm-powerbiembedded.Workspaces
       name: Workspaces
-- name: azure-arm-recoveryservices-siterecovery
-  uid: azure-arm-recoveryservices-siterecovery
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-recoveryservices-siterecovery.A2AApplyRecoveryPointInput
@@ -6118,8 +6110,8 @@
       name: VMwareV2FabricSpecificDetails
     - uid: azure-arm-recoveryservices-siterecovery.VMwareVirtualMachineDetails
       name: VMwareVirtualMachineDetails
-- name: azure-arm-recoveryservices
-  uid: azure-arm-recoveryservices
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-recoveryservices.BackupStorageConfig
@@ -6200,8 +6192,8 @@
       name: VaultUsage
     - uid: azure-arm-recoveryservices.VaultUsageList
       name: VaultUsageList
-- name: azure-arm-recoveryservicesbackup
-  uid: azure-arm-recoveryservicesbackup
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-recoveryservicesbackup.AzureBackupServerContainer
@@ -6532,8 +6524,8 @@
       name: WorkloadProtectableItemResourceList
     - uid: azure-arm-recoveryservicesbackup.YearlyRetentionSchedule
       name: YearlyRetentionSchedule
-- name: azure-arm-rediscache
-  uid: azure-arm-rediscache
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-rediscache.ExportRDBParameters
@@ -6582,8 +6574,8 @@
       name: ScheduleEntry
     - uid: azure-arm-rediscache.Sku
       name: Sku
-- name: azure-arm-relay
-  uid: azure-arm-relay
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-relay.AccessKeys
@@ -6638,8 +6630,8 @@
       name: WCFRelays
     - uid: azure-arm-relay.WcfRelaysListResult
       name: WcfRelaysListResult
-- name: azure-arm-resource
-  uid: azure-arm-resource
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-resource.AliasPathType
@@ -6856,8 +6848,8 @@
       name: TenantListResult
     - uid: azure-arm-resource.Tenants
       name: Tenants
-- name: azure-arm-resourcehealth
-  uid: azure-arm-resourcehealth
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-resourcehealth.AvailabilityStatus
@@ -6891,8 +6883,8 @@
       name: ServiceImpactingEventIncidentProperties
     - uid: azure-arm-resourcehealth.ServiceImpactingEventStatus
       name: ServiceImpactingEventStatus
-- name: azure-arm-sb
-  uid: azure-arm-sb
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-sb.AccessKeys
@@ -6997,8 +6989,8 @@
       name: Topics
     - uid: azure-arm-sb.TrackedResource
       name: TrackedResource
-- name: azure-arm-scheduler
-  uid: azure-arm-scheduler
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-scheduler.BasicAuthentication
@@ -7071,8 +7063,8 @@
       name: Sku
     - uid: azure-arm-scheduler.StorageQueueMessage
       name: StorageQueueMessage
-- name: azure-arm-search
-  uid: azure-arm-search
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-search.AdminKeyResult
@@ -7103,8 +7095,8 @@
       name: Services
     - uid: azure-arm-search.Sku
       name: Sku
-- name: azure-arm-servermanagement
-  uid: azure-arm-servermanagement
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-servermanagement.EncryptionJwkResource
@@ -7165,8 +7157,8 @@
       name: SessionResource
     - uid: azure-arm-servermanagement.Version
       name: Version
-- name: azure-arm-servicefabric
-  uid: azure-arm-servicefabric
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-servicefabric.Application
@@ -7297,8 +7289,8 @@
       name: VersionResource
     - uid: azure-arm-servicefabric.VersionResourceList
       name: VersionResourceList
-- name: azure-arm-servicemap
-  uid: azure-arm-servicemap
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-servicemap.Acceptor
@@ -7415,8 +7407,8 @@
       name: Timezone
     - uid: azure-arm-servicemap.VirtualMachineConfiguration
       name: VirtualMachineConfiguration
-- name: azure-arm-sql
-  uid: azure-arm-sql
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-sql.BackupLongTermRetentionPolicies
@@ -7731,8 +7723,8 @@
       name: VirtualNetworkRuleListResult
     - uid: azure-arm-sql.VirtualNetworkRules
       name: VirtualNetworkRules
-- name: azure-arm-storage
-  uid: azure-arm-storage
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-storage.AccountSasParameters
@@ -7819,8 +7811,8 @@
       name: UsageOperations
     - uid: azure-arm-storage.VirtualNetworkRule
       name: VirtualNetworkRule
-- name: azure-arm-storageimportexport
-  uid: azure-arm-storageimportexport
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-storageimportexport.BitLockerKeysListResult
@@ -7867,8 +7859,8 @@
       name: StorageImportExportManagementClient
     - uid: azure-arm-storageimportexport.SupportedOperationsListResult
       name: SupportedOperationsListResult
-- name: azure-arm-storsimple8000series
-  uid: azure-arm-storsimple8000series
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-storsimple8000series.AccessControlRecord
@@ -8127,8 +8119,8 @@
       name: Volumes
     - uid: azure-arm-storsimple8000series.WebproxySettings
       name: WebproxySettings
-- name: azure-arm-streamanalytics
-  uid: azure-arm-streamanalytics
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-streamanalytics.AvroSerialization
@@ -8278,8 +8270,8 @@
       name: Transformation
     - uid: azure-arm-streamanalytics.Transformations
       name: Transformations
-- name: azure-arm-trafficmanager
-  uid: azure-arm-trafficmanager
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: >-
@@ -8327,8 +8319,8 @@
       name: TrafficManagerManagementClient
     - uid: azure-arm-trafficmanager.TrafficManagerNameAvailability
       name: TrafficManagerNameAvailability
-- name: azure-arm-visualstudio
-  uid: azure-arm-visualstudio
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-visualstudio.AccountResource
@@ -8371,8 +8363,8 @@
       name: Resource
     - uid: azure-arm-visualstudio.VisualStudioResourceProviderClient
       name: VisualStudioResourceProviderClient
-- name: azure-arm-website
-  uid: azure-arm-website
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-arm-website.Address
@@ -8833,8 +8825,8 @@
       name: WorkerPoolCollection
     - uid: azure-arm-website.WorkerPoolResource
       name: WorkerPoolResource
-- name: azure-batch
-  uid: azure-batch
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-batch.Account
@@ -9297,8 +9289,8 @@
       name: VirtualMachineConfiguration
     - uid: azure-batch.WindowsConfiguration
       name: WindowsConfiguration
-- name: azure-graph
-  uid: azure-graph
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-graph.AADObject
@@ -9391,8 +9383,8 @@
       name: Users
     - uid: azure-graph.UserUpdateParameters
       name: UserUpdateParameters
-- name: azure-keyvault
-  uid: azure-keyvault
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-keyvault.Action
@@ -9561,8 +9553,8 @@
       name: X509CertificateProperties
     - uid: azure-keyvault.global
       name: GLOBAL
-- name: azure-monitor
-  uid: azure-monitor
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-monitor.ActivityLogs
@@ -9613,8 +9605,8 @@
       name: UsageMetricCollection
     - uid: azure-monitor.UsageMetrics
       name: UsageMetrics
-- name: azure-servicefabric
-  uid: azure-servicefabric
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-servicefabric.AadMetadata
@@ -10149,8 +10141,8 @@
       name: WaitForReconfigurationSafetyCheck
     - uid: azure-servicefabric.WaitingChaosEvent
       name: WaitingChaosEvent
-- name: azure-storage
-  uid: azure-storage
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure-storage.BatchResult
@@ -10215,8 +10207,8 @@
       name: WebResource
     - uid: azure-storage.global
       name: GLOBAL
-- name: azure
-  uid: azure
+- name: docs-ref-autogen
+  uid: docs-ref-autogen
   landingPageType: Service
   items:
     - uid: azure.ApplicationTokenCredentials
