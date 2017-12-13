@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: HelloWorker.global
+    id: HelloWorker.global
+    name: GLOBAL
+    fullName: GLOBAL
+    type: Class
+    langs:
+      - js
+    children:
+      - HelloWorker._global.getDiagnosticPath
+      - HelloWorker._global.getLocalResourcePath
+      - HelloWorker._global.getConfigurationSetting
+      - HelloWorker._global.getListenAddress
+  - uid: HelloWorker._global.getDiagnosticPath
+    id: HelloWorker._global.getDiagnosticPath
+    name: 'getDiagnosticPath(callback:)'
+    summary: Return the path to the diagnostic store.
+    fullName: 'HelloWorker.getDiagnosticPath(callback:)'
+    type: Function
+    syntax:
+      parameters:
+        - id: 'callback:'
+          type:
+            - function
+          description: The completion callback.
+      content: 'function getDiagnosticPath(callback:)'
+    langs:
+      - js
+  - uid: HelloWorker._global.getLocalResourcePath
+    id: HelloWorker._global.getLocalResourcePath
+    name: 'getLocalResourcePath(resourceName:, callback:)'
+    summary: Returne the path to the named local resource.
+    fullName: 'HelloWorker.getLocalResourcePath(resourceName:, callback:)'
+    type: Function
+    syntax:
+      parameters:
+        - id: 'resourceName:'
+          type:
+            - string
+          description: Name of the local storage resource.
+        - id: 'callback:'
+          type:
+            - function
+          description: The completion callback.
+      content: 'function getLocalResourcePath(resourceName:, callback:)'
+    langs:
+      - js
+  - uid: HelloWorker._global.getConfigurationSetting
+    id: HelloWorker._global.getConfigurationSetting
+    name: 'getConfigurationSetting(key:, callback:)'
+    summary: Get a specific role configuration setting.
+    fullName: 'HelloWorker.getConfigurationSetting(key:, callback:)'
+    type: Function
+    syntax:
+      parameters:
+        - id: 'key:'
+          type:
+            - string
+          description: The name of the configuration setting.
+        - id: 'callback:'
+          type:
+            - function
+          description: The completion callback.
+      content: 'function getConfigurationSetting(key:, callback:)'
+    langs:
+      - js
+  - uid: HelloWorker._global.getListenAddress
+    id: HelloWorker._global.getListenAddress
+    name: 'getListenAddress(endpointName:, callback:)'
+    summary: >-
+      Get the hostname and port associated with the given endpoint for this role
+      instance.
+    fullName: 'HelloWorker.getListenAddress(endpointName:, callback:)'
+    type: Function
+    syntax:
+      parameters:
+        - id: 'endpointName:'
+          type:
+            - string
+          description: The name of the endpoint in the service definition file.
+        - id: 'callback:'
+          type:
+            - function
+          description: The completion callback.
+      content: 'function getListenAddress(endpointName:, callback:)'
+    langs:
+      - js

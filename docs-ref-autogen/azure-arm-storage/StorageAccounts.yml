@@ -8,9 +8,9 @@ items:
     source:
       id: azure-arm-storage.StorageAccounts
       path: lib\services\storageManagement2\lib\operations\storageAccounts.js
-      startLine: 2413
+      startLine: 2417
       remote:
-        branch: jsdoc
+        branch: master
         path: lib\services\storageManagement2\lib\operations\storageAccounts.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
@@ -210,7 +210,7 @@ items:
         - id: parameters.kind
           type:
             - string
-          description: "Required. Indicates the type of storage\raccount. Possible values include: 'Storage', 'BlobStorage'"
+          description: "Required. Indicates the type of storage\raccount. Possible values include: 'Storage', 'StorageV2', 'BlobStorage'"
         - id: parameters.location
           type:
             - string
@@ -391,7 +391,7 @@ items:
         - id: parameters.kind
           type:
             - string
-          description: "Required. Indicates the type of storage\raccount. Possible values include: 'Storage', 'BlobStorage'"
+          description: "Required. Indicates the type of storage\raccount. Possible values include: 'Storage', 'StorageV2', 'BlobStorage'"
         - id: parameters.location
           type:
             - string
@@ -895,6 +895,11 @@ items:
           type:
             - string
           description: "Specifies the\rdefault action of allow or deny when no other rules match. Possible values\rinclude: 'Allow', 'Deny'"
+        - id: parameters.kind
+          type:
+            - string
+          description: "Optional. Indicates the type of storage\raccount. Currently only StorageV2 value supported by server. Possible values\rinclude: 'Storage', 'StorageV2', 'BlobStorage'"
+          optional: true
         - id: options
           type:
             - object
@@ -1069,6 +1074,11 @@ items:
           type:
             - string
           description: "Specifies the\rdefault action of allow or deny when no other rules match. Possible values\rinclude: 'Allow', 'Deny'"
+        - id: parameters.kind
+          type:
+            - string
+          description: "Optional. Indicates the type of storage\raccount. Currently only StorageV2 value supported by server. Possible values\rinclude: 'Storage', 'StorageV2', 'BlobStorage'"
+          optional: true
         - id: options
           type:
             - object
@@ -2026,7 +2036,7 @@ items:
         - id: parameters.kind
           type:
             - string
-          description: "Required. Indicates the type of storage\raccount. Possible values include: 'Storage', 'BlobStorage'"
+          description: "Required. Indicates the type of storage\raccount. Possible values include: 'Storage', 'StorageV2', 'BlobStorage'"
         - id: parameters.location
           type:
             - string
@@ -2207,7 +2217,7 @@ items:
         - id: parameters.kind
           type:
             - string
-          description: "Required. Indicates the type of storage\raccount. Possible values include: 'Storage', 'BlobStorage'"
+          description: "Required. Indicates the type of storage\raccount. Possible values include: 'Storage', 'StorageV2', 'BlobStorage'"
         - id: parameters.location
           type:
             - string
