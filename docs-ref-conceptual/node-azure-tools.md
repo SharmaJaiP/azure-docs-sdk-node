@@ -1,16 +1,4 @@
----
-title: Tools for Node.js developers on Azure | Microsoft Docs
-description: Install individual tools for Node.js development on Azure
-services: multiple
-author: craigshoemaker
-manager: routlaw
-ms.service: azure-nodejs
-ms.tgt_pltfrm: na
-ms.devlang: nodejs
-ms.topic: article
-ms.date: 11/07/2017 
-ms.author: cshoe
----
+
 
 # Azure tools for Node.js developers
 The following tools are recommended for developing with Azure on Node.js.
