@@ -1,14 +1,3 @@
----
-title: Azure databases with Node.js code samples
-description: Sample code demonstrating how to use Azure databases with Node.js.
-author: craigshoemaker
-manager: routlaw
-ms.devlang: nodejs
-ms.topic: article
-ms.service: azure-nodejs
-ms.date: 03/20/2018
-ms.author: cshoe
----
 
 # Azure databases with Node.js code samples
 
